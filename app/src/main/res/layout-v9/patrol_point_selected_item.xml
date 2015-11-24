@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#f2f6fc">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f2f6fc">
+
+        <TextView
+            android:id="@+id/tv_patrol_point_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/cb_selected"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="尘沙"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="#cc000000"
+            android:textSize="12sp"
+            android:padding="5dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_move_up"
+            android:layout_marginRight="5dp"
+            android:button="@null"
+            android:drawableRight="@drawable/contactlist_contact_selector"
+            android:padding="5dp">
+        </CheckBox>
+
+        <Button
+            android:id="@+id/btn_move_up"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@drawable/feed_back_bg"
+            android:textSize="9sp"
+            android:textColor="@color/button_text_item"
+            android:gravity="center"
+            android:text="上移"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="3dp"
+            />
+
+        <Button
+            android:id="@+id/btn_move_down"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@drawable/feed_back_bg"
+            android:textSize="9sp"
+            android:textColor="@color/button_text_item"
+            android:gravity="center"
+            android:text="下移"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="3dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

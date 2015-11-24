@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nfc_tag_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="标签名称"
+        android:textColor="#57595b"
+        android:textSize="14dp" />
+
+    <!-- 由edittext改为AutoCompleteTextView -->
+
+    <AutoCompleteTextView
+        android:id="@+id/nfc_tag_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/tc_input_bg"
+        android:completionThreshold="1"
+        android:hint="标签位置 例：小区大门"
+        android:maxLength="15"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="#57595b"
+        android:textCursorDrawable="@drawable/clock_hour"
+        android:textSize="14dp" >
+    </AutoCompleteTextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/nfc_tag_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="选择巡检点"
+        android:textColor="#57595b"
+        android:textSize="14dp" />
+
+    <Spinner
+        android:id="@+id/attendance_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <CheckBox
+        android:id="@+id/nfc_tag_readOnly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:button="@drawable/common_res_togglebutton_selector"
+        android:drawablePadding="5dp"
+        android:minHeight="0dip"
+        android:minWidth="0dip"
+        android:text="只读模式"
+        android:textColor="#57595b"
+        android:textSize="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="注意：只读模式开启后标签只能写入一次，请谨慎使用"
+        android:textColor="#57595b"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/nfc_write_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="#00000000"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/icon_nfc_write_big"
+        android:text="写入标签"
+        android:textColor="#57595b" />
+
+</LinearLayout>

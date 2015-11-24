@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="bestpaysdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/TelecomppExtendLib/libs/bestpaysdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

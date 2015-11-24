@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/label_panel"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/top_panel"
+        android:background="#ffecf3fd"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/card_record"
+            android:layout_width="82dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/tab_bg_selector"
+            android:gravity="center"
+            android:text="卡内记录"
+            android:textColor="@color/label_tab_selector"
+            android:textSize="13dip" />
+
+        <TextView
+            android:id="@+id/trans_record"
+            android:layout_width="82dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="55dip"
+            android:background="@drawable/tab_bg_selector"
+            android:gravity="center"
+            android:text="交易记录"
+            android:textColor="@color/label_tab_selector"
+            android:textSize="13dip" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/label_panel"
+        android:background="#f2f6fc" >
+
+        <!--
+             <cn.yjt.oa.app.widget.TimeLineView android:id="@id/timelineview"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="match_parent"
+	    	app:lineDrawable="#000"
+	    	app:nodeDrawable="#f00"
+	    	app:timelineWidth="1dip"
+	    	app:nodeWidth="5dip"
+	    	app:nodeHeight="5dip" />
+        -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f2f6fc" >
+
+            <cn.yjt.oa.app.widget.TimeLineView
+                android:id="@id/timelineview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                app:lineDrawable="@drawable/task_list_item_content_action_divider"
+                app:nodeDrawable="@drawable/task_list_timeline_node" />
+
+            <cn.yjt.oa.app.widget.listview.PullToRefreshListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:divider="@null"
+                android:scrollbars="none" />
+            <include layout="@layout/view_empty_view"/>
+        </FrameLayout>
+
+        <cn.yjt.oa.app.widget.TravelerView
+            android:id="@id/travelerview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:visibility="gone" >
+
+            <include layout="@layout/time_clock_layout" />
+        </cn.yjt.oa.app.widget.TravelerView>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/consume_bg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/consume_top_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp" >
+
+            <cn.yjt.oa.app.widget.FlashImageView
+                android:id="@+id/flash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/light_circle" />
+
+            <ImageView
+                android:id="@+id/consume_sufficient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="14dip"
+                android:layout_marginTop="@dimen/icon_consume_money_margin_top"
+                android:src="@drawable/icon_consume_money" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="35dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="6dip" >
+
+                <TextView
+                    android:id="@+id/record_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#17000000"
+                    android:shadowDx="10"
+                    android:shadowDy="7"
+                    android:text="--.--"
+                    android:textColor="#fff"
+                    android:textSize="37dip" />
+
+                <TextView
+                    android:id="@+id/record_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.6"
+                    android:text="@string/consume_yuan"
+                    android:textColor="#ffffff"
+                    android:textSize="15dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/record_edbalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:text="补贴：0次"
+                android:textColor="#fff"
+                android:textSize="15dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

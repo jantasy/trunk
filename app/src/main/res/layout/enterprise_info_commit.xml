@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf3fd" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_enterprise_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="enterprise name"
+            android:textColor="@color/button_text_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d9dde2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="beforeDescendants"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:minHeight="53dp"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="营业执照注册号："
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/et_license_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_input_box"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="@color/enterprise_font_description_color"
+                    android:textSize="14dp" />
+
+                <RelativeLayout
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:id="@+id/ib_license_img"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/default_image"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/iv_license_img_delete"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginTop="-5dp"
+                        android:contentDescription="@string/description"
+                        android:padding="6dp"
+                        android:src="@drawable/tc_btn_delete_pressed"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d9dde2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="53dp"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="运营者："
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/et_idcard_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_input_box"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textColor="@color/enterprise_font_description_color"
+                    android:textSize="14dp" />
+
+                <RelativeLayout
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:id="@+id/ib_idcard_img"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/default_image"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/iv_idcard_img_delete"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginTop="-5dp"
+                        android:contentDescription="@string/description"
+                        android:padding="6dp"
+                        android:visibility="gone"
+                        android:src="@drawable/tc_btn_delete_pressed" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d9dde2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地址："
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_input_box"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textColor="@color/enterprise_font_description_color"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d9dde2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="状态："
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="待提交"
+                    android:textColor="@color/enterprise_font_description_color"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d9dde2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="请确认以上信息。\n\n审核需要1-3个工作日，在此期间您可以在测试企业中体验一下软件的各种的功能。"
+            android:textColor="@color/enterprise_font_description_color"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/enterprise_next_step_button" />
+
+</RelativeLayout>

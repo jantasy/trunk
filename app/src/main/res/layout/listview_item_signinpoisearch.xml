@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.yjt.oa.app.widget.CheckableContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f6fc"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/listview_item_poiname"
+            android:layout_width="wrap_content"
+            android:layout_height="57dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dip"
+            android:alpha="0.8"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:textColor="#000000"
+            android:textSize="13dip" />
+
+        <CheckedTextView
+            android:id="@+id/listview_item_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/listview_item_poiname"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dip"
+            android:checkMark="@drawable/signin_checked_selector" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="24dip"
+        android:layout_marginRight="24dip"
+        android:background="@drawable/comm_res_divider" />
+
+</cn.yjt.oa.app.widget.CheckableContainer>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tc_activate" 
+        android:scaleType="fitCenter"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="电话会议”功能以固话、移动终端为载体，提供多人之间通过语音进行沟通和联系服务。" />
+    
+     <TextView
+        android:id="@+id/introduction_click"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击查看资费标准（重要）"/>
+     
+     <Button
+         android:id="@+id/introduction_ok"
+         android:layout_marginTop="30dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textColor="#fff"
+         android:background="@drawable/tc_button_bg"
+         android:text="确定"/>
+
+</LinearLayout>

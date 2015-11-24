@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nfc_app_bg" >
+
+    <ImageView
+        android:id="@+id/iv_bus_bg_1"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:background="@drawable/nfc_icon_bus" />
+
+<!--     <ImageView
+        android:id="@+id/iv_bus_bg_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_bus_bg_1"
+        android:background="@drawable/bus_bg_2"
+        android:layout_toRightOf="@id/iv_bus_bg_1" /> -->
+
+    <!-- Title -->
+
+    <LinearLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:gravity="center"
+        android:background="@drawable/nfc_top" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nfc_edit_text"
+            android:gravity="center"
+            android:hint="@string/nfc_bus_title"
+            android:shadowRadius="2.75"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/nfc_white"
+            android:textSize="@dimen/nfc_title_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlTitle"
+        android:orientation="vertical"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" >
+
+        <TextView
+            android:id="@+id/tvTimeDetail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="2013/04/11 13:00"
+            android:textColor="@color/nfc_grey_time"
+            android:textSize="15sp" />
+        <!-- Content -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvContent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/nfc_edit_text"
+                    android:gravity="top"
+                    android:padding="5dip"
+                    android:textColor="@color/nfc_black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="nfc_app_name">翼机通NFC工具集</string>
+    <string name="nfc_agency">ChinaTelecom</string>
+    <string name="nfc_confirm_delete_all">未被收藏的标签将被全部删除，确认要这么做吗？</string>
+    <string name="nfc_confirm_exit">确认退出吗？</string>
+    <string name="nfc_confirm_save">确认要保存吗？</string>
+    <string name="nfc_title_prompt">提示</string>
+    <string name="nfc_ok">确认</string>
+    <string name="nfc_writeLotteryTag">分享</string>
+    <string name="nfc_cancel">取消</string>
+    <string name="nfc_getFromFile">从文件读</string>
+    <string name="nfc_help">帮助</string>
+    <string name="nfc_readMessage">读取信息</string>
+    <string name="nfc_writeMessage">设置</string>
+    
+    <!-- 文件分享 -->
+    <string name="nfc_shareFile">分享文件</string>
+    <string name="nfc_music_title">音乐分享</string>
+    <string name="nfc_file_title">文件分享</string>    
+    <string name="nfc_fileresult">文件查看</string>
+    <string name="nfc_bluetoothPairing">蓝牙配对</string>
+    <string name="nfc_shareDirector">设备接触，点击发送方屏幕进行传输。</string>
+    <string name="nfc_explorer">文件分享</string>
+    <string name="nfc_failed2OpenBluetooth">打开蓝牙失败</string>
+    <string name="nfc_success2OpenBluetooth">已打开蓝牙</string>
+    <string name="nfc_success2OpenWIFIP2P">已打开WLAN直连</string>
+    <string name="nfc_failed2PairBluetooth">蓝牙配对蓝牙失败</string>
+    <string name="nfc_receive2direction">接收至sdcard/NFCForChinaTelecom/myshares！</string>
+    <string name="nfc_wifidirectorisclose">WIFI直连功能未开启</string>
+    <string name="nfc_failed2connectretry">建立连接失败，请重试</string>
+    <string name="nfc_waitforreceiving">正在发送中，请等待</string>
+    <string name="nfc_receiving">正在发送文件</string>
+    <string name="nfc_waitforsending">前次仍在发送，请等待</string>
+    <string name="nfc_sending">正在发送文件</string>
+    <string name="nfc_transmiting">文件已传输</string>
+    <string name="nfc_transmitending">传输完成</string>
+    <string name="nfc_fileisnotfound">找不到该文件</string>
+    <string name="nfc_failed2connect">连接失败</string>
+    <string name="nfc_failed2transmit">传输失败</string>
+    <string name="nfc_filenamelisttitle">文件列表</string>
+    <string name="nfc_receivetext">请将两部设备靠近后，点击对方屏幕进行传输</string>
+    <string name="nfc_msg_open_wifi_direct">请打开无线直连。</string>
+    <string name="nfc_back_to">返回上一层 </string>
+    
+    
+    <string name="nfc_rbClose">关闭</string>
+    <string name="nfc_rbStart">开启</string>
+    
+    <!-- Tosat Message -->
+    <string name="nfc_txtAddEnvironment">添加新环境</string>
+    <string name="nfc_nullException">不能为空</string>
+    <string name="nfc_delete">确定要删除吗？</string>
+    <string name="nfc_m_full_awards">不能添加更多的奖项。</string>
+    <string name="nfc_m_etTotal_nullException">需要先设置抽奖的基数。</string>
+    <string name="nfc_m_name_nullException">名称不能为空。</string>
+    <string name="nfc_m_content_nullException">简介不能为空。</string>
+    <string name="nfc_m_award_nullException">至少添加一个奖项。</string>
+    <string name="nfc_m_total_error">抽奖总数输入有误。</string>
+    <string name="nfc_m_parse_exception">强制转换出错。</string>
+    
+    <string name="nfc_wait_update">敬请期待</string>
+    <string name="nfc_make_tag">制作标签</string>
+    <string name="nfc_enviroment_manage">环境管理</string>
+    <string name="nfc_enviroment_meetting">会议管理</string>
+    <string name="nfc_enviroment_coupon">优惠券</string>
+    <string name="nfc_enviroment_lottery">抽奖</string>
+    <string name="nfc_enviroment_ad">广告</string>
+    <string name="nfc_enviroment_mymode">自定义环境</string>
+    
+    <string name="nfc_phone_manage">手机管理</string>
+    <string name="nfc_phone_mode">手机模式</string>
+    <string name="nfc_phone_mutemode">静音</string>
+    <string name="nfc_phone_vibrationmode">振动</string>
+    <string name="nfc_phone_ling">响铃</string>
+    <string name="nfc_phone_wifi">无线网络设置</string>
+    <string name="nfc_phone_digitalswitch">数据(2G/3G)设置</string>
+    <string name="nfc_phone_bluetooth">蓝牙设置</string>
+    <string name="nfc_phone_airplanemode">飞行模式</string>
+    
+    
+    <string name="nfc_on">启动</string>
+    <string name="nfc_off">关闭</string>
+    <string name="nfc_default_">默认</string>
+    
+    <string name="nfc_set_date">设置日期</string>
+    <string name="nfc_set_time">设置时间</string>
+    
+    <string name="nfc_set_mute">设置手机静音模式</string>
+    <string name="nfc_set_vibration">设置手机振动模式</string>
+    <string name="nfc_set_wifi">设置无线网络</string>
+    <string name="nfc_set_wifi_name">无线网络名称</string>
+    <string name="nfc_set_wifi_passwoed">无线网络密码</string>
+    <string name="nfc_set_bluetooth">设置蓝牙</string>
+    
+    <string name="nfc_add_success">插入数据成功</string>
+    <string name="nfc_add_faild">插入数据失败</string>
+    
+    <string-array name="nfc_PermitedExtension">
+        <item >zip</item>
+        <item >rar</item>
+        <item >jpg</item>
+        <item >gif</item>
+        <item >png</item>
+        <item >bmp</item>
+	</string-array>
+    
+    <string-array name="nfc_elements">
+        <item >静音</item>
+        <item >振动</item>
+        <item >Wi-Fi</item>
+        <item >2G/3G</item>
+        <item >蓝牙</item>
+        <item >飞行模式</item>
+    </string-array>
+    <string-array name="nfc_elements_info">
+        <item >静音模式</item>
+        <item >手机振动模式</item>
+        <item >打开或者关闭无线</item>
+        <item >打开或者关闭移动数据</item>
+        <item >打开或者关闭蓝牙</item>
+        <item >飞行模式</item>
+    </string-array>
+    
+     <string-array name="nfc_enviroments">
+        <item >我的模式</item>
+        <item >会议</item>
+        <item >日程</item>
+        <item >抽奖</item>
+        <item >广告</item>
+        <item >自定义模式</item>
+    </string-array>
+    <!-- ashley 0922 削减页面功能：名片管理 读公交卡 情景设置（静音啥的） 访问网址 文件分享
+    
+    碰碰公交卡
+NFC互动标签
+
+NFC电子名片
+P2P触碰闪传 -->
+    
+     <string name="nfc_cardmanager" >NFC电子名片</string>
+        <string name="nfc_readcard">手机读公交卡</string>
+        <string name="nfc_meeting">NFC互动标签</string>
+		<string name="nfc_website">访问网址</string>    
+        <string name="nfc_fileshare">P2P触碰闪传</string>
+        
+         <string-array name="nfc_tag_title">
+        <item >@string/nfc_cardmanager</item>
+        <item >@string/nfc_readcard</item>
+        <item >@string/nfc_meeting</item>
+        <item >@string/nfc_website</item>
+        <item >@string/nfc_fileshare</item>
+    </string-array>
+     <string-array name="nfc_new_tag_title">
+        <item >制作电子名片</item>
+        <item >制作情景设置标签</item>
+        <item >制作优惠券</item>
+        <item >制作抽奖标签</item>
+        <item >制作广告标签</item>
+        <item >制作文本标签</item>
+        <item >制作网址标签</item>
+        <item >制作电影票</item>
+        <item >制作公园门票</item>
+    </string-array>
+    
+     <string-array name="nfc_detail_title">
+        <item >文本标签</item>
+        <item >网址标签</item>
+        <item >公交卡</item>
+    </string-array>
+     
+    <string name="nfc_other_tag">其他标签</string>
+     
+ 	<!-- The title for the activity that shows a tag that was just scanned -->
+    <string name="nfc_title_scanned_tag">New tag collected</string>
+    <!-- Heading for the text of the content in the "my tag" feature. -->
+    <string name="nfc_tag_text">Text</string>
+    
+    
+    <string name="nfc_name_bkcat_soc">社会科学</string>
+	<string name="nfc_name_bkcat_sci">自然科学</string>
+	<string name="nfc_name_bkcat_ltr">文学</string>
+	<string name="nfc_name_octopuscard">八达通卡（香港）</string>
+	<string name="nfc_name_szt">深圳通卡</string>
+	<string name="nfc_name_szt_f">深圳通卡（旧版）</string>
+	<string name="nfc_name_lnt">岭南通卡（羊城通）</string>
+	<string name="nfc_name_wht">武汉城市一卡通</string>
+	<string name="nfc_name_cac">长安通卡</string>
+	<string name="nfc_name_bj">北京市政交通卡</string>
+	<string name="nfc_name_bj_m">北京市政交通卡（旧版）</string>
+	<string name="nfc_name_unknowntag">未知的电子标签</string>
+	<string name="nfc_name_szlib_center">深圳图书馆（市民中心）</string>
+	<string name="nfc_name_szlib_nanshan">深圳图书馆（南山）</string>
+	<string name="nfc_name_lib_readercard">读者证</string>
+	<string name="nfc_name_lib_booktag">书籍标签</string>
+	
+	
+	<string name="nfc_lab_id">标识：</string>
+	<string name="nfc_lab_pmm">参数：</string>
+	<string name="nfc_lab_serl">序号：</string>
+	<string name="nfc_lab_ver">版本：</string>
+	<string name="nfc_lab_date">生效：</string>
+	<string name="nfc_lab_op">使用：</string>
+	<string name="nfc_lab_log">交易记录：</string>
+	<string name="nfc_lab_balance">余额：</string>
+	<string name="nfc_lab_cur_cny">元</string>
+	<string name="nfc_lab_cur_hkd">港币</string>
+	<string name="nfc_lab_op_time">次</string>
+	<string name="nfc_lab_user_id">读者证号：</string>
+	<string name="nfc_lab_bktg_sn">书籍编号：</string>
+	<string name="nfc_lab_bkcat">书籍类别：</string>
+	
+	
+	<!--名片-->
+	<string name="nfc_card_manage">名片管理</string>
+	<string name="nfc_use_photo_as_primary" >使用此头像</string>
+    <string name="nfc_changePicture" >更改头像</string>
+    <string name="nfc_removePicture" >删除头像</string>
+    <string name="nfc_attachToContact">我的头像</string>
+    <string name="nfc_take_photo">拍照</string>
+    <string name="nfc_pick_photo">从图库中选择一张</string>
+    <string name="nfc_photoPickerNotFoundText" >照相机没拍到照片</string>
+    <string name="nfc_photoPickerNotFoundText1" >手机里面没有照片</string>
+    <string name="nfc_photoPickerNotFoundText2" >剪辑照片出错</string>
+    <string name="nfc_nc_edit">编辑</string>
+    <string name="nfc_nc_save">保存</string>
+    <string name="nfc_nc_send_succeed">发送成功</string>
+    <string name="nfc_nc_need_save">请先保存!</string>
+    <string name="nfc_nc_no_name">名字不能为空!</string>
+    <string name="nfc_nc_no_phone">号码不能为空!</string>
+    <string name="nfc_nc_email_error">Email格式错误!</string>
+    <string name="nfc_nc_name">姓名</string>
+    <string name="nfc_nc_company">公司</string>
+    <string name="nfc_nc_tel">手机:</string>
+    <string name="nfc_nc_fix_tel">座机:</string>
+    <string name="nfc_nc_fax">传真:</string>
+    <string name="nfc_nc_txt_tel">电话</string>
+    <string name="nfc_nc_section">部门:</string>
+    <string name="nfc_nc_rank">职位:</string>
+    <string name="nfc_nc_net">网址:</string>
+    <string name="nfc_nc_addr">地址:</string>
+    <string name="nfc_nc_email">邮箱:</string>
+    <string name="nfc_nc_detail_info">详细信息</string>
+    <string name="nfc_nc_info">备注:</string>
+    <string name="nfc_nc_sendto_destop">发送到桌面</string>
+    <string name="nfc_nc_swap_nc">分享标签</string>
+    <string name="nfc_nc_read_contact">读通讯录</string>
+    <string name="nfc_nc_no_other">没有可以添加的项目</string>
+    <string name="nfc_nc_add_other">添加其他项目</string>
+    <string name="nfc_nc_exist">名片已存在!</string>
+    <string name="nfc_nc_my_nc">请创建我的名片!</string>
+    <string name="nfc_nc_my_name">我的名片</string>
+    <string name="nfc_nc_tip">提示</string>
+    <string name="nfc_nc_save_nc_read_from_nfc">是否保存到通讯录</string>
+    <string name="nfc_nc_has_shortcut">快捷方式已经存在!</string>
+    <string name="nfc_nc_not_same">名片内容有更新，是否保存?</string>
+    
+    <string name="nfc_spinner_group">加入分组</string>
+	<string name="nfc_card_add">添加电子名片</string>
+	<string name="nfc_text_add">添加文本标签</string>
+	<string name="nfc_web_add">添加网址标签</string>
+	
+	<string name="nfc_tag_text_title">文本标签</string>
+	
+	<string name="nfc_pull_to_refresh_tap_label">轻碰刷新...</string>
+	<string name="nfc_pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="nfc_pull_to_refresh_release_label">松开后刷新</string>
+    <string name="nfc_pull_to_refresh_refreshing_label">正在刷新中...</string>
+    
+    
+    <string name="nfc_view">查看</string>
+    <string name="nfc_love">收藏</string>
+    <string name="nfc_loveorhite">收藏/取消收藏</string>
+    <string name="nfc_edit">编辑</string>
+    <string name="nfc_save">保存</string>
+    <string name="nfc_delete_">删除</string>
+    <string name="nfc_share_tag">分享标签</string>
+    <string name="nfc_new_tag">新建标签</string>
+    <string name="nfc_history_title">历史记录</string>
+    
+    <string name="nfc_all_impetent">*</string>
+    <string name="nfc_msg_null_all_title">名称不能为空</string>
+    <string name="nfc_all_title">*名称</string>
+    <string name="nfc_all_content">内容简介：</string>
+    <string name="nfc_all_content_hint">内容简介</string>
+    
+    <!-- 会议 -->
+    <string name="nfc_meetting_mode_null">没有设置手机模式</string>
+    <string name="nfc_meetting_mode">会议模式</string>
+    <string name="nfc_meetting_mode_wifi_ssid">无线连接名称</string>
+    <string name="nfc_meetting_mode_wifi_search">搜索</string>
+    <string name="nfc_meetting_mode_wifi_pwd">无线密码</string>
+    <string name="nfc_meetting_title">*情景名称</string>
+    <string name="nfc_meetting_startTime">*会议开始时间,点击设置</string>
+    <string name="nfc_meetting_startTime_title">会议开始时间</string>
+    <string name="nfc_msg_null_meetting_startTime">点击设置会议开始时间!</string>
+    <string name="nfc_msg_null_meetting_place">会议地点不能为空</string>
+    <string name="nfc_msg_null_meetting_partner">参与人员不能为空</string>
+    <string name="nfc_meetting_content_hint">会议内容简介</string>
+    <string name="nfc_meetting_exist">会议已更新!</string>
+    <string name="nfc_meetting_restore_null">没有指定还原模式。</string>
+    <string name="nfc_meetting_restore_1">将手机模式还原为进入会议模式之前的状态?</string>
+    <string name="nfc_meetting_restore_2">确定要还原吗？</string>
+    <string name="nfc_meetting_restore_mode">模式还原</string>
+    <string name="nfc_meetting_restore_test">测试数据</string>
+    
+    <!-- 公交卡 -->
+    <string name="nfc_bus_title">公交卡</string>
+    <string name="nfc_bus_null">返回值为空，不能解析这张IC卡</string>
+    <string name="nfc_bus_test_data"><br/><b>北京市政交通卡</b><br/><img src="spliter"/><br/>序号： 1000751082486672<br />版本： 01.0200<br />生效： 2012.06.26 - 2015.04.21<br />使用： 192 次<br/><img src="spliter"/><br/><b>余额：<font color="teal"> 0.60 元</font></b><br/><img src="spliter"/><br/><b>交易记录：</b>
+					<small><br />2013.05.10 20:26 -0.40 [000500000799]<br />2013.05.10 20:04 -2.00 [300940000261]<br />2013.05.10 18:35 -2.00 [300130000085]<br />2013.05.02 14:43 -0.40 [000000019048]<br />2013.05.02 14:29 -0.40 [000000019048]<br />2013.05.02 14:29 -0.40 [000000019048]<br />2013.04.30
+					19:22 -0.40 [000000024678]<br />2013.04.30 19:05 -2.00 [300940000279]<br />2013.04.30 13:19 -2.00 [300040000414]<br />2013.04.30 12:32 -0.40 [000000016904]</small><br/><br/></string>
+   
+    <!-- 网址标签 -->
+    <string name="nfc_web_title">网址标签</string>
+    <string name="nfc_msg_null_web_url">网址不能为空</string>
+    <string name="nfc_web_url">网址链接</string>
+    <string name="nfc_web_url_head">http://</string>
+   
+    <!-- 文本 -->
+    <string name="nfc_msg_null_text_content">文本内容不能为空</string>
+   
+    <!-- 标签 BaseNfcAdapter-->
+    <string name="nfc_msg_no_tag">没有找找到标签！</string>
+    
+    <string name="nfc_msg_null_nameorpwd">SSID或者密码不能为空!</string>
+   
+    <string name="nfc_msg_save_first">请先保存!</string>
+   
+    <string name="nfc_select_wifi">Wi-Fi</string>
+    <string name="nfc_select_bluetooth">蓝牙</string>
+    
+    <!-- 抽奖 -->
+    <string name="nfc_lottery_beam">application/vnd.com.chinatelecom.nfc.beam</string>
+    <string name="nfc_lottery_test_data">A0000039A091A1,A0000039A091A2,A0000039A091A3,A0000039A091A4,A0000039A091A5,A0000039A091A6,A0000039A091A7,A0000039A091A8,A0000039A091A9,A0000039A091B1,A0000039A091B2,A0000039A091B3,A0000039A091B4,A0000039A091B5,A0000039A091B6,A0000039A091B7,	A0000039A091B8,A0000039A091B9,
+	</string>
+    <string name="nfc_lottery_readfromsdcard">抽奖号码</string>
+	
+    <string name="nfc_msg_no_support_device">您的设备不支持NFC功能。</string>
+    <string name="nfc_msg_repeat_lottery_tag">您已经参加过抽奖活动，不能重复参加。</string>
+    
+    <string name="nfc_msg_no_sdcard">SD卡不存在</string>
+    
+   
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#3399CCFF</color>
+    <color name="alpha">#0099CCFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#F1A30B</color>
+    <color name="red">#F10BA3</color>
+    <color name="green">#76A464</color>
+    <color name="zi">#AA00FF</color>
+    <color name="hotred">#AD193D</color>
+    <color name="rred">#3D19AD</color>
+    <color name="grey">#658676</color>
+    <color name="blued">#0069FA</color>
+    <color name="about_blue">#0000cc</color>
+    
+    <color name="translation">#00000000</color>
+    <color name="pressed_color">#10000000</color>
+    
+    
+    <color name="half_translucent">#a000</color>
+    <color name="normal_black">#1B1B1B</color>
+    <color name="black">#000000</color>
+
+    <!-- App -->
+    <color name="app_head_background_color">#fff</color>
+    <color name="app_foot_background_color">#fff</color>
+    <color name="app_head_line_color">#000</color>
+    <color name="app_content_background">#f2f6fc</color>
+    <color name="green1">#00AAAC</color>
+    <color name="zi1">#6A01FE</color>
+    <!-- 消息 -->
+    <color name="widget_title_background">#ecf3fd</color>
+    <color name="widget_selected_front">#078eed</color>
+    <color name="widget_front">#99000000</color>
+    <color name="widget_time">#9fa0a1</color>
+    <color name="widget_content">#6b6c6d</color>
+    
+    <color name="line">#d7d7d7</color>
+    
+    <color name="label_normal">#ff82868b</color>
+    <color name="label_selected">#ff078eed</color>
+    <color name="label_red">#ffff4a4a</color>
+    <color name="label_blue">#ff078eed</color>
+    
+    <color name="nfc_tools_data">#7e8083</color>
+    
+    <color name="text57595b">#57595b</color>
+    <color name="text616265">#616265</color>
+    <color name="textff4a4a">#ff4a4a</color>
+    <color name="textc9d5e2">#c9d5e2</color>
+    <color name="textd9dde2">#d9dde2</color>
+    <color name="textf2f6fc">#f2f6fc</color>
+    
+    <color name="consume_time_color">#99000000</color>
+    <color name="window_bg_color">#fff2f6fc</color>
+
+     <color name="contact_lable_unselected">#cc000000</color>
+     <color name="button_line">#94adc6</color>
+     <color name="button_text_color">#4e6278</color>
+     
+     <color name="nfc_line_color">#94adc6</color>
+     
+     
+     <color name="title_text">#57595b</color>
+     <color name="context_text">#797b7e</color>
+     <color name="attention_text">#85878b</color>
+     <color name="enterprise_item_name">#303132</color>
+     <color name="red_text">#d90000</color>
+     
+     <color name="enterprise_font_description_color">#606264</color>
+     
+     <color name="attendance_normal">#12a666</color>
+     <color name="attendance_abnormal">#FC5757</color>
+     
+     <color name="verfy_code_normal">#00c0ff</color>
+     <color name="verfy_code_disable">#cccccc</color>
+
+    <color name="choosecity_group_press">#ffeff5fa</color>
+    <color name="white_f7">#fff7f7f7</color>
+    <color name="dark_normal">#ff1f1f1f</color>
+    <color name="darker_gray">#ff888888</color>
+    <color name="search_dark">#ff292421</color>
+    <color name="city_c">#ff7b8086</color>
+</resources>

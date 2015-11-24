@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f6fc"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/contact_list_division"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/contact_list_group_detail_padding"
+            android:text="@string/contactlist_group_detail_groupname"
+            android:textColor="#4c000000"
+            android:textSize="9dp" />
+
+        <EditText
+            android:id="@+id/group_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/contact_list_group_detail_margin"
+            android:layout_marginRight="@dimen/contact_list_group_detail_margin"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/contact_list_input"
+            android:ellipsize="none"
+            android:hint="@string/contactlist_group_detail_groupname_hint"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#cc000000"
+            android:textColorHint="#4c000000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@drawable/contact_list_division"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/contact_list_group_detail_padding"
+        android:text="@string/contactlist_group_detail_groupdescription"
+        android:textColor="#4c000000"
+        android:textSize="9dp" />
+
+    <EditText
+        android:id="@+id/group_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/contact_list_group_detail_margin"
+        android:layout_marginRight="@dimen/contact_list_group_detail_margin"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/contact_list_input"
+        android:ellipsize="none"
+        android:ems="10"
+        android:gravity="left|top"
+        android:lines="3"
+        android:padding="5dp"
+        android:textColor="#cc000000"
+        android:textColorHint="#4c000000"
+        android:textSize="15dp" >
+
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/member_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/contact_list_division"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/contact_list_group_detail_padding"
+            android:text="@string/group_members"
+            android:textColor="#4c000000"
+            android:textSize="9dp" />
+
+        <ListView
+            android:id="@+id/group_members_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/group_add_new_member"
+            android:layout_below="@+id/member_subtitle"
+            android:layout_marginLeft="@dimen/contact_list_group_detail_margin"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/comm_res_divider"
+            android:dividerHeight="1px" >
+        </ListView>
+
+        <Button
+            android:id="@+id/group_add_new_member"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/contact_list_group_detail_margin"
+            android:layout_marginRight="@dimen/contact_list_group_detail_margin"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/contact_list_button"
+            android:text="@string/group_add_new_contact"
+            android:textColor="#cc000000"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/consume_item_line"
+        android:layout_marginRight="24dip"
+        android:alpha="0.7"
+        android:textColor="#000000"
+        android:textSize="20dip"
+        android:visibility="gone"
+        />
+     <!-- android:visibility="gone"  -->
+         
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/consume_item_line"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="12dip"
+        android:layout_marginRight="24dip"
+        android:layout_marginTop="6dip"
+        android:textColor="@color/label_red"
+        android:textSize="11dip"
+        android:visibility="gone"
+        />
+         <!-- android:visibility="gone"  --> 
+        
+
+    <TextView
+        android:id="@id/consume_item_line"
+        android:layout_width="1px"
+        android:layout_height="51dip"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/comm_res_divider"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/consume_item_line"
+        android:layout_marginLeft="24dip"
+        android:alpha="0.7"
+        android:textColor="#000000"
+        android:textSize="20dip"
+        android:visibility="gone"
+        />
+     <!-- android:visibility="gone"  -->
+
+    <TextView
+        android:id="@+id/content_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/consume_item_line"
+        android:layout_below="@id/title_right"
+        android:layout_marginLeft="24dip"
+        android:layout_marginTop="6dip"
+        android:textColor="@color/label_selected"
+        android:textSize="11dip"
+        android:visibility="gone"/>
+     <!-- android:visibility="gone"  -->
+     
+      <TextView
+        android:id="@+id/card_tran_san"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/consume_item_line"
+        android:layout_below="@id/content_right"
+        android:layout_marginBottom="12dip"
+        android:layout_marginLeft="24dip"
+        android:layout_marginTop="2dip"
+        android:textColor="#ff9b9a9a"
+        android:textSize="10dip"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f6fc" 
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+    <View
+        android:id="@+id/divider"
+        android:layout_width="@dimen/contact_list_item_divider_width"
+        android:layout_height="1px"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/comm_res_divider" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#f2f6fc" >
+
+        <ImageView
+           android:id="@+id/contact_item_icon"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:layout_marginLeft="@dimen/contact_list_item_margin"
+           android:layout_marginTop="8dp"
+           android:layout_marginBottom="8dp"
+           android:src="@drawable/contactlist_contact_icon_default" />
+
+        <TextView
+            android:id="@+id/contact_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/contact_item_icon"
+            android:layout_marginLeft="19dp"
+            android:textColor="#cc000000"
+            android:textSize="15dp" />
+
+        <CheckBox
+            android:id="@+id/item_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="33dp"
+            android:padding="5dp"
+            android:drawableRight="@drawable/contactlist_contact_selector"
+            android:button="@null"
+            android:visibility="gone" >
+        </CheckBox>
+    </RelativeLayout>
+</LinearLayout>

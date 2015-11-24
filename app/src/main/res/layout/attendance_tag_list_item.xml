@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp" >
+
+    <TextView
+        android:id="@+id/tag_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="前门"
+        android:textColor="@color/enterprise_item_name"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/sn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tag_name"
+        android:alpha="0.7"
+        android:textColor="@color/enterprise_item_name"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tag_sn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tag_name"
+        android:layout_toRightOf="@+id/sn"
+        android:alpha="0.7"
+        android:textColor="@color/enterprise_item_name"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tag_sn"
+        android:alpha="0.7"
+        android:textColor="@color/enterprise_item_name"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tag_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tag_sn"
+        android:layout_toRightOf="@+id/area"
+        android:alpha="0.7"
+        android:textColor="@color/enterprise_item_name"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tag_create_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tag_area"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.5"
+        android:text="2015-01-21 17:36:55"
+        android:textColor="@color/enterprise_item_name"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/list_divider" />
+
+    <ImageView
+        android:id="@+id/tag_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/background_selector"
+        android:focusable="false"
+        android:padding="20dp"
+        android:src="@drawable/enterprise_delete_icon" />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/nfc_writting_promt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/description"
+        android:src="@anim/nfc_anim_writting" />
+
+    <TextView
+        android:id="@+id/nfc_write_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:text="将手机靠近NFC标签准备写入"
+        android:textColor="#078eed"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/nfc_write_ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/contact_list_button"
+        android:text="取消" />
+
+</LinearLayout>

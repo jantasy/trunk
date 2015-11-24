@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical" >
+    <EditText
+        android:id="@+id/member_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_input_box"
+        android:padding="10dp"
+        android:hint="请输入用户名"/>
+    <EditText
+        android:id="@+id/member_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_input_box"
+        android:inputType="phone"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:hint="请输入手机号码"/>
+    <Button
+        android:id="@+id/btn_member_ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/app_details_download_btn_bg"
+        android:text="添加"/>
+
+</LinearLayout>

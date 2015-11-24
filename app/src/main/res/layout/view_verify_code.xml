@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_centerInParent="true" >
+
+        <EditText
+            android:id="@+id/et_verify_code"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/btn_verify_code"
+            android:layout_alignTop="@+id/btn_verify_code"
+            android:background="@drawable/search_input_box"
+            android:cursorVisible="true"
+            android:ems="6"
+            android:hint="输入验证码"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="14dp" 
+            android:textCursorDrawable="@drawable/clock_hour"
+             >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_verify_code"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/et_verify_code"
+            android:background="@drawable/btn_verify_code"
+            android:text="获取验证码"
+            android:textColor="@color/color_verify_code_btn_text"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

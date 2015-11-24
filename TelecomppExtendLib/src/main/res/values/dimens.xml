@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">5.0dip</dimen>
+    <dimen name="bottom_tab_font_size">14.0sp</dimen>
+    <dimen name="top_tab_padding_drawable">0.0dip</dimen>
+    <dimen name="top_tab_padding">5.0dip</dimen>
+    <dimen name="top_tab_font_size">17.0sp</dimen>
+    <dimen name="alert_title">18.0sp</dimen>
+    <dimen name="alert_btn">18.0sp</dimen>
+    <dimen name="alert_word">19.0dip</dimen>
+    <dimen name="alert_word_s">16.0dip</dimen>
+	<dimen name="forgetPsw">16.0sp</dimen>
+    <dimen name="text_size_body">17.0sp</dimen>
+    <dimen name="text_size_body_small">15.0sp</dimen>
+    <dimen name="text_size_listview_body">16.0sp</dimen>
+    <dimen name="TitleHeight">50.0dip</dimen>
+    <dimen name="more_pic_size">31.33dip</dimen>
+    <dimen name="more_arrow_height">16.66dip</dimen>
+    <dimen name="more_arrow_width">9dip</dimen>
+    <dimen name="more_arrow_marginRight">17.33dip</dimen>
+    <dimen name="line_separator_size">0.33dip</dimen>
+    <dimen name="item_text_height">52.00dip</dimen>
+</resources>

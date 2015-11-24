@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9fbff"
+    android:paddingBottom="12dp"
+    android:paddingRight="22dp"
+    android:paddingTop="12dp" >
+
+    <RelativeLayout
+        android:id="@+id/layout_detail_username"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/detail_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_user_icon"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="75dp"
+            android:text="陈尚"
+            android:textColor="#454647"
+            android:textSize="24.66dp" />
+
+        <ImageView
+            android:id="@+id/detail_user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:src="@drawable/contactlist_contact_icon_default" />
+
+        <ImageView
+            android:id="@+id/detail_sex"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignTop="@+id/detail_username"
+            android:layout_toRightOf="@+id/detail_username"  
+            android:src="@drawable/male_uncheck" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detail_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/detail_phone_text"
+        android:drawableRight="@drawable/ic_contact_detail_sms"
+        android:singleLine="true"
+        android:text="18618435755"
+        android:textColor="#5a5b5c"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/detail_email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/layout_detail_username"
+        android:text="邮箱："
+        android:textColor="#bcbec0"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/detail_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/detail_email_text"
+        android:singleLine="true"
+        android:text="chenshang@robusoft.com.cn"
+        android:textColor="#5a5b5c"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/detail_tel_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/layout_detail_username"
+        android:text="座机："
+        android:textColor="#bcbec0"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/detail_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/detail_tel_text"
+        android:drawableRight="@drawable/ic_contact_detail_tel"
+        android:singleLine="true"
+        android:text="87768766"
+        android:textColor="#5a5b5c"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/detail_phone_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/layout_detail_username"
+        android:text="手机："
+        android:textColor="#bcbec0"
+        android:textSize="13dp" />
+
+</RelativeLayout>

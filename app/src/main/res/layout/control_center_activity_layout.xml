@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/personal_divider_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/message_center_layout"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/message_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="3dip"
+                    android:drawableTop="@drawable/message_center_selector"
+                    android:gravity="center"
+                    android:paddingBottom="9dip"
+                    android:paddingTop="11dip"
+                    android:text="消息中心"
+                    android:textColor="@color/label_tab_selector"
+                    android:textSize="11dip" />
+
+                <TextView
+                    android:id="@+id/new_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/new_message_count_bg"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#fff"
+                    android:textSize="10dip"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/control_center"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="3dip"
+                android:drawableTop="@drawable/dashboard_selector"
+                android:gravity="center"
+                android:paddingBottom="9dip"
+                android:paddingTop="11dip"
+                android:text="工作台"
+                android:textColor="@color/label_tab_selector"
+                android:textSize="11dip" />
+
+            <TextView
+                android:id="@+id/contact_center"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="3dip"
+                android:drawableTop="@drawable/contact_selector"
+                android:gravity="center"
+                android:paddingBottom="9dip"
+                android:paddingTop="11dip"
+                android:text="通讯录"
+                android:textColor="@color/label_tab_selector"
+                android:textSize="11dip" />
+
+            <TextView
+                android:id="@+id/finder_center"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="3dip"
+                android:drawableTop="@drawable/finder_selector"
+                android:gravity="center_horizontal"
+                android:paddingBottom="9dip"
+                android:paddingTop="11dip"
+                android:text="@string/live_circle"
+                android:textColor="@color/label_tab_selector"
+                android:textSize="11dip" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="item_pos_org" type="id"/>
+    <item name="item_pos_cur" type="id"/>
+    <item name="listview" type="id" />
+    <item name="timelineview" type="id" />
+    <item name="travelerview" type="id" />
+    <item name="clock_minute" type="id" />
+    <item name="clock_hour" type="id" />
+</resources>

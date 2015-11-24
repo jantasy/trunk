@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_wifi"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/connection_specific_wifi"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:button="@drawable/umeng_update_button_check_selector"
+        android:text="@string/connection_specific_wifi"
+        android:textColor="#AAABAF" />
+
+    <LinearLayout
+        android:id="@+id/connect_wifi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+             android:textSize="15sp"
+            android:text="@string/network_ssid" />
+
+        <EditText
+            android:id="@+id/network_ssid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/contact_list_input"
+            android:gravity="top|left"
+            android:hint="@string/network_ssid"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="13dp"
+             android:textSize="15sp"
+            android:text="@string/network_safety" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dip" >
+
+            <Spinner
+                android:id="@+id/safety_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:background="@drawable/contact_list_input" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/contact_list_expandable_show" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="13dp"
+            android:textSize="15sp"
+            android:text="@string/network_pwd" />
+
+        <EditText
+            android:id="@+id/network_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/contact_list_input"
+            android:gravity="top|left"
+            android:hint="@string/network_pwd"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/display_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+            android:button="@drawable/umeng_update_button_check_selector"
+            android:text="@string/display_pwd"
+            android:textColor="#AAABAF" />
+    </LinearLayout>
+
+</LinearLayout>

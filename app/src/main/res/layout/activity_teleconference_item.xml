@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp" 
+    android:layout_gravity="center_vertical"
+    android:padding="10dp">
+
+    <ImageView 
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"   
+        android:src="@drawable/contactlist_contact_icon_default"
+        />
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/icon"   
+        android:layout_marginLeft="20dp"   
+        android:orientation="vertical"  
+        
+        >
+	    <TextView
+	        android:id="@+id/tv_user_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:gravity="center_vertical"
+	        android:text="用户名"
+	        android:textSize="16dp"
+	        android:textColor="#57595b" />        
+        	    
+	    <TextView
+	        android:id="@+id/tv_user_phone"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:gravity="center_vertical"
+	        android:text="12334556789"
+	        android:textSize="14dp"
+	        android:textColor="#57595b"	         />	    
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_alignParentRight="true"
+        android:text="移除"
+        android:textColor="#ff4444"    
+        android:textSize="15dp"    
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

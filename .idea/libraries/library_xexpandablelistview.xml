@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="library-xexpandablelistview">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/library-xexpandablelistview.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

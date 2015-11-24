@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clockin_signin_bg" >
+
+    <LinearLayout
+        android:id="@+id/clockin_ll_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="17dip"
+        android:paddingLeft="24dip"
+        android:paddingRight="24dip"
+        android:paddingTop="18dip" >
+
+        <TextView
+            android:id="@+id/clockin_tv_sum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#a000"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/clockin_tv_some"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#a000"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/clockin_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_above="@id/clockin_ll_num"
+        android:background="@color/textc9d5e2" />
+
+    <!-- 签到列表 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/clockin_line"
+        android:orientation="vertical" >
+
+        <cn.yjt.oa.app.widget.listview.PullToRefreshListView
+            android:id="@+id/clockin_record_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/clockin_signin_bg"
+            android:divider="@null"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clockin_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:text="@string/loading_wait"
+            android:textSize="14dip" />
+    </LinearLayout>
+
+</RelativeLayout>

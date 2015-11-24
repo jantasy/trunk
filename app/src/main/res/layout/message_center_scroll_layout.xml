@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:background="#ECF3FD"
+        android:orientation="horizontal"
+        android:paddingLeft="58dip"
+        android:paddingRight="58dip"
+        android:paddingTop="14dip" >
+
+        <TextView
+            android:id="@+id/all"
+            android:layout_width="82dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_selector"
+            android:gravity="center"
+            android:paddingBottom="@dimen/tab_padding_bottom"
+            android:text="全部"
+            android:textColor="@color/label_tab_selector"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/task"
+            android:layout_width="82dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_selector"
+            android:gravity="center"
+            android:paddingBottom="@dimen/tab_padding_bottom"
+            android:text="任务"
+            android:textColor="@color/label_tab_selector"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/notice"
+            android:layout_width="82dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_selector"
+            android:gravity="center"
+            android:paddingBottom="@dimen/tab_padding_bottom"
+            android:text="公告"
+            android:textColor="@color/label_tab_selector"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

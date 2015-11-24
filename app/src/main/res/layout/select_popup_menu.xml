@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_popup_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_menu_bg"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/select_pop_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#4d6177" />
+
+    <Button
+        android:id="@+id/btn_select_local"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_menu_btn_bg"
+        android:text="添加本机联系人"
+        android:textColor="#4d6177" />
+
+    <Button
+        android:id="@+id/btn_select_manual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/select_menu_btn_bg"
+        android:text="手动输入"
+        android:textColor="#4d6177" />
+
+    <Button
+        android:id="@+id/btn_select_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/select_menu_btn_cancel_bg"
+        android:text="取消"
+        android:textColor="#fff" />
+
+</LinearLayout>

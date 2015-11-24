@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <cn.yjt.oa.app.widget.ViewContainerStub
+        android:id="@+id/vcs_baidu_map"
+        android:layout_width="match_parent"
+        android:layout_height="203dip"
+        android:clickable="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/list_divider" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@drawable/contact_list_division"
+                android:gravity="center_vertical"
+                android:paddingLeft="23dip"
+                android:text="巡检点名称"
+                android:textColor="#bac0c9"
+                android:textSize="10dip" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/sign_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="名称：" />
+
+                <EditText
+                    android:id="@+id/et_patrol_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/sign_name_tv"
+                    android:layout_alignTop="@+id/sign_name_tv"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/sign_name_tv"
+                    android:background="@drawable/edit_line_background"
+                    android:textColor="@color/TextColorGray"
+                    android:inputType="text"
+                    android:minEms="10"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@drawable/contact_list_division"
+                android:gravity="center_vertical"
+                android:paddingLeft="23dip"
+                android:text="巡检点描述"
+                android:textColor="#bac0c9"
+                android:textSize="10dip" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/sign_decription_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="描述：" />
+
+                <EditText
+                    android:id="@+id/et_patrol_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/sign_decription_tv"
+                    android:layout_alignTop="@+id/sign_decription_tv"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/sign_decription_tv"
+                    android:background="@drawable/edit_line_background"
+                    android:textColor="@color/TextColorGray"
+                    android:inputType="text"
+                    android:minEms="10"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@drawable/contact_list_division"
+                android:gravity="center_vertical"
+                android:paddingLeft="23dip"
+                android:text="巡检点校验"
+                android:textColor="#bac0c9"
+                android:textSize="10dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/cb_check_loacation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="位置校验"
+                    android:textColor="@color/TextColorGray"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_check_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="标签校验"
+                    android:textColor="@color/TextColorGray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="@drawable/list_divider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:paddingTop="5dp"
+                android:text="根据巡检定位要求进行勾选，如果选择位置校验，还需要设置下面的巡检点位置和签到范围。"
+                android:textColor="#bac0c9"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@drawable/contact_list_division"
+                android:gravity="center_vertical"
+                android:paddingLeft="23dip"
+                android:text="巡检点位置"
+                android:textColor="#bac0c9"
+                android:textSize="10dip" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_patrol_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/set_top_bg"
+                    android:gravity="center"
+                    android:text="选择位置" />
+
+                <cn.yjt.oa.app.widget.AlwaysMarqueeTextView
+                    android:id="@+id/tv_current_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_toLeftOf="@id/tv_patrol_location"
+                    android:alpha="0.8"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="15dip" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="@drawable/list_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="签到范围:"
+                    android:textColor="@color/attention_text"
+                    android:textSize="15dp"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/range_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/iv_range_subtract"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/range_subtract"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp" />
+
+                        <SeekBar
+                            android:id="@+id/sb_patrol_range"
+                            android:layout_width="@dimen/signin_seekbar_width"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-17dp"
+                            android:layout_marginRight="-17dp"
+                            android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+                            android:indeterminateOnly="false"
+                            android:max="1000"
+                            android:maxHeight="8dp"
+                            android:minHeight="8dp"
+                            android:paddingBottom="2dp"
+                            android:paddingTop="10dp"
+                            android:progressDrawable="@drawable/seekbar_style"
+                            android:thumb="@drawable/pointer"
+                            android:thumbOffset="1dp" />
+
+                        <ImageView
+                            android:id="@+id/iv_range_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/range_add" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/range_layout"
+                        android:layout_centerHorizontal="true" >
+
+                        <EditText
+                            android:id="@+id/et_patrol_range"
+                            android:layout_width="35dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textColor="@color/attention_text"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/et_patrol_range"
+                            android:text="米"
+                            android:textColor="@color/attention_text"
+                            android:textSize="13dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

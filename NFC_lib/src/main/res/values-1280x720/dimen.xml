@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<dimen name="nfc_title_text_size">18sp</dimen>
+
+<dimen name="nfc_layout_f_title_layout_height">59.95px</dimen>
+<dimen name="nfc_iv_card_bg_layout_height">244.01px</dimen>
+<dimen name="nfc_iv_card_bg_layout_marginTop">59.95px</dimen>
+<dimen name="nfc_layout_f_card_layout_marginLeft">30px</dimen>
+<dimen name="nfc_layout_f_card_layout_marginRight">30px</dimen>
+<dimen name="nfc_layout_f_card_layout_height">214.03px</dimen>
+<dimen name="nfc_layout_f_card_layout_marginTop">119.91px</dimen>
+<dimen name="nfc_iv_businesscard_bg_layout_marginTop">303.96px</dimen>
+<dimen name="nfc_layout_f_businesscard_layout_marginTop">363.92px</dimen>
+<dimen name="nfc_iv_coupons_bg_layout_marginTop">547.97px</dimen>
+<dimen name="nfc_layout_f_coupons_layout_marginTop">607.93px</dimen>
+<dimen name="nfc_layout_otherfeatures_bg_paddingLeft">30px</dimen>
+<dimen name="nfc_layout_otherfeatures_bg_paddingRight">30px</dimen>
+<dimen name="nfc_layout_otherfeatures_bg_layout_marginTop">791.98px</dimen>
+<dimen name="nfc_layout_otherfeatures_layout_marginRight">6px</dimen>
+<dimen name="nfc_layout_bottom_bg_layout_marginTop">1035.99px</dimen>
+<dimen name="nfc_temp_margin">14.99px</dimen>
+<dimen name="nfc_title_textsize">29.98sp</dimen>
+<dimen name="nfc_srceen_layout_height">1280px</dimen>
+<dimen name="nfc_srceen_layout_wight">720px</dimen>
+<dimen name="nfc_srceen_half_layout_height">640px</dimen>
+<dimen name="nfc_srceen_half_layout_wight">360px</dimen>
+<dimen name="nfc_nfc_animation_x">382.5px</dimen>
+<dimen name="nfc_nfc_animation_y">382.2px</dimen>
+<dimen name="nfc_otherfeatures_layout_marginTop">59.95dip</dimen>
+<dimen name="nfc_otherfeatures_textSize">17.99sp</dimen>
+<dimen name="nfc_otherfeatures_paddingBottom">7.49dip</dimen>
+
+
+
+
+
+
+
+
+
+
+    
+</resources>

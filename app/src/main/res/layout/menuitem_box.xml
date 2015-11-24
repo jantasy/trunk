@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.yjt.oa.app.app.widget.MenuItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="#6A01FE"
+    android:orientation="vertical" >
+   <ImageView 
+       android:id="@+id/img_icon"
+       android:layout_width="wrap_content"
+       android:src="@drawable/icon_sign_in"
+       android:layout_centerInParent="true"
+       android:layout_height="wrap_content"/> 
+	<TextView android:id="@+id/tv_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginLeft="10dp"
+	    android:textSize="12sp"
+	    android:textColor="#ffffff"
+	    android:layout_marginBottom="5dp"
+	    android:text="签到、考勤"/>
+</cn.yjt.oa.app.app.widget.MenuItemView>

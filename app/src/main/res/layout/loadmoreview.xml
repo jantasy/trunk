@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  >
+    <ProgressBar 
+        android:scrollbarSize="10.0dip" 
+        android:textColor="#ff00ffff" 
+        android:layout_gravity="center_vertical" 
+        android:id="@+id/pb_updating"
+        android:focusable="false" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        style="@android:style/Widget.ProgressBar.Small" />
+    <TextView 
+        android:textSize="16.0sp" 
+        android:textColor="@color/black" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="5.0dip"
+		android:text="加载中..." />
+</LinearLayout>

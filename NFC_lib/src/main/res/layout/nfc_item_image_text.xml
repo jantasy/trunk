@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llSetting"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    <!-- android:background="@drawable/nfc_item_listview" -->
+
+    <LinearLayout
+        android:id="@+id/llDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:singleLine="true"
+            android:text="其他管理"
+            android:textColor="@color/nfc_orange"
+            android:textSize="@dimen/nfc_title_text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/nfc_orange" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dip"
+            android:src="@drawable/nfc_list_arrow" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dip"
+             />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ivArrow"
+            android:layout_toRightOf="@id/icon"
+            android:singleLine="true"
+            android:text="@string/nfc_enviroment_meetting"
+            android:textColor="@color/nfc_black"
+            android:textSize="18dip" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hideId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

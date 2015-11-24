@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="contact_list_title_padding">51dp</dimen>
+    <dimen name="contact_list_search_padding">11dp</dimen>
+    <dimen name="contact_list_item_margin">20dp</dimen>
+    <dimen name="contact_list_item_divider_width">279dp</dimen>
+    <dimen name="contact_list_child_item_margin">68dp</dimen>
+    <dimen name="contact_list_detail_bottom_margin">20dp</dimen>
+    <dimen name="contact_list_detail_margin">37dp</dimen>
+    <dimen name="contact_list_group_detail_margin">20dp</dimen>
+    <dimen name="contact_list_group_detail_padding">20dp</dimen>
+    <dimen name="login_icon_bottom_margin">70dip</dimen>
+    <dimen name="login_icon_top_margin">70dip</dimen>
+    <dimen name="edittext_padding">8dip</dimen>
+    <dimen name="regist_bt_top_margin">61dip</dimen>
+    <dimen name="regist_divier_top_margin">35dp</dimen>
+    <dimen name="regist_divier_bottom_margin">35dp</dimen>
+    <dimen name="personal_icon_top_margin">15dp</dimen>
+    <dimen name="personal_sex_top_margin">15dip</dimen>
+    <dimen name="personal_sex_bottom_margin">15dip</dimen>
+    <dimen name="personal_padding">20dp</dimen>
+    <dimen name="personal_sex_margin_left">87dip</dimen>
+    <dimen name="personal_sex_margin_right">80dip</dimen>
+
+    <!-- 考勤签到 -->
+    <dimen name="signin_bg">220dip</dimen>
+    <dimen name="signin_clock_margin_top">12dip</dimen>
+    <dimen name="signin_seekbar_width">195dip</dimen>
+    <!-- 充值消费 -->
+    <dimen name="consume_bg">220dip</dimen>
+    <dimen name="icon_consume_money_margin_top">12dip</dimen>
+
+</resources>

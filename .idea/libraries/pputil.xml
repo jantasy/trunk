@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pputil">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/TelecomppExtendLib/libs/pputil.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

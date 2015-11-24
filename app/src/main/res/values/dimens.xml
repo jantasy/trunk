@@ -1,0 +1,139 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="view_pager_spacing">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="shadow_width_0.5dp">14.5dp</dimen>
+    <dimen name="slidingmenu_offset">120dp</dimen>
+    <dimen name="pull_to_refresh_header_origin_height">60dp</dimen>
+    <dimen name="pull_to_refresh_footer_origin_height">50dp</dimen>
+    <dimen name="iv_indicator_wight">20dp</dimen>
+
+    <!-- App -->
+    <dimen name="app_head_height">50dp</dimen>
+    <dimen name="app_foot_height">60dp</dimen>
+    <dimen name="app_head_line_height">1px</dimen>
+    <dimen name="gridview_scroll_edge">50dip</dimen>
+    <dimen name="message_center_icon">41dip</dimen>
+    <dimen name="message_center_icon_tomarg">3dip</dimen>
+    <dimen name="app_icon_width">56dp</dimen>
+    <dimen name="message_center_header_size">33dip</dimen>
+    <dimen name="edittext_padding">14dp</dimen>
+    <dimen name="notification_detail_padding">13dip</dimen>
+    <dimen name="refreshing_scroll_height">50dp</dimen>
+    <dimen name="contact_list_title_padding">51dp</dimen>
+    <dimen name="contact_list_search_padding">11dp</dimen>
+    <dimen name="contact_list_item_margin">20dp</dimen>
+    <dimen name="contact_list_item_divider_width">279dp</dimen>
+    <dimen name="contact_list_child_item_margin">68dp</dimen>
+    <dimen name="contact_list_detail_bottom_margin">20dp</dimen>
+    <dimen name="contact_list_detail_margin">37dp</dimen>
+    <dimen name="contact_list_group_detail_margin">20dp</dimen>
+    <dimen name="contact_list_group_detail_padding">20dp</dimen>
+    <dimen name="task_list_start_new_task_height">53dp</dimen>
+    <dimen name="task_list_start_new_task_top_padding">9dp</dimen>
+    <dimen name="task_list_start_new_task_bottom_padding">9dp</dimen>
+    <dimen name="task_list_start_new_task_left_padding">14dp</dimen>
+    <dimen name="task_list_start_new_task_right_padding">14dp</dimen>
+    <dimen name="task_list_timeline_left_margin">10dp</dimen>
+    <dimen name="task_list_timeline_right_margin">7dp</dimen>
+    <dimen name="task_search_list_divder_bottom_margin">7dp</dimen>
+    <dimen name="task_list_item_operation_bar_height">28dp</dimen>
+    <dimen name="task_list_item_operation_bar_divider_height">14dp</dimen>
+    <dimen name="task_list_item_top_margin">5dp</dimen>
+    <dimen name="task_list_item_bottom_margin">13dp</dimen>
+    <dimen name="task_list_item_right_margin">10dp</dimen>
+    <dimen name="task_list_item_from_user_icon_top_margin">5dp</dimen>
+    <dimen name="task_list_item_from_user_icon_left_margin">5dp</dimen>
+    <dimen name="task_list_item_content_top_margin">9dp</dimen>
+    <dimen name="task_list_item_content_bottom_margin">22dp</dimen>
+    <dimen name="task_list_item_content_left_margin">5dp</dimen>
+    <dimen name="task_list_item_content_right_margin">5dp</dimen>
+    <dimen name="task_list_item_reply_time_right_margin">8dp</dimen>
+    <dimen name="task_publishing_top_left_margin">19dp</dimen>
+    <dimen name="task_publishing_top_top_margin">15dp</dimen>
+    <dimen name="task_publishing_top_bottom_margin">9dp</dimen>
+    <dimen name="task_publishing_action_top_margin">20dp</dimen>
+    <dimen name="task_publishing_action_bottom_margin">20dp</dimen>
+    <dimen name="task_publishing_daily_check_drawablepadding">19dp</dimen>
+    <dimen name="task_publishing_action_button_height">25dp</dimen>
+    <dimen name="task_detail_from_user_info_top_margin">7dp</dimen>
+    <dimen name="task_detail_from_user_info_bottom_margin">5dp</dimen>
+    <dimen name="task_detail_from_user_info_left_margin">18dp</dimen>
+    <dimen name="task_detail_from_user_info_right_margin">20dp</dimen>
+    <dimen name="task_detail_from_user_name_left_margin">11dp</dimen>
+    <dimen name="task_detail_listview_right_margin">10dp</dimen>
+    <dimen name="task_detail_content_top_margin">20dp</dimen>
+    <dimen name="task_detail_content_bottom_margin">27dp</dimen>
+    <dimen name="task_detail_reply_item_top_margin">14dp</dimen>
+    <dimen name="task_detail_reply_item_bottom_margin">14dp</dimen>
+    <dimen name="task_detail_radio_group_left_margin">53dp</dimen>
+    <dimen name="task_detail_radio_group_right_margin">53dp</dimen>
+    <dimen name="task_detail_radio_group_top_margin">18dp</dimen>
+    <dimen name="task_detail_radio_group_bottom_margin">9dp</dimen>
+    <dimen name="task_detail_radio_drawablepadding">14dp</dimen>
+    <dimen name="task_detail_reply_part_top_margin">8dp</dimen>
+    <dimen name="task_detail_reply_part_bottom_margin">10dp</dimen>
+    <dimen name="task_detail_reply_part_left_margin">21dp</dimen>
+    <dimen name="task_detail_reply_part_right_margin">21dp</dimen>
+    <dimen name="task_detail_reply_part_content_height">36dp</dimen>
+    <dimen name="task_detail_reply_part_content_send_left_margin">9dp</dimen>
+    <dimen name="login_icon_top_margin">97dp</dimen>
+    <dimen name="login_icon_bottom_margin">96dp</dimen>
+    <dimen name="regist_divier_top_margin">41dp</dimen>
+    <dimen name="regist_divier_bottom_margin">41dp</dimen>
+    <dimen name="regist_bt_top_margin">81dip</dimen>
+    <dimen name="personal_icon_top_margin">42dp</dimen>
+    <dimen name="personal_sex_top_margin">25dip</dimen>
+    <dimen name="personal_sex_bottom_margin">24dip</dimen>
+    <dimen name="personal_padding">23dp</dimen>
+    <dimen name="personal_sex_margin_left">98dip</dimen>
+    <dimen name="personal_sex_margin_right">90dip</dimen>
+
+    <!-- 考勤签到 -->
+    <dimen name="signin_bg">220dip</dimen>
+    <dimen name="signin_clock_margin_top">12dip</dimen>
+    <!-- 充值消费 -->
+    <dimen name="consume_bg">220dip</dimen>
+    <dimen name="icon_consume_money_margin_top">12dip</dimen>
+    <dimen name="dash_item_horizontal">30dip</dimen>
+    <dimen name="finder_itemTop_height">29dp</dimen>
+    <dimen name="finder_itemMid_height">20dp</dimen>
+    <dimen name="dashborad_menu_drag_limt">30dp</dimen>
+    
+    <dimen name="popmenu_y_margin_right">30dp</dimen>
+    
+    <dimen name="enterprise_img_w_50">50dp</dimen>
+    <dimen name="enterprise_img_h_40">40dp</dimen>
+    
+    <dimen name="enterprise_img_w_100">100dp</dimen>
+    <dimen name="enterprise_img_h_61_8">61.8dp</dimen>
+    <dimen name="operator_drawable">20dp</dimen>
+    <dimen name="notice_icon_width">85dp</dimen>
+    <dimen name="notice_icon_height">67dp</dimen>
+    <dimen name="setting_admin">60dp</dimen>
+    
+    <dimen name="enterprise_member_detail_height">320dp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_15dp">15dp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="dimen_18_3dp">18.33dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="dimen_36dp">36dp</dimen>
+    <dimen name="dimen_40dp">40dp</dimen>
+    <dimen name="dimen_47dp">47dp</dimen>
+    <dimen name="dimen_64dp">64dp</dimen>
+    <dimen name="dimen_31_4dp">31.4dp</dimen>
+    <dimen name="dimen_0_4dp">0.4dp</dimen>
+    
+    <dimen name="tab_padding_bottom">12dp</dimen>
+    <dimen name="dept_padding_left">20dp</dimen>
+    <dimen name="dept_padding_left_type">30dp</dimen>
+    
+     <dimen name="share_link_image_width">245dp</dimen>
+
+     
+</resources>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/left_menu_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dip"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="66dip"
+            android:layout_marginTop="66dip" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="66dip"
+                android:layout_height="66dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ccffffff"
+                android:textSize="13dip" />
+            <TextView
+                android:id="@+id/cust_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ccffffff"
+                android:textSize="13dip" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_marginLeft="34dp"
+            android:id="@+id/car_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slid_menu_divide_line" />
+
+        <LinearLayout
+            android:layout_marginLeft="34dp"
+            android:id="@+id/create_enterprise"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_menu_enterprise_list" />
+
+            <TextView
+                android:id="@+id/enterprise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dip"
+                android:text="单位列表"
+                android:textColor="#ccffffff"
+                android:textSize="15dip" />
+        </LinearLayout>
+
+        <ImageView
+             android:layout_marginLeft="34dp"
+            android:id="@+id/enterprise_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slid_menu_divide_line" />
+
+        <LinearLayout
+             android:layout_marginLeft="34dp"
+            android:id="@+id/car_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_menu_donwload" />
+
+            <TextView
+                android:id="@+id/download_card_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dip"
+                android:text="卡应用下载"
+                android:textColor="#ccffffff"
+                android:textSize="15dip" />
+        </LinearLayout>
+
+        <ImageView
+             android:layout_marginLeft="34dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slid_menu_divide_line" />
+
+        <LinearLayout
+             android:layout_marginLeft="34dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_menu_feedback" />
+
+            <TextView
+                android:id="@+id/feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dip"
+                android:text="意见反馈"
+                android:textColor="#ccffffff"
+                android:textSize="15dip" />
+        </LinearLayout>
+
+        <ImageView
+             android:layout_marginLeft="34dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slid_menu_divide_line" />
+
+        <LinearLayout
+             android:layout_marginLeft="34dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_menu_setting" />
+
+            <TextView
+                android:id="@+id/setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dip"
+                android:text="系统设置"
+                android:textColor="#ccffffff"
+                android:textSize="15dip" />
+        </LinearLayout>
+
+        <ImageView
+             android:layout_marginLeft="34dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slid_menu_divide_line" />
+
+        <LinearLayout
+             android:layout_marginLeft="34dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_menu_about" />
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dip"
+                android:text="关于"
+                android:textColor="#ccffffff"
+                android:textSize="15dip" />
+        </LinearLayout>
+
+        <ImageView
+             android:layout_marginLeft="34dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slid_menu_divide_line" />
+
+        <LinearLayout
+             android:layout_marginLeft="34dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_menu_help" />
+
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dip"
+                android:text="帮助"
+                android:textColor="#ccffffff"
+                android:textSize="15dip" />
+        </LinearLayout>
+
+        <ImageView
+             android:layout_marginLeft="34dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slid_menu_divide_line" />
+
+        <LinearLayout
+             android:layout_marginLeft="34dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_menu_out" />
+
+            <TextView
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dip"
+                android:text="退出登录"
+                android:textColor="#ccffffff"
+                android:textSize="15dip" />
+        </LinearLayout>
+
+        <ImageView
+             android:layout_marginLeft="34dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slid_menu_divide_line" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f6fc" >
+
+<!--     <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/signin_bg"
+        android:background="@drawable/consume_top_bg"
+        android:gravity="center_horizontal"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/signin_clock_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp" >
+
+            <cn.yjt.oa.app.widget.FlashImageView
+                android:id="@+id/flash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/light_circle" />
+
+            <ImageView
+                android:id="@+id/signin_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/signin_clock_margin_top"
+                android:src="@drawable/signin_clock" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signin_clock_layout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:text="@string/signin_tips_day"
+                android:textColor="#ffffff"
+                android:textSize="15dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dip"
+                android:shadowDx="10"
+                android:shadowDy="7"
+                android:text="@string/signin_tips_morning"
+                android:textColor="#ffffff"
+                android:textSize="15dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dip"
+                android:shadowDx="10"
+                android:shadowDy="7"
+                android:text="@string/signin_tips_afternoon"
+                android:textColor="#ffffff"
+                android:textSize="15dip" />
+        </LinearLayout>
+    </RelativeLayout> -->
+
+    <LinearLayout
+        android:id="@+id/label_panel"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/rl_layout"
+        android:background="#ffecf3fd"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/signin_record"
+            android:layout_width="82dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/tab_bg_selector"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/signin_title"
+            android:textColor="@color/label_tab_selector"
+            android:textSize="13dip" />
+
+        <TextView
+            android:id="@+id/clockin_record"
+            android:layout_width="82dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_selector"
+            android:gravity="center"
+            android:text="@string/clockin_title"
+            android:textColor="@color/label_tab_selector"
+            android:textSize="13dip" />
+        <TextView
+            android:id="@+id/cardcheckin_record"
+            android:layout_width="82dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/tab_bg_selector"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/card_clockin_title"
+            android:textColor="@color/label_tab_selector"
+            android:textSize="13dip" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:background="@drawable/clockin_signin_bg"
+        android:layout_below="@+id/label_panel" >
+
+        <cn.yjt.oa.app.widget.listview.PullToRefreshListView
+            android:id="@+id/record_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+        <cn.yjt.oa.app.widget.listview.PullToRefreshListView
+            android:id="@+id/attendance_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none" />
+        
+         <cn.yjt.oa.app.widget.listview.PullToRefreshListView
+            android:id="@+id/card_checkin_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+</RelativeLayout>

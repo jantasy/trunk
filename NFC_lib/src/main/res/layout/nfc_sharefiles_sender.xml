@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nfc_sharefilesbackgroundsender"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/fileslist_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="20dip"
+        android:textSize="26dip"
+        android:textColor="@color/nfc_black"
+        android:text="@string/nfc_filenamelisttitle"
+    />
+<!-- //by yuzhao 2013/6/18 start -->    
+    <ListView 
+          android:id="@+id/fileslist"
+          android:layout_marginTop="29dip"
+          android:layout_gravity="center_horizontal"
+          android:layout_width="260dip" 
+          android:layout_height="438dip"
+          android:cacheColorHint="#00000000"
+    />
+<!-- //by yuzhao 2013/6/18 end -->
+<!--     <TextView
+        android:id="@+id/fileslist_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dip"
+        android:textColor="@color/nfc_white"
+        android:text="@string/nfc_shareDirector"
+    /> -->
+<!--     <ProgressBar
+        android:id="@+id/sharefiles_imageview"
+        android:layout_width="wrap_content"
+        android:paddingBottom="0dip"
+        android:indeterminateDrawable="@drawable/nfc_sharefiles1"
+    /> -->
+    
+<!--      <ProgressBar
+              android:id="@+id/sharefiles_pBar"
+              android:layout_width="fill_parent"
+              android:layout_height="200dip"
+              android:layout_gravity="center"
+              android:paddingBottom="0dip"
+              android:layout_marginBottom="0dip"
+              android:indeterminateDrawable="@drawable/nfc_sharefiles"
+              android:visibility="gone"
+              /> -->
+
+<!--     <ImageView
+        android:id="@+id/load_pb_me"
+        android:layout_width="300dip"
+        android:layout_height="300dip"
+        android:indeterminateDrawable="@drawable/nfc_sharefiles1" 
+        /> -->
+<!--     <Button
+        android:id="@+id/OK" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nfc_ok"
+        /> -->
+<!--     <Button
+        android:id="@+id/CANCEL" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nfc_cancel"
+        /> -->
+</LinearLayout>

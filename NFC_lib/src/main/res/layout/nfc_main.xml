@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/nfc_app_bg" >
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="47dp"
+        android:background="@color/nfc_black" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="47dip"
+            android:background="@drawable/title_bg" >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:shadowColor="#000"
+                android:shadowDy="3"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:text="@string/nfc_app_name"
+                android:textColor="#fff5f8fd"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/ivSort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/nfc_main_arrow_btn_press"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnMymode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/nfc_btn_bg"
+                android:text="@string/nfc_meetting_restore_mode"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/btnNewTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/contact_add_group"
+                android:paddingRight="15dp"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btnTestData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/btnMymode"
+                android:background="@drawable/nfc_btn_bg"
+                android:text="@string/nfc_meetting_restore_test"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+	<ImageView
+            android:id="@+id/animation"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@anim/nfc_touch_anim_hor" />
+    <com.chinatelecom.nfc.View.RefreshListView
+        android:visibility="gone"
+        android:id="@+id/mainListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlTitle"
+        android:cacheColorHint="@color/nfc_transparent"
+        android:divider="@null"
+        android:focusable="true"
+        android:listSelector="@android:color/transparent"  
+        android:focusableInTouchMode="true"
+        android:footerDividersEnabled="true"
+        android:scrollbarThumbVertical="@drawable/nfc_scrollbar" />
+
+</RelativeLayout>

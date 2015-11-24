@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/operation_menu_more_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="11dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="11dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/hide_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_hide"
+                android:textColor="#fff"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/tv_line"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="11dp"
+            android:background="#fff" />
+
+        <LinearLayout
+            android:id="@+id/ll_uninstall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="11dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="11dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/unstall_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_unstall"
+                android:textColor="#fff"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/desktop_line"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="11dp"
+            android:background="#fff" />
+
+        <LinearLayout
+            android:id="@+id/ll_desktop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="11dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="11dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/desktop_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_desktop"
+                android:textColor="#fff"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

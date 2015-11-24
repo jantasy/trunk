@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_contact_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="13.5dp" >
+
+        <LinearLayout
+            android:id="@+id/rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_toLeftOf="@+id/line_phone"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/contact_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="陈尚"
+                    android:textColor="#cc000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/contact_item_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/contact_item_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/contact_item_name"
+                    android:gravity="center_vertical"
+                    android:text="18618435755"
+                    android:textColor="#b8b8b8"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/contact_item_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rl_2"
+                android:layout_below="@+id/rl_2"
+                android:paddingBottom="9dp"
+                android:text="工程师"
+                android:textColor="#b8b8b8"
+                android:textSize="10.33dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_phone"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl_1"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="10.33dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/btn_contact_item_phone"
+            android:background="#44b8b8b8" />
+
+        <ImageView
+            android:id="@+id/btn_contact_item_phone"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl_1"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/line_at"
+            android:scaleType="center"
+            android:src="@drawable/ic_contact_item_phone" />
+
+        <View
+            android:id="@+id/line_at"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl_1"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/fl_contact_item_at"
+            android:background="#44b8b8b8" />
+
+        <FrameLayout
+            android:id="@+id/fl_contact_item_at"
+            android:layout_width="39dp"
+            android:layout_height="55.66dp"
+            android:layout_alignBottom="@+id/rl_1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/btn_contact_item_at"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/ic_contact_item_at" />
+
+            <TextView
+                android:id="@+id/tv_contact_isregiest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/rl_1"
+            android:background="@drawable/comm_res_divider" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/layout_contact_detail"
+        layout="@layout/view_contact_detail"
+        android:visibility="gone" />
+
+</LinearLayout>

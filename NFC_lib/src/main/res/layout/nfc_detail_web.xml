@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/nfc_app_bg" >
+
+    <!-- Title -->
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/nfc_top"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nfc_edit_text"
+            android:shadowRadius="2.75"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/nfc_white"
+            android:textSize="@dimen/nfc_title_text_size"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:maxLength="11"
+            android:hint="@string/nfc_all_title"
+             android:singleLine="true" />
+    </LinearLayout>
+
+    <!-- Content -->
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/nfc_mood"
+        android:orientation="horizontal"
+        android:paddingTop="5dip" >
+
+
+        <LinearLayout
+            android:id="@+id/llShareTag"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nfc_nc_share_normal" />
+
+            <TextView
+                style="@style/nfc_style_bottom_text"
+                android:gravity="center"
+                android:text="@string/nfc_share_tag" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEditOrSelect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivEditOrSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nfc_nc_save_normal" />
+
+            <TextView
+                android:id="@+id/tvEditOrSelect"
+                style="@style/nfc_style_bottom_text"
+                android:gravity="center"
+                android:text="@string/nfc_edit" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/llBottom"
+        android:layout_below="@id/llTitle"
+        android:background="@drawable/nfc_bg_web_"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nfc_web_icon"
+            android:layout_marginTop="-100dp"
+            android:layout_marginBottom="50dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nfc_web_text" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:padding="10dip">
+
+            <Button
+                android:id="@+id/btnGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/nfc_web_go" 
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="-3dip"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/btnGo"
+                android:background="@drawable/nfc_bg_web_url_"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/etUrl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/nfc_edit_text"
+                    android:gravity="top"
+                    android:padding="5dip"
+                    android:textColor="@color/nfc_black" 
+                    android:hint="@string/nfc_web_url"
+                    android:inputType="textUri"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    />
+                
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

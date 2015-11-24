@@ -1,0 +1,1 @@
+include ':app', ':floatwidgetlib', ':NFC_lib', ':QrCodeScan', ':sliddingmenu_library', ':TelecomppExtendLib', ':viewpager_indicator_lib'

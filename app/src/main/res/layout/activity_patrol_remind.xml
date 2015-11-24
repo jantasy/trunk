@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <TextView
+            style="@style/setting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="巡检提醒开启" />
+
+        <CheckBox
+            android:id="@+id/cb_is_patrol_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/common_res_togglebutton_selector"
+            android:minHeight="0dip"
+            android:minWidth="0dip" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_patrol_remind_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rb_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客户端提醒" />
+
+        <RadioButton
+            android:id="@+id/rb_short_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="短信提醒" />
+
+        <RadioButton
+            android:id="@+id/rb_both"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客户端和短信提醒" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_patrol_remind_sure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_left"
+            android:text="@string/change_pwd_sure"
+            android:textColor="@color/button_text_color" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="48dp"
+            android:background="@color/button_line" />
+
+        <Button
+            android:id="@+id/btn_patrol_remind_cancle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_right"
+            android:text="@string/change_pwd_cancle"
+            android:textColor="@color/label_red" />
+    </LinearLayout>
+
+</LinearLayout>

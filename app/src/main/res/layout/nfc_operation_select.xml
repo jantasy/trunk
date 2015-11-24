@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/nfc_connect_settings" />
+
+        <include layout="@layout/nfc_sound_settings" />
+    </LinearLayout>
+    -->
+
+    <ListView
+        android:id="@+id/nfc_operator_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#f2f6fc"
+        android:dividerHeight="10dp"
+        android:scrollbars="none" />
+
+    <Button
+        android:id="@+id/nfc_operator_confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/contact_list_button"
+        android:text="确定" />
+
+</LinearLayout>

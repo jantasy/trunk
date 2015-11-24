@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.yjt.oa.app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="8dip"
+    android:background="@color/textf2f6fc"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/notification_detail_padding"
+    android:paddingRight="@dimen/notification_detail_padding"
+    android:paddingTop="30dip" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="通知消息的标题"
+                android:textColor="@color/text57595b"
+                android:textSize="20dip" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="12dip"
+                android:text="2014-09-03 10:00"
+                android:textColor="@color/context_text"
+                android:textSize="9dip" />
+
+            <TextView
+                android:id="@+id/from_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/context_text"
+                android:textSize="9dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/image_content" />
+
+                    <cn.yjt.oa.app.widget.ProgressView
+                        android:id="@+id/progressView"
+                        app:style="medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:effect_speed="3" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="37dip"
+                    android:textColor="@color/text616265"
+                    android:textSize="15dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

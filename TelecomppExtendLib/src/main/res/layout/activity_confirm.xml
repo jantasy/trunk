@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="47.0dip"
+        android:background="@drawable/title_bar_yjt" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="充值信息"
+                android:textColor="@color/word_white"
+                android:textSize="22.0sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_titlebar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rl_confirm_load"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/rl_cardinfo_separator0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:id="@+id/rl_tradeAmount"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_below="@id/rl_cardinfo_separator0"
+                android:background="#f9f9f9"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14.0dip"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="收款方:"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/text_size_body" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_weight="2"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_merchant_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="翼机通"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/text_size_body_small" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 不需要显示商户ID -->
+            <!-- <RelativeLayout
+                android:id="@+id/rl_cardinfo_separator3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/rl_tradeAmount"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:id="@+id/rl_orderTime"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_below="@id/rl_cardinfo_separator3"
+                android:background="#f9f9f9"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/yue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14.0dip"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="商户ID:"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/text_size_body" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_weight="2"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_confirm_merchantId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-01-05 13:00"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/text_size_body_small" />
+                </LinearLayout>
+            </LinearLayout> -->
+
+            <RelativeLayout
+                android:id="@+id/rl_cardinfo_separator4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/rl_tradeAmount"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:id="@+id/rl_orderType"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_below="@id/rl_cardinfo_separator4"
+                android:background="#f9f9f9"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14.0dip"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="充值账户:"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/text_size_body" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_weight="2"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_confirm_uimNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1234567890"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/text_size_body_small" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_cardinfo_separator5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/rl_orderType"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:id="@+id/rl__confirm_balance"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_below="@id/rl_cardinfo_separator5"
+                android:background="#f9f9f9"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14.0dip"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="卡内余额:"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/text_size_body" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_weight="2"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_confirm_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:text="100"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/text_size_body_small" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/text_size_body_small" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rl_cardinfo_separator6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/rl__confirm_balance"
+                android:background="#cccccc" />
+            
+            <LinearLayout
+                android:id="@+id/rl__confirm_cardType"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_below="@id/rl_cardinfo_separator6"
+                android:background="#f9f9f9"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14.0dip"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="卡片类型:"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/text_size_body" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_weight="2"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_confirm_cardType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:text="100"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/text_size_body_small" />
+
+                </LinearLayout>
+            </LinearLayout>
+            
+
+            <LinearLayout
+                android:id="@+id/ll_confirm_quickload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl__confirm_cardType"
+                android:layout_marginTop="6dp"
+                android:background="@color/text_bgcolor"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/checkbox_load_quickload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginTop="10dp"
+                    android:text="充值金额:"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_size_body" />
+
+                <com.telecompp.ui.MyRadioGroup
+                    android:id="@+id/myRadioGroup_load_quickload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radioButton_quickload_10"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/myradiogroup_radiobutton_select"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="10元" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton_quickload_20"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="19dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/myradiogroup_radiobutton_select"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="20元" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton_quickload_30"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="19dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/myradiogroup_radiobutton_select"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="30元" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radioButton_quickload_50"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/myradiogroup_radiobutton_select"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="50元" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton_quickload_100"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="19dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/myradiogroup_radiobutton_select"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="100元" />
+
+                        <RadioButton
+                            android:id="@+id/main_radio1.3"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="19dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/quick_load_unchecked"
+                            android:button="@null"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:text=""
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </com.telecompp.ui.MyRadioGroup>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_confirm_othermoney"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_text_height"
+                android:layout_below="@id/ll_confirm_quickload"
+                android:background="@color/text_bgcolor"
+                android:visibility="visible" >
+
+                <RadioButton
+                    android:id="@+id/checkbox_load_othermoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30.0dip"
+                    android:text="其他金额："
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_size_body" />
+
+                <LinearLayout
+                    android:id="@+id/ll_load_othermoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_text_height"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/checkbox_load_othermoney"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_load_money"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:text="0.01"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_size_body" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="元"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_size_body" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_confirm_buttons"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_below="@id/rl_confirm_othermoney"
+                android:layout_marginTop="12.3dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_pay"
+                    android:layout_width="0dp"
+                    android:layout_height="50.0dip"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/list_item_last"
+                    android:gravity="center"
+                    android:padding="4.0dip"
+                    android:text="立即支付"
+                    android:textColor="@color/white"
+                    android:textSize="18.0sp" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="50.0dip"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/list_item_last"
+                    android:gravity="center"
+                    android:padding="4.0dip"
+                    android:text="取消支付"
+                    android:textColor="@color/white"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_confirm_buttons"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+                
+                <TextView 
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="资金将充入您的翼机通钱包账户"
+                    android:textSize="15sp"
+                    />
+                
+            </LinearLayout>
+            
+        </RelativeLayout>
+
+        <!-- 充值结果显示 -->
+
+        <LinearLayout
+            android:id="@+id/ll_confirm_loadresult"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_confirm_kahao"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50.0dip"
+                        android:background="@color/text_bgcolor"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/kahao"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14.0dip"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:text="充值编号:"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/text_size_body" />
+
+                        <TextView
+                            android:id="@+id/tv_card_num"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dp"
+                            android:layout_weight="4"
+                            android:text="348965123"
+                            android:textColor="@color/text_color"
+                            android:textSize="17.0sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/textview_separatorcolor" />
+                    
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50.0dip"
+                        android:background="@color/text_bgcolor"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14.0dip"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:text="交易流水号:"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/text_size_body" />
+
+                        <TextView
+                            android:id="@+id/tv_confirm_tradeNum"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dp"
+                            android:layout_weight="4"
+                            android:text="348965123"
+                            android:textColor="@color/text_color"
+                            android:textSize="17.0sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/textview_separatorcolor" />
+
+                    <LinearLayout
+                        android:id="@+id/rl_result_pre_load_balance"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50.0dip"
+                        android:background="@color/text_bgcolor"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv_result_load_purchase_pre_balance"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14.0dip"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:text="充值前余额:"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/text_size_body" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dp"
+                            android:layout_weight="4"
+                            android:gravity="left"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/tv_pre_balance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="11.0"
+                                android:textColor="@color/text_color"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/tv_yuan"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="元"
+                                android:textColor="@color/text_color"
+                                android:textSize="17.0sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/textview_separatorcolor" />
+
+                    <LinearLayout
+                        android:id="@+id/rl_result_load_money"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50.0dip"
+                        android:background="@color/text_bgcolor"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_result_load_purchase_money"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14.0dip"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:text="充值金额:"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/text_size_body" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dp"
+                            android:layout_weight="4"
+                            android:gravity="left"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/tv_load_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.01"
+                                android:textColor="@color/red"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/tv_yuan1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="元"
+                                android:textColor="@color/red"
+                                android:textSize="17.0sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/textview_separatorcolor" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_confirm_post_balance"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50.0dip"
+                        android:background="@color/text_bgcolor"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14.0dp"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:text="充值后余额:"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/text_size_body" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="33dp"
+                            android:layout_weight="4"
+                            android:gravity="left"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/tv_card_balance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="11.0"
+                                android:textColor="@color/text_color"
+                                android:textSize="17.0sp" />
+
+                            <TextView
+                                android:id="@+id/tv_yuan3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="元"
+                                android:textColor="@color/text_color"
+                                android:textSize="17.0sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_confirm_success_img"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/img_confirm_load_result"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/icon_success" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_result_load_purchase_result"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="充值成功"
+                        android:textColor="@color/red"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_card_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="50.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/list_item_last"
+                android:padding="4.0dip"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    </ScrollView>
+
+</RelativeLayout>

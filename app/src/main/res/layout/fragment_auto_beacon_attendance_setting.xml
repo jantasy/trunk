@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <RelativeLayout
+        android:id="@+id/switch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/auto_attendance_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动考勤"
+            android:textColor="#111111"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/auto_attendance_text"
+            android:text="勾选列表中的标签收藏为自动考勤标签"
+            android:textColor="#88111111"
+            android:textSize="13dp" />
+
+        <CheckBox
+            android:id="@+id/auto_attendance_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/common_res_togglebutton_selector"
+            android:minHeight="0dip"
+            android:minWidth="0dip" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:layout_below="@+id/switch_layout"
+        android:layout_marginTop="10dp"
+        android:background="@color/line" />
+
+    <cn.yjt.oa.app.widget.listview.PullToRefreshListView
+        android:id="@+id/beacon_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_text"
+        android:layout_below="@+id/tv_line"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+    <TextView
+        android:id="@+id/bottom_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:text="开启自动考勤后，“翼机通+”会根据您当天排班每个班段的开始前半小时和结束后半小时自动进行蓝牙标签扫描，若您在设置的自动考勤标签周围（约0-30米）会自动进行考勤。\n开启自动考勤可能会稍微增加您的手机耗电呦"
+        android:textColor="#88111111"
+        android:textSize="13dp" />
+
+</RelativeLayout>

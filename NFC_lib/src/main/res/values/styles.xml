@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="nfc_style_layout_f_title">
+        <item name="android:layout_gravity">left|top</item>
+        <item name="android:layout_height">@dimen/nfc_layout_f_title_layout_height</item>
+    </style>
+    
+	<!-- 卡包背景 -->
+    <style name="nfc_style_iv_card_bg">
+        <item name="android:layout_gravity">left|top</item>
+        <item name="android:layout_height">@dimen/nfc_iv_card_bg_layout_height</item>
+    </style>
+    <!-- 卡包卡片名片等 -->
+    <style name="nfc_style_layout_card">
+        <item name="android:layout_gravity">left|top</item>
+        <item name="android:layout_height">@dimen/nfc_layout_f_card_layout_height</item>
+		<item name="android:layout_marginLeft">@dimen/nfc_layout_f_card_layout_marginLeft</item>
+		<item name="android:layout_marginRight">@dimen/nfc_layout_f_card_layout_marginRight</item>
+
+    </style>
+    <!-- 卡包卡片-->
+    <style name="nfc_style_layout_card_">
+        <item name="android:layout_gravity">left|top</item>
+		<item name="android:layout_marginLeft">@dimen/nfc_layout_f_card_layout_marginLeft</item>
+		<item name="android:layout_marginRight">@dimen/nfc_layout_f_card_layout_marginRight</item>
+
+    </style>
+    
+    <style name="nfc_style_layout_otherfeatures_bg">
+        <item name="android:layout_gravity">left|top</item>
+        <item name="android:layout_height">@dimen/nfc_iv_card_bg_layout_height</item>
+		<item name="android:paddingLeft">@dimen/nfc_layout_otherfeatures_bg_paddingLeft</item>
+		<item name="android:paddingRight">@dimen/nfc_layout_otherfeatures_bg_paddingRight</item>
+    </style>
+    <style name="nfc_style_otherfeatures">
+		<item name="android:layout_weight">1</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:textSize">10sp</item>
+		<item name="android:background">@null</item>
+		<item name="android:textColor">@color/nfc_write</item>
+		<!-- <item name="android:gravity">bottom|center_horizontal</item> -->
+    </style>
+    <style name="nfc_style_bottom_text">
+        <item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">13sp</item>
+		<item name="android:background">@null</item>
+		<item name="android:textColor">@color/nfc_write</item>
+    </style>
+    
+    <style name="nfc_style_sort_popup">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@null</item>
+		<item name="android:padding">8dip</item>
+		<item name="android:textColor">@color/nfc_tag_title</item>
+    </style>
+    
+    <style name="nfc_style_tag_text">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:padding">5dip</item>
+		<item name="android:textColor">@color/nfc_grey_time</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">15sp</item>
+    </style>
+    <style name="nfc_style_tag_text_meetting">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:paddingTop">5dip</item>
+		<item name="android:textColor">@color/nfc_grey_time</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">15sp</item>
+    </style>
+    <style name="nfc_style_tag_text_detail">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">@color/nfc_black</item>
+		<item name="android:textSize">13sp</item>
+		<item name="android:background">@drawable/nfc_edit_text</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:maxLength">15</item>
+    </style>
+    <style name="nfc_style_tag_text_price">
+		<item name="android:layout_width">80dip</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">@color/nfc_red</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:background">@drawable/nfc_edit_text</item>
+		<item name="android:maxLength">6</item>
+		<item name="android:singleLine">true</item>
+    </style>
+    <style name="nfc_style_tag_text_original">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">@color/nfc_light_black</item>
+		<item name="android:textSize">13sp</item>
+		<item name="android:background">@drawable/nfc_edit_text</item>
+		<item name="android:maxLength">8</item>
+		<item name="android:singleLine">true</item>
+    </style>
+    
+    
+    <style name="nfc_style_title_editview">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">30sp</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:gravity">center</item>
+		<item name="android:shadowRadius">2.75</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    
+         <style name="nfc_translucent">
+        <item name="android:windowBackground">@color/nfc_translucent_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+</resources>

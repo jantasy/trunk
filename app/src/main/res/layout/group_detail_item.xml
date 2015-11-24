@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/grouop_detail_item_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:src="@drawable/contactlist_contact_icon_default" />
+
+        <TextView
+            android:id="@+id/grouop_detail_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/grouop_detail_item_icon"
+            android:textColor="#cc000000"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/grouop_detail_item_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/contact_list_group_detail_margin"
+            android:src="@drawable/btn_check" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.yjt.oa.app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <cn.yjt.oa.app.widget.TouchImageView
+        android:id="@+id/touchImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix" />
+
+    <cn.yjt.oa.app.widget.ProgressView
+        android:id="@+id/progressView"
+        app:style="large"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:effect_speed="3" />
+
+</RelativeLayout>

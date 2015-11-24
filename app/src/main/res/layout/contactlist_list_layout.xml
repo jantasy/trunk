@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#ECF3FD"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/contact_list_title_padding"
+        android:paddingRight="@dimen/contact_list_title_padding" >
+
+        <TextView
+            android:id="@+id/contact_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_selector"
+            android:gravity="center"
+            android:text="@string/contactlist_all"
+            android:textColor="@color/contact_list_label_tab_selector"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/contact_groups"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_selector"
+            android:gravity="center"
+            android:text="@string/contactlist_groups"
+            android:textColor="@color/contact_list_label_tab_selector"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/contact_public_service"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_selector"
+            android:gravity="center"
+            android:text="@string/contactlist_public_service"
+            android:textColor="@color/contact_list_label_tab_selector"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECF3FD"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/top_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/comm_res_divider" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/organize_parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f2f6fc" 
+        android:orientation="vertical"
+        android:gravity="bottom">
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/comm_res_divider" />
+
+        <RelativeLayout
+            android:id="@+id/organize_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#e7effc"
+            android:paddingLeft="@dimen/contact_list_search_padding"
+            android:paddingRight="@dimen/contact_list_search_padding" >
+
+            <TextView
+                android:id="@+id/organize_name"
+                style="@style/setting_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="组织架构" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/setting_more" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/comm_res_divider" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contact_search_parent"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#f2f6fc"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/contact_search"
+            android:layout_width="0dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/contact_list_search_padding"
+            android:layout_marginRight="@dimen/contact_list_search_padding"
+            android:layout_weight="1"
+            android:background="@drawable/search_input_box"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/contact_search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/contactlist_search_icon" />
+
+            <EditText
+                android:id="@+id/address_search_input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="none"
+                android:gravity="center_vertical"
+                android:hint="@string/contactlist_search_hint"
+                android:singleLine="true"
+                android:textColor="#57595B"
+                android:textColorHint="#4c000000"
+                android:textCursorDrawable="@drawable/clock_hour"
+                android:textSize="13dp" />
+
+            <LinearLayout
+                android:id="@+id/contact_search_clear_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/address_search_text_clear" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/contact_search_cancle"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/contactlist_search_cancle"
+            android:textColor="#82868B"
+            android:textSize="15dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f2f6fc" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#CDC9C9" >
+
+        <cn.yjt.oa.app.contactlist.view.CustomViewPager
+            android:id="@+id/contact_list_viewpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+        </cn.yjt.oa.app.contactlist.view.CustomViewPager>
+
+        <cn.yjt.oa.app.contactlist.view.IndexView
+            android:id="@+id/contact_index_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="3dp" >
+        </cn.yjt.oa.app.contactlist.view.IndexView>
+
+        <TextView
+            android:id="@+id/contact_index_show_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/contactlist_index_show_bg"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="36dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/contact_search_click"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f2f6fc"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/address_search_result_list_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f2f6fc"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/contact_search_result_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:headerDividersEnabled="true" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/contact_search_result_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="@string/contactlist_search_no_result"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

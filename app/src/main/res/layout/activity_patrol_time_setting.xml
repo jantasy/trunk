@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dip"
+        android:background="@drawable/contact_list_division"
+        android:gravity="center_vertical"
+        android:paddingLeft="23dip"
+        android:text="选择巡检模式"
+        android:textColor="#bac0c9"
+        android:textSize="10dip" />
+
+    <RadioGroup
+        android:id="@+id/attendance_mode_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/attendance_mode_simple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="启用简约型巡检规则"
+            android:textColor="@color/attention_text"
+            android:textSize="14dp" />
+
+        <RadioButton
+            android:id="@+id/attendance_mode_complex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="启用精细型巡检规则"
+            android:textColor="@color/attention_text"
+            android:textSize="14dp" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/use_simple_attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="10dp"
+        android:button="@drawable/attendance_time_togglebutton"
+        android:minHeight="0dip"
+        android:minWidth="0dip"
+        android:padding="5dp"
+        android:text="启用精细型巡检规则"
+        android:textColor="@color/attention_text"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="4dp"
+        android:alpha="0.8"
+        android:text="您需要使用对应的管理网站设置精细型巡检规则。如未设置，请在PC端访问http://yjt.189.cn选择管理员入口登录后进行配置。"
+        android:textColor="@color/attention_text"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/attendance_complex_intr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_patrol_detail" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dip"
+                    android:background="@drawable/contact_list_division"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="23dip"
+                    android:text="开始时间"
+                    android:textColor="#bac0c9"
+                    android:textSize="10dip" />
+
+                <TextView
+                    android:id="@+id/onduty_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/tc_input_bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="09:00"
+                    android:textColor="@color/context_text"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="23dp"
+                    android:background="@color/line" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dip"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/contact_list_division"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="23dip"
+                    android:text="结束时间"
+                    android:textColor="#bac0c9"
+                    android:textSize="10dip" />
+
+                <TextView
+                    android:id="@+id/offduty_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/tc_input_bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="18:00"
+                    android:textColor="@color/context_text"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="23dp"
+                    android:background="@color/line" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" >
+
+                <TextView
+                    android:id="@+id/tv_multi_segment_setting"
+                    style="@style/setting_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="双班段关闭" />
+
+                <CheckBox
+                    android:id="@+id/cb_multi_segment_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/common_res_togglebutton_selector"
+                    android:minHeight="0dip"
+                    android:minWidth="0dip" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/multi_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dip"
+                    android:background="@drawable/contact_list_division"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="23dip"
+                    android:text="开始时间"
+                    android:textColor="#bac0c9"
+                    android:textSize="10dip" />
+
+                <TextView
+                    android:id="@+id/multi_onduty_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/tc_input_bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="09:00"
+                    android:textColor="@color/context_text"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="23dp"
+                    android:background="@color/line" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dip"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/contact_list_division"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="23dip"
+                    android:text="结束时间"
+                    android:textColor="#bac0c9"
+                    android:textSize="10dip" />
+
+                <TextView
+                    android:id="@+id/multi_offduty_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/tc_input_bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="18:00"
+                    android:textColor="@color/context_text"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="23dp"
+                    android:background="@color/line" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

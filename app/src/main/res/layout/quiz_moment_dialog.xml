@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/app_bg"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="47dp"
+            android:gravity="center"
+            android:text="@string/quiz_select_pic"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/consume_top_bg"/>
+        <Button
+            android:id="@+id/btn_take_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="43dp"
+            android:gravity="center"
+            android:text="@string/quiz_take_pic"
+            android:textSize="15dp"
+            android:focusable="true"
+            android:background="@drawable/btn_quiz_selector"
+            android:textColor="#66000000"
+            />
+        <Button
+            android:id="@+id/btn_gallery_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="43dp"
+            android:gravity="center"
+             android:focusable="true"
+            android:background="@drawable/btn_quiz_selector"
+            android:text="@string/quiz_gallery_pic"
+            android:textSize="15dp"
+            android:textColor="#66000000"
+            />
+        <Button
+            android:id="@+id/btn_sure_pic"
+            android:layout_width="313dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/quiz_pic_sure"
+            android:textSize="15dp"
+            android:background="@drawable/app_button_download_details"
+            android:textColor="#66000000"
+            />
+
+</LinearLayout>

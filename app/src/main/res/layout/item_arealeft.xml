@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/colorlayout" 
+    android:background="@color/transparent" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  >
+    <TextView 
+        android:textSize="16.0sp" 
+        android:gravity="center_vertical" 
+        android:id="@+id/textview" 
+        android:layout_width="wrap_content" 
+        android:layout_height="45.0dip" 
+        android:layout_marginLeft="20.0dip" 
+        android:layout_marginTop="8.0dip" 
+        android:layout_marginBottom="8.0dip" 
+        android:layout_centerVertical="true" />
+    <TextView 
+        android:textColor="@color/city_c" 
+        android:gravity="center" 
+        android:layout_width="20.0dip" 
+        android:layout_height="wrap_content" 
+        android:text="•" 
+        android:layout_centerVertical="true" />
+    <TextView 
+        android:gravity="right" 
+        android:layout_gravity="center_vertical" 
+        android:id="@+id/arrow" 
+        android:background="@drawable/background_arrow" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginRight="-2.0dip" 
+        android:layout_alignParentRight="true" 
+        android:layout_centerVertical="true" />
+</RelativeLayout>

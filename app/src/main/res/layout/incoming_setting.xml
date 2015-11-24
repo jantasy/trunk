@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <RadioGroup
+        android:id="@+id/incoming_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+        <RadioButton
+            android:id="@+id/incoming_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭" />
+
+        <RadioButton
+            android:id="@+id/incoming_simple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启简约弹屏" />
+
+        <RadioButton
+            android:id="@+id/incoming_complex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启华丽弹屏" />
+        
+    </RadioGroup>
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/incoming_sure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/change_pwd_sure"
+            android:textColor="@color/button_text_color"
+            android:background="@drawable/button_left" />
+        
+        <View 
+            android:layout_width="0.5dp"
+            android:layout_height="48dp"
+            android:background="@color/button_line"/>
+
+        <Button
+            android:id="@+id/incoming_cancle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/change_pwd_cancle" 
+            android:textColor="@color/label_red"
+            android:background="@drawable/button_right"/>
+    </LinearLayout>
+</LinearLayout>

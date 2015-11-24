@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="40dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="40dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="47dip"
+        android:background="@drawable/title_bg"
+        android:gravity="center"
+        android:shadowColor="#000"
+        android:shadowDy="3"
+        android:shadowRadius="1"
+        android:singleLine="true"
+        android:text="附近位置"
+        android:textColor="#fff5f8fd"
+        android:textSize="18dip" />
+
+    <LinearLayout
+        android:id="@+id/poi_search"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#f2f6fc"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/contact_list_search_padding"
+            android:layout_marginRight="@dimen/contact_list_search_padding"
+            android:background="@drawable/search_input_box"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/contactlist_search_icon" />
+
+            <EditText
+                android:id="@+id/poi_search_input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="none"
+                android:gravity="center_vertical"
+                android:hint="@string/search_poi_hint"
+                android:singleLine="true"
+                android:textColor="#57595B"
+                android:textColorHint="#4c000000"
+                android:textCursorDrawable="@drawable/clock_hour"
+                android:textSize="13dp" />
+
+            <LinearLayout
+                android:id="@+id/poi_search_clear_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/address_search_text_clear" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/pb_updating"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/app_content_background" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <cn.yjt.oa.app.widget.listview.PullToRefreshListView
+        android:id="@+id/poiResultListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_content_background"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:scrollbars="none" />
+
+</LinearLayout>

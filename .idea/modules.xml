@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NFC_lib/NFC_lib.iml" filepath="$PROJECT_DIR$/NFC_lib/NFC_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QrCodeScan/QrCodeScan.iml" filepath="$PROJECT_DIR$/QrCodeScan/QrCodeScan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TelecomppExtendLib/TelecomppExtendLib.iml" filepath="$PROJECT_DIR$/TelecomppExtendLib/TelecomppExtendLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/floatwidgetlib/floatwidgetlib.iml" filepath="$PROJECT_DIR$/floatwidgetlib/floatwidgetlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sliddingmenu_library/sliddingmenu_library.iml" filepath="$PROJECT_DIR$/sliddingmenu_library/sliddingmenu_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trunk.iml" filepath="$PROJECT_DIR$/trunk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpager_indicator_lib/viewpager_indicator_lib.iml" filepath="$PROJECT_DIR$/viewpager_indicator_lib/viewpager_indicator_lib.iml" />
+    </modules>
+  </component>
+</project>

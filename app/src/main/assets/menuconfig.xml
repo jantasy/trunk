@@ -1,0 +1,63 @@
+<items>
+    <item id="singin" size="3">
+        <posX>0</posX>
+        <posY>0</posY>
+    </item>
+    
+    <item id="charge" size="2">
+        <posX>2</posX>
+        <posY>0</posY>
+    </item>
+    
+    <item id="communication" size="2">
+        <posX>2</posX>
+        <posY>1</posY>
+    </item>
+    
+    <item id="im" size="2">
+        <posX>0</posX>
+        <posY>2</posY>
+    </item>
+    
+    <item id="task" size="2">
+        <posX>0</posX>
+        <posY>3</posY>
+    </item>
+    
+    <item id="info" size="3">
+        <posX>2</posX>
+        <posY>2</posY>
+    </item>
+    
+        <item id="office" size="1">
+        <posX>0</posX>
+        <posY>4</posY>
+    </item>
+    
+            <item id="meeting" size="1">
+        <posX>1</posX>
+        <posY>4</posY>
+        <uri></uri>
+        <size></size>
+        <smallZoon></smallZoon>
+        <bigZoon></bigZoon>
+    </item>
+        <item id="helper" size="2">
+        <posX>2</posX>
+        <posY>4</posY>
+    </item>
+    
+            <item id="appstore" size="3">
+        <posX>0</posX>
+        <posY>5</posY>
+    </item>
+    
+    <item id="find" size="2">
+        <posX>2</posX>
+        <posY>5</posY>
+    </item>
+        <item id="personal" size="1110">
+        <posX>2</posX>
+        <posY>6</posY>
+    </item>
+</items>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nfc_white"
+    android:orientation="vertical" >
+
+    <!-- Title -->
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="47dp"
+        android:background="@color/nfc_black" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="47dip"
+            android:background="@drawable/title_bg" >
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nfc_edit_text"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="@string/nfc_meetting_title"
+                android:maxLength="11"
+                android:shadowRadius="2.75"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/nfc_title_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" >
+
+        <!-- ashley 0923 削减功能 隐藏会议相关内容 -->
+
+        <TextView
+            android:id="@+id/tvTimeDetail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="@string/nfc_meetting_startTime"
+            android:textColor="@color/nfc_grey_time"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nfc_tag_view_line"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dip" >
+
+            <TextView
+                style="@style/nfc_style_tag_text_meetting"
+                android:text="情景模式设置" />
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="2dp"
+                android:background="@color/nfc_mood" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPhoneMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nfc_tag_view_line"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dip"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/nfc_style_tag_text_meetting"
+                android:text="会议概要" />
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="2dp"
+                android:background="@color/nfc_mood" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/llPlace"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvPlace"
+                    style="@style/nfc_style_tag_text_meetting"
+                    android:paddingLeft="5dip"
+                    android:text="会议地点:" />
+
+                <EditText
+                    android:id="@+id/etPlaceDetail"
+                    style="@style/nfc_style_tag_text_detail"
+                    android:hint="@string/nfc_all_impetent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPartner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvPartner"
+                    style="@style/nfc_style_tag_text_meetting"
+                    android:paddingLeft="5dip"
+                    android:text="参与人员:" />
+
+                <EditText
+                    android:id="@+id/etPartnerDetail"
+                    style="@style/nfc_style_tag_text_detail"
+                    android:hint="@string/nfc_all_impetent" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Content -->
+
+        <LinearLayout
+            android:id="@+id/llName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/etContent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/nfc_edit_text"
+                android:gravity="top"
+                android:hint="@string/nfc_meetting_content_hint"
+                android:maxLength="50"
+                android:padding="5dip"
+                android:textColor="@color/nfc_black" />
+        </LinearLayout>
+    </ScrollView>
+    <!--
+        <TextView
+            android:id="@+id/tvTimeDetail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/nfc_grey_time"
+            android:textSize="15sp"
+            android:text="@string/nfc_meetting_startTime" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tag_view_line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dip" >
+
+            <TextView
+                style="@style/nfc_style_tag_text_meetting"
+                android:text="会议模式" />
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="2dp"
+                android:background="@color/nfc_mood" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPhoneMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tag_view_line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dip" >
+
+            <TextView
+                style="@style/nfc_style_tag_text_meetting"
+                android:text="会议概要" />
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="2dp"
+                android:background="@color/nfc_mood" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llPlace"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvPlace"
+                    style="@style/nfc_style_tag_text_meetting"
+                    android:paddingLeft="5dip"
+                    android:text="会议地点:" />
+
+                <EditText
+                    android:id="@+id/etPlaceDetail"
+                    style="@style/nfc_style_tag_text_detail" 
+                    android:hint="@string/nfc_all_impetent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPartner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvPartner"
+                    style="@style/nfc_style_tag_text_meetting"
+                    android:paddingLeft="5dip"
+                    android:text="参与人员:" />
+
+                <EditText
+                    android:id="@+id/etPartnerDetail"
+                    style="@style/nfc_style_tag_text_detail" 
+                    android:hint="@string/nfc_all_impetent"/>
+            </LinearLayout>
+        </LinearLayout>
+    -->
+    <!-- Content -->
+
+
+    <!--
+    <LinearLayout
+            android:id="@+id/llName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/etContent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edit_text"
+                android:gravity="top"
+                android:padding="5dip"
+                android:textColor="@color/nfc_black"
+                android:maxLength="50"
+                android:hint="@string/nfc_meetting_content_hint" />
+        </LinearLayout>
+    </ScrollView>
+    -->
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="79dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/comm_res_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/llNew"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/ivShareFile"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/nfc_nc_new_normal" />
+
+                <TextView
+                    android:id="@+id/tvShareFile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/nfc_new_tag"
+                    android:textColor="#66000000"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llShareTag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/nfc_nc_swap" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/nfc_share_tag"
+                    android:textColor="#66000000"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llEditOrSelect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ivEditOrSelect"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/nfc_nc_save" />
+
+                <TextView
+                    android:id="@+id/tvEditOrSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/nfc_edit"
+                    android:textColor="#66000000"
+                    android:textSize="11dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

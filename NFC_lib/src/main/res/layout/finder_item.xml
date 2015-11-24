@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingLeft="23dp" >
+
+    <RelativeLayout
+        android:id="@+id/finder_rl"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/finder_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/finder_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/finder_icon"
+            android:gravity="center_horizontal"
+            android:textColor="#000"
+            android:textSize="14dp" />
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/find_line"
+        android:layout_marginRight="23dp"
+        android:layout_below="@id/finder_rl"
+        android:layout_width="match_parent"
+        android:background="#d9d9d9"
+        android:layout_height="0.3px" />
+
+</RelativeLayout>

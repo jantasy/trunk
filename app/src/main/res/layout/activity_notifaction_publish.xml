@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <EditText
+            android:id="@+id/noti_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/task_publishing_content_input_background"
+            android:gravity="top"
+            android:hint="请输入公告标题"
+            android:singleLine="true"
+            android:textColor="#cc000000"
+            android:textColorHint="#48000000"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/noti_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/task_picture_add_bg"
+            android:scaleType="center"
+            android:src="@drawable/task_picture_add" />
+
+        <EditText
+            android:id="@+id/noti_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:minLines="6"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/task_publishing_content_input_background"
+            android:gravity="top"
+            android:hint="请输入公告内容"
+            android:textColor="#cc000000"
+            android:textColorHint="#48000000"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/noti_publish_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/contact_list_button"
+            android:text="发布" />
+    </LinearLayout>
+
+</ScrollView>

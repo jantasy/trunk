@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/beacon_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#111111"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/uumm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/beacon_name"
+        android:textColor="#88111111"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/item_check"
+        android:ellipsize="middle"
+        android:textSize="12dp" />
+    <TextView
+        android:id="@+id/area_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uumm"
+        android:textColor="#88111111"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:id="@+id/item_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:drawableRight="@drawable/contactlist_contact_selector"
+        android:padding="5dp" />
+
+</RelativeLayout>

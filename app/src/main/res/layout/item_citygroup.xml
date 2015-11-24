@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"            
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+	    <TextView 
+	        android:text="2015-10-30 21:58:55"        
+	        android:textColor="#ff515151"     
+	        android:textSize="12.0sp"    
+	        android:id="@+id/tv_time"         
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:layout_alignParentLeft="true"
+	       	android:layout_alignParentBottom="true"	       	
+	       	android:layout_marginBottom="5dp" />    
+	         
+	    <TextView 
+	        android:text="30分钟"        
+	        android:textColor="#ff515151"
+	        android:textSize="12.0sp"         
+	        android:id="@+id/tv_during"         
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:layout_toRightOf="@+id/tv_time"
+	        android:layout_marginLeft="5dp"
+	        android:layout_alignBaseline="@+id/tv_time" />  
+	         
+	    <TextView 
+	        android:id="@+id/tv_group" 
+	        android:textColor="#ff515151"   
+	        android:textSize="15.0sp"       
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"         
+	        android:text="13312341234" 
+	        android:layout_above="@+id/tv_time"
+	        android:layout_alignLeft="@+id/tv_time"        
+	        android:layout_marginBottom="2dp" />    
+	    
+	    <TextView 
+	        android:text="主持"        
+	        android:textColor="#ff515151" 
+	        android:textSize="12.0sp"        
+	        android:id="@+id/tv_admin"         
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:layout_alignBaseline="@+id/tv_group"
+	        android:layout_toRightOf="@+id/tv_group"
+	        android:layout_marginLeft="5dp" />    
+	
+	   
+	    <Button 
+	        android:id="@+id/button_meeting" 
+	        android:layout_width="75dp" 
+	        android:layout_height="25dp" 
+	        android:textSize="12.0sp"
+	        android:background="@drawable/task_detail_send_new_reply_background"
+	        android:layout_alignParentRight="true"        
+	        android:layout_alignParentBottom="true"      
+	        android:layout_marginBottom="10dp"
+	        android:text="再次发起" />               
+    </RelativeLayout>
+
+        
+    <View 
+        android:background="#20000000" 
+        android:layout_width="fill_parent" 
+        android:layout_height="0.100000024px" 
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

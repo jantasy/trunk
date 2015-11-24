@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="guava-r07">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/NFC_lib/libs/guava-r07.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

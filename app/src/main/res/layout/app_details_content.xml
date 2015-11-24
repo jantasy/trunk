@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res/cn.yjt.oa.app">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <cn.yjt.oa.app.app.widget.PagerContainer
+            android:id="@+id/app_pager_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f6fc" >
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="180dp"
+                android:layout_height="320dp"
+                android:layout_gravity="center_horizontal" />
+        </cn.yjt.oa.app.app.widget.PagerContainer>
+        
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/app_details_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:pageColor="#d9dde2"
+            app:fillColor="#078eed"
+            android:paddingBottom="10dp"
+            android:paddingTop="15dp" />
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="20dp"
+		    android:paddingRight="20dp"
+		    android:orientation="vertical" >
+
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:drawableLeft="@drawable/app_details_introduction"
+		        android:drawablePadding="6dp"
+		        android:text="@string/app_description"
+		        android:textColor="#9a9da1" />
+
+		    <cn.yjt.oa.app.app.widget.ExtendableTextView
+		        android:id="@+id/app_details_description"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dp"
+		        android:maxLines="4"
+		        android:textColor="#9a9da1"/>
+
+		    <Button
+		        android:id="@+id/app_details_unfold"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:layout_marginTop="15dp"
+		        android:visibility="gone"
+		        android:background="@drawable/app_details_btn_unfold_bg"
+		        android:text="查看更多" />
+		</LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

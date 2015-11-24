@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_enterprise_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="enterprise name"
+                android:textColor="@color/button_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="您将要创建的企业需要经过审核，才可以使用全部功能。请提价审核所需的材料。"
+                android:textColor="@color/attention_text"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/et_license_num"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/search_input_box"
+                android:hint="营业执照注册号"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/attention_text"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="营业执照"
+                android:textColor="@color/button_text_color"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/ib_license_img"
+                android:layout_width="100dp"
+                android:layout_height="61.8dp"
+                android:layout_marginTop="7dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/enterprise_add_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="请上传营业执照副本扫描件或者照片"
+                android:textColor="@color/attention_text"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/et_idcard_num"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/search_input_box"
+                android:hint="运营者身份证号"
+                android:textColor="@color/attention_text"
+                android:textSize="13sp"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="运营者信息"
+                android:textColor="@color/button_text_color"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/ib_idcard_img"
+                android:layout_width="100dp"
+                android:layout_height="61.8dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/enterprise_add_image"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="12dp"
+                android:text="请上传运营者身份证"
+                android:textColor="@color/attention_text"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/enterprise_next_step_button" />
+
+</LinearLayout>

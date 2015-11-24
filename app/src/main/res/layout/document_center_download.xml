@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ImageView 
+        android:id="@+id/document_center_download_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="93dip"
+        android:layout_marginBottom="20dip"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/document_center_add"/>
+    <TextView 
+        android:id="@+id/document_center_download_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textColor="#85878b"/>
+    <TextView 
+        android:id="@+id/document_center_download_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:textColor="#85878b"/>
+     <Button
+        android:id="@+id/document_center_download_btn"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="66dp"
+        android:text="@string/document_center_download_file"
+        android:textColor="#fff"
+        android:background="@drawable/login_bt" />
+    
+</LinearLayout>

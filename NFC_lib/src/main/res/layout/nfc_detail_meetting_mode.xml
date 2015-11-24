@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/nfc_grey"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    <TextView
+        android:id="@+id/tvPhoneManage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:singleLine="true"
+        android:text="@string/nfc_meetting_mode"
+        android:textColor="@color/nfc_orange"
+        android:textSize="@dimen/nfc_title_text_size" />
+
+    <ImageView
+        android:id="@+id/tvPhoneManageDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_marginBottom="10dip"
+        android:background="@color/nfc_orange" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/nfc_transparent"
+        android:divider="@color/nfc_light_blue"
+        android:dividerHeight="1dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:footerDividersEnabled="true"
+        android:scrollbarThumbVertical="@drawable/nfc_scrollbar" />
+
+    <LinearLayout
+        android:id="@+id/llSSID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/edSSID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/nfc_meetting_mode_wifi_ssid" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/nfc_meetting_mode_wifi_search"
+             android:background="@drawable/nfc_btn_bg" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edPwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nfc_meetting_mode_wifi_pwd"
+        android:visibility="gone"
+        android:inputType="textPassword"  />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.chinatelecom.nfc.View.MyListView
+                android:id="@+id/wifiListView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/nfc_transparent"
+                android:divider="@color/nfc_light_blue"
+                android:dividerHeight="1dip"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:footerDividersEnabled="true"
+                android:scrollbarThumbVertical="@drawable/nfc_scrollbar" />
+
+            <ProgressBar
+                android:id="@+id/pbWifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/nfc_ok"
+            android:background="@drawable/nfc_dialog_ok_bg_selector"
+            android:textColor="@color/nfc_black" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+             android:layout_margin="5dp"
+             android:text="@string/nfc_cancel"
+             android:background="@drawable/nfc_dialog_cancel_bg_selector"
+             android:textColor="@color/nfc_black" />
+    </LinearLayout>
+
+</LinearLayout>

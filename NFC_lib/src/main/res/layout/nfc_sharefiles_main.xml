@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_history"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/nfc_app_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="47dp"
+        android:background="@color/nfc_black" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="47dip"
+            android:background="@drawable/title_bg" >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:shadowColor="#000"
+                android:shadowDy="3"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:text="文件共享"
+                android:textColor="#fff5f8fd"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="29dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <RadioGroup
+            android:id="@+id/rdgroup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rdbluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/set_top_bg"
+                android:button="@null"
+                android:checked="false"
+                android:drawableLeft="@drawable/nfc_sharefile_bluetooth"
+                android:paddingLeft="10dp"
+                android:text="@string/nfc_select_bluetooth"
+                android:textColor="@color/nfc_black"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rdwifi"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/set_top_bg"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/nfc_sharefile_wifi"
+                android:paddingLeft="10dp"
+                android:text="@string/nfc_select_wifi"
+                android:textColor="@color/nfc_black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nfc_sharefilessetting"
+                android:layout_marginRight="10dp"
+                android:visibility="visible" />
+        </RadioGroup>
+    </RelativeLayout>
+    
+    
+       <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/nfc_shareDirector"
+            android:textColor="@color/nfc_black"
+            android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="192dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingLeft="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/sendpic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dip"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/sendpic_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/nfc_picture_icon" />
+
+            <TextView
+                android:id="@+id/sendpic_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/sendpic_icon"
+                android:gravity="center_horizontal"
+                android:text="图片分享"
+                android:textColor="#000"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.3px"
+            android:layout_marginRight="23dp"
+            android:background="#d9d9d9" />
+
+        <RelativeLayout
+            android:id="@+id/sendmusic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/sendmusic_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/nfc_music_icon" />
+
+            <TextView
+                android:id="@+id/sendmusic_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/sendmusic_icon"
+                android:gravity="center_horizontal"
+                android:text="视听分享"
+                android:textColor="#000"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.3px"
+            android:layout_marginRight="23dp"
+            android:background="#d9d9d9" />
+
+        <RelativeLayout
+            android:id="@+id/filemanage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/filemanage_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/nfc_sharefile_icon" />
+
+            <TextView
+                android:id="@+id/filemanage_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/filemanage_icon"
+                android:gravity="center_horizontal"
+                android:text="文件分享"
+                android:textColor="#000"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.3px"
+            android:layout_marginRight="23dp"
+            android:background="#d9d9d9" />
+
+        <RelativeLayout
+            android:id="@+id/result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/result_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/nfc_shareresult_icon" />
+
+            <TextView
+                android:id="@+id/result_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/result_icon"
+                android:gravity="center_horizontal"
+                android:text="文件查看"
+                android:textColor="#000"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

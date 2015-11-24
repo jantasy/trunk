@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nfc_left_menu_bg" >
+
+    <com.chinatelecom.nfc.View.MenuHorizontalScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00ffffff"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/left_sliding_tab"
+            android:layout_width="300dip"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" 
+            >
+
+            <RelativeLayout
+                android:id="@+id/rlTitle"
+                android:layout_width="300dip"
+                android:layout_height="48dip" >
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/nfc_history_title"
+                    android:textColor="@color/nfc_write"
+                    android:textSize="@dimen/nfc_title_text_size" />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:background="@drawable/nfc_delete" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlTitle"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/nfc_logo"
+                android:visibility="gone" />
+
+            <com.chinatelecom.nfc.View.RefreshListView
+                android:id="@+id/mainListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/rlTitle"
+                android:cacheColorHint="@color/nfc_transparent"
+                android:divider="@null"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:footerDividersEnabled="true"
+                android:scrollbarThumbVertical="@drawable/nfc_scrollbar" />
+        </LinearLayout>
+
+        <!-- 把一个线布局，包含在自定义的HorizontalScrollView里面 -->
+
+
+        <!-- 侧面的抽屉拉手 -->
+
+        <FrameLayout
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00ffffff"
+            android:orientation="horizontal" >
+        </FrameLayout>
+    </com.chinatelecom.nfc.View.MenuHorizontalScrollView>
+
+</LinearLayout>

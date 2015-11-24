@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/moment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="23dp"
+            android:paddingRight="23dp" >
+
+            <ImageView
+                android:id="@+id/img_moment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:minHeight="150dp"
+                />
+
+            <EditText
+                android:id="@+id/et_moment"
+                android:layout_width="match_parent"
+                android:layout_height="209dp"
+                android:layout_below="@id/img_moment"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/contact_list_input"
+                android:gravity="top|left"
+                android:hint="@string/quiz_moment_add_hint"
+                android:padding="14dp"
+                android:textColor="#cc000000"
+                android:textColorHint="#48000000"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_add_moment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/contact_list_button"
+            android:text="@string/quiz_moment_commit"
+            android:textColor="#4e6278" />
+    </LinearLayout>
+
+</ScrollView>

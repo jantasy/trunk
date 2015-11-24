@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/contact_list_search_padding"
+        android:layout_marginRight="@dimen/contact_list_search_padding"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/search_input_box">
+
+        <EditText
+            android:id="@+id/task_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/contactlist_search_icon"
+            android:drawableStart="@drawable/contactlist_search_icon"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:ellipsize="none"
+            android:hint="搜索任务"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:textColor="#7f000000"
+            android:textColorHint="#7f000000"
+            android:textCursorDrawable="@drawable/clock_hour"
+            android:textSize="13dp" />
+        
+        <ImageButton
+            android:id="@+id/task_search_clear"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/tc_input_delete"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c9d5d2"
+        android:layout_marginBottom="@dimen/task_search_list_divder_bottom_margin" />
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent" >
+        
+        <include android:id="@+id/all_tasks_request_status" 
+        	layout="@layout/task_request_status" />
+    
+    	<LinearLayout
+        	android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="horizontal" >
+
+        	<cn.yjt.oa.app.widget.TimeLineView
+            	android:id="@id/timelineview"
+        		android:layout_width="wrap_content"
+    			android:layout_height="match_parent"
+    			android:layout_marginLeft="@dimen/task_list_timeline_left_margin"
+    			android:layout_marginRight="@dimen/task_list_timeline_right_margin"
+    			app:lineDrawable="@drawable/task_list_item_content_action_divider" />
+        
+        	<cn.yjt.oa.app.widget.listview.PullToRefreshListView
+	    		android:id="@+id/listview"
+	    		android:layout_width="0dp"
+	    		android:layout_weight="1"
+    			android:layout_height="match_parent"
+    			android:divider="@null"
+    			android:listSelector="@android:color/transparent" />
+    	</LinearLayout>
+	
+    </FrameLayout>
+    
+</LinearLayout>

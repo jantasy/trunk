@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5fb" 
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_enterprise_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="中国电信政企测试"
+            android:textColor="@color/button_text_color"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您将要创建的企业需要经过审核，才可以使用全部功能。请提价审核所需的材料。"
+            android:textColor="@color/attention_text"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/et_enterprise_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="58dp"
+            android:background="@drawable/search_input_box"
+            android:gravity="center_vertical"
+            android:hint="请输入企业地址"
+            android:textColor="@color/attention_text"
+            android:textSize="13sp"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/tc_input_bg"
+            android:gravity="center_vertical"
+            android:hint="请输入"
+            android:padding="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="审核需要1-3个工作日，在此期间您可以在测试企业中体验一下软件的各种的功能。"
+            android:textColor="@color/attention_text"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <include layout="@layout/enterprise_next_step_button" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

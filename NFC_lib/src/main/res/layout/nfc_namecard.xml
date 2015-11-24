@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/nfc_app_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="47dp"
+        android:background="@color/nfc_black" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="47dip"
+            android:background="@drawable/title_bg" >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:shadowColor="#000"
+                android:shadowDy="3"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:text="电子名片"
+                android:textColor="#fff5f8fd"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/nfc_layoutbg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <com.chinatelecom.nfc.PhotoEditorView
+                    android:id="@+id/nameCardPhoto"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/nfc_transparent"
+                    android:clickable="true"
+                    android:cropToPadding="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/nfc_icon_card" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="2dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:layout_marginTop="5dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/nfc_edit_text"
+                        android:hint="@string/nfc_nc_name"
+                        android:maxLength="7"
+                        android:singleLine="true"
+                        android:textColor="@color/nfc_namecard_text"
+                        android:textSize="16sp" >
+                        <requestFocus />
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/companyName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:layout_marginTop="5dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/nfc_edit_text"
+                        android:hint="@string/nfc_nc_company"
+                        android:maxLength="15"
+                        android:textColor="@color/nfc_namecard_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:paddingTop="3dip" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/lay_tel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0px"
+                        android:layout_marginRight="15.0px"
+                        android:layout_marginTop="10.0px"
+                        android:background="@drawable/nfc_layoutbg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="2dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nfc_nc_tel"
+                            android:textColor="@color/nfc_namecard_text"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/phoneNumber"
+                            style="@style/nfc_style_tag_text_detail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="23dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/nfc_edit_text"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="@color/nfc_namecard_text" />
+
+                        <Button
+                            android:id="@+id/nc_del_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nfc_nc_btn_del"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/nc_call_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nfc_nc_btn_phone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_company"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0px"
+                        android:layout_marginRight="15.0px"
+                        android:layout_marginTop="10.0px"
+                        android:background="@drawable/nfc_layoutbg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="2dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nfc_nc_fix_tel"
+                            android:textColor="@color/nfc_namecard_text"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/companyPhone"
+                            style="@style/nfc_style_tag_text_detail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="23dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/nfc_edit_text"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="@color/nfc_namecard_text" />
+
+                        <Button
+                            android:id="@+id/nc_del_company"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nfc_nc_btn_del"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/nc_call_company"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nfc_nc_btn_phone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_fax"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0px"
+                        android:layout_marginRight="15.0px"
+                        android:layout_marginTop="10.0px"
+                        android:background="@drawable/nfc_layoutbg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="2dip"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nfc_nc_fax"
+                            android:textColor="@color/nfc_namecard_text"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/faxNumber"
+                            style="@style/nfc_style_tag_text_detail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/nfc_edit_text"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="@color/nfc_namecard_text" />
+
+                        <Button
+                            android:id="@+id/nc_del_fax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nfc_nc_btn_del" />
+
+                        <Button
+                            android:id="@+id/nc_call_fax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nfc_nc_btn_phone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/nc_txt_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:requiresFadingEdge="horizontal"
+                    android:text="@string/nfc_nc_txt_tel"
+                    android:textColor="@color/nfc_namecard_text"
+                    android:textSize="13sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/detailInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:paddingTop="3dip" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/lay_section"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0px"
+                        android:layout_marginRight="15.0px"
+                        android:layout_marginTop="10.0px"
+                        android:background="@drawable/nfc_layoutbg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="2dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nfc_nc_section"
+                            android:textColor="@color/nfc_namecard_text"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/section"
+                            style="@style/nfc_style_tag_text_detail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/nfc_edit_text"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textColor="@color/nfc_namecard_text" />
+
+                        <Button
+                            android:id="@+id/nc_del_section"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nfc_nc_btn_del" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_rank"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0px"
+                        android:layout_marginRight="15.0px"
+                        android:layout_marginTop="10.0px"
+                        android:background="@drawable/nfc_layoutbg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="2dip"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nfc_nc_rank"
+                            android:textColor="@color/nfc_namecard_text"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/rank"
+                            style="@style/nfc_style_tag_text_detail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/nfc_edit_text"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textColor="@color/nfc_namecard_text" />
+
+                        <Button
+                            android:id="@+id/nc_del_rank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nfc_nc_btn_del" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_net"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0px"
+                        android:layout_marginRight="15.0px"
+                        android:layout_marginTop="10.0px"
+                        android:background="@drawable/nfc_layoutbg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="2dip"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nfc_nc_net"
+                            android:textColor="@color/nfc_namecard_text"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/companyNetAddress"
+                            style="@style/nfc_style_tag_text_detail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/nfc_edit_text"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textColor="@color/nfc_namecard_text" />
+
+                        <Button
+                            android:id="@+id/nc_del_net"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nfc_nc_btn_del" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_addr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0px"
+                        android:layout_marginRight="15.0px"
+                        android:layout_marginTop="10.0px"
+                        android:background="@drawable/nfc_layoutbg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="2dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nfc_nc_addr"
+                            android:textColor="@color/nfc_namecard_text"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/address"
+                            style="@style/nfc_style_tag_text_detail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/nfc_edit_text"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textColor="@color/nfc_namecard_text" >
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/nc_del_adress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nfc_nc_btn_del" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0px"
+                        android:layout_marginRight="15.0px"
+                        android:layout_marginTop="10.0px"
+                        android:background="@drawable/nfc_layoutbg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="2dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nfc_nc_email"
+                            android:textColor="@color/nfc_namecard_text"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/email"
+                            style="@style/nfc_style_tag_text_detail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/nfc_edit_text"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="40"
+                            android:singleLine="true"
+                            android:textColor="@color/nfc_namecard_text" />
+
+                        <Button
+                            android:id="@+id/nc_del_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nfc_nc_btn_del" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/nc_txt_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:text="@string/nfc_nc_detail_info"
+                    android:textColor="@color/nfc_namecard_text"
+                    android:textSize="13sp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="27dip"
+                android:background="@drawable/nfc_layoutbg"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                    android:text="@string/nfc_nc_info"
+                    android:textColor="@color/nfc_namecard_text"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/information"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dip"
+                    android:layout_marginTop="3dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/nfc_edit_text"
+                    android:gravity="left|top"
+                    android:maxLength="50"
+                    android:maxLines="3"
+                    android:singleLine="false"
+                    android:textColor="@color/nfc_namecard_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="79dp"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/comm_res_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/namecard_send"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/nc_img_send"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/nfc_nc_send" />
+
+                <TextView
+                    android:id="@+id/nc_txt_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/nfc_nc_sendto_destop"
+                    android:textColor="#66000000"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llShareTag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/nc_img_swap"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/nfc_nc_swap" />
+
+                <TextView
+                    android:id="@+id/nc_txt_swap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/nfc_nc_swap_nc"
+                    android:textColor="#66000000"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/namecard_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/nc_img_edit"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/nfc_nc_contact" />
+
+                <TextView
+                    android:id="@+id/nc_txt_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/nfc_nc_read_contact"
+                    android:textColor="#66000000"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/namecard_save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/nc_img_ok"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/nfc_nc_save"
+                    android:focusable="false" />
+
+                <TextView
+                    android:id="@+id/nc_txt_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/nfc_nc_read_contact"
+                    android:textColor="#66000000"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/namecard_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/nc_img_add"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/nfc_nc_add"
+                    android:focusable="false" />
+
+                <TextView
+                    android:id="@+id/nc_txt_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/nfc_nc_add_other"
+                    android:textColor="#66000000"
+                    android:textSize="11dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

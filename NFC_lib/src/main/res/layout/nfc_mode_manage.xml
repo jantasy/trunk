@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/nfc_grey"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nfc_grey"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@color/nfc_grey"
+            android:gravity="center"
+            android:text="@string/nfc_set_mute"
+            android:textColor="@color/nfc_orange"
+            android:textSize="@dimen/nfc_title_text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:layout_marginBottom="10dip"
+            android:background="@color/nfc_orange" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_default"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/nfc_setting_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:singleLine="true"
+                android:text="@string/nfc_default_"
+                android:textColor="@color/nfc_black"
+                android:textSize="16dip" />
+
+            <CheckBox
+                android:id="@+id/cb_default"
+                android:layout_width="5dip"
+                android:layout_height="20dip"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dip"
+                android:background="@drawable/nfc_xml_mode"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/nfc_light_blue" />
+        <RelativeLayout
+            android:id="@+id/rl_off"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/nfc_setting_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:singleLine="true"
+                android:text="@string/nfc_off"
+                android:textColor="@color/nfc_black"
+                android:textSize="16dip" />
+
+            <CheckBox
+                android:id="@+id/cb_off"
+                android:layout_width="5dip"
+                android:layout_height="20dip"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dip"
+                android:background="@drawable/nfc_xml_mode" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/nfc_light_blue" />
+        <RelativeLayout
+            android:id="@+id/rl_on"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/nfc_setting_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:singleLine="true"
+                android:text="@string/nfc_on"
+                android:textColor="@color/nfc_black"
+                android:textSize="16dip" />
+
+            <CheckBox
+                android:id="@+id/cb_on"
+                android:layout_width="5dip"
+                android:layout_height="20dip"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dip"
+                android:background="@drawable/nfc_xml_mode" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/llSettingWifi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <EditText
+                android:id="@+id/etWifiName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nfc_set_wifi_name" />
+
+            <EditText
+                android:id="@+id/etWifiPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nfc_set_wifi_passwoed" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="130dip"
+            android:layout_height="wrap_content"
+            android:text="@string/nfc_cancel"
+            android:textColor="@color/nfc_black" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="130dip"
+            android:layout_height="wrap_content"
+            android:text="@string/nfc_ok"
+            android:textColor="@color/nfc_orange" />
+    </LinearLayout>
+
+</LinearLayout>

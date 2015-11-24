@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#fff"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardElevation = "0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/check_attendance"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="在每天固定的时间进行今天巡检任务的提醒，您可以在下列时间点中进行选择，也可以自定义巡检提醒时间"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@android:color/tertiary_text_dark"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#fff"
+                app:cardElevation = "0dp"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_no_remind"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="不提醒"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/tertiary_text_dark"/>
+
+                        <ImageView
+                            android:id="@+id/iv_no_remind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_alignParentRight="true"
+                            android:visibility="gone"
+                            android:src="@drawable/enterprise_select"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/list_divider" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_seven"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_seven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="07:00"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/tertiary_text_dark"/>
+
+                        <ImageView
+                            android:id="@+id/iv_type_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_alignParentRight="true"
+                            android:visibility="gone"
+                            android:src="@drawable/enterprise_select"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/list_divider" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_eight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_eight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="08:00"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/tertiary_text_dark"/>
+
+                        <ImageView
+                            android:id="@+id/iv_type_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_alignParentRight="true"
+                            android:visibility="gone"
+                            android:src="@drawable/enterprise_select"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/list_divider" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/iv_type_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_nine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="09:00"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/tertiary_text_dark"/>
+
+                        <ImageView
+                            android:id="@+id/iv_nine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_alignParentRight="true"
+                            android:visibility="gone"
+                            android:src="@drawable/enterprise_select"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/list_divider" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_user_definded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="自定义"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/tertiary_text_dark"/>
+
+                        <ImageView
+                            android:id="@+id/iv_user_definded"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_alignParentRight="true"
+                            android:visibility="gone"
+                            android:src="@drawable/enterprise_select"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_time_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#fff"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:cardElevation = "0dp"
+                >
+                <TimePicker
+                    android:id="@+id/tp_user_definded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

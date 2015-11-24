@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<groups>
+
+    <group>
+
+        <item
+            icon="res://drawable/ic_bestpay"
+            intent="#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10000000;package=com.chinatelecom.bestpayclient;component=com.chinatelecom.bestpayclient/.BufferActivity;end"
+            label="res://string/title_bestpay"
+            url="https://www.bestpay.com.cn/mobileclient"/>
+
+        <item
+            icon="res://drawable/ic_bestpay"
+            intent="#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10000000;package=chinatelecom.mwallet;component=chinatelecom.mwallet/.activity.WelcomeActivity;end"
+            label="res://string/title_wallet"
+            url="http://nfc.189.cn"/>
+    </group>
+
+    <group>
+
+        <item
+            icon="res://drawable/nfc_icon_bus"
+            intent="#Intent;component=cn.yjt.oa.app/.ReadBusCard;end"
+            label="res://string/nfc_readcard"/>
+
+        <item
+            icon="res://drawable/ic_nfc"
+            intent="#Intent;component=cn.yjt.oa.app/cn.yjt.oa.app.nfctools.NFCActivity;end"
+            label="res://string/nfc_tools"/>
+
+        <item
+            icon="res://drawable/ic_lifecircle"
+            intent="#Intent;component=cn.yjt.oa.app/.lifecircle.LifeCircleActivity;end"
+            label="res://string/ic_lifecircle"/>
+
+
+        <!--  <item
+             icon="res://drawable/nfc_icon_card"
+             intent="#Intent;component=cn.yjt.oa.app/.BusinessCardManager;end"
+             label="res://string/nfc_cardmanager"/> -->
+    </group>
+    <group>
+        <item
+            icon="res://drawable/icon_cardpack"
+            intent="#Intent;component=cn.yjt.oa.app/.cardpack.CardPackActivity;end"
+            label="res://string/ic_cardpack"/>
+    </group>
+    <!--  <group> -->
+
+    <!--       <item
+              icon="res://drawable/ic_vicinity"
+              intent="#Intent;component=cn.yjt.oa.app/.find.FinderActivity;end"
+              label="res://string/finder_title"/> -->
+
+    <!--  </group> -->
+
+</groups>

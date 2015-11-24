@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <cn.yjt.oa.app.widget.ViewContainerStub
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="203dip"
+        android:clickable="false" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@drawable/contact_list_division"
+                android:gravity="center_vertical"
+                android:paddingLeft="23dip"
+                android:text="考勤区域名称"
+                android:textColor="#bac0c9"
+                android:textSize="10dip" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/sign_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="名称：" />
+
+                <EditText
+                    android:id="@+id/sign_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/sign_name_tv"
+                    android:layout_alignTop="@+id/sign_name_tv"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/sign_name_tv"
+                    android:background="@drawable/edit_line_background"
+                    android:inputType="text"
+                    android:minEms="10"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@drawable/contact_list_division"
+                android:gravity="center_vertical"
+                android:paddingLeft="23dip"
+                android:text="考勤中心点位置"
+                android:textColor="#bac0c9"
+                android:textSize="10dip" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/sign_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/set_top_bg"
+                    android:gravity="center"
+                    android:text="选择位置" />
+
+                <cn.yjt.oa.app.widget.AlwaysMarqueeTextView
+                    android:id="@+id/current_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_toLeftOf="@id/sign_location"
+                    android:alpha="0.8"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="15dip" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="@drawable/list_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="签到范围:"
+                    android:textColor="@color/attention_text"
+                    android:textSize="15dp"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/range_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/range_subtract"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/range_subtract"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp" />
+
+                        <SeekBar
+                            android:id="@+id/signin_range"
+                            android:layout_width="@dimen/signin_seekbar_width"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-17dp"
+                            android:layout_marginRight="-17dp"
+                            android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+                            android:indeterminateOnly="false"
+                            android:max="1000"
+                            android:maxHeight="8dp"
+                            android:minHeight="8dp"
+                            android:paddingBottom="2dp"
+                            android:paddingTop="10dp"
+                            android:progressDrawable="@drawable/seekbar_style"
+                            android:thumb="@drawable/pointer"
+                            android:thumbOffset="1dp" />
+
+                        <ImageView
+                            android:id="@+id/range_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/range_add" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/range_layout"
+                        android:layout_centerHorizontal="true" >
+
+                        <EditText
+                            android:id="@+id/et_signin_range"
+                            android:layout_width="35dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textColor="@color/attention_text"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/et_signin_range"
+                            android:text="米"
+                            android:textColor="@color/attention_text"
+                            android:textSize="13dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/time_title"
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@drawable/contact_list_division"
+                android:gravity="center_vertical"
+                android:paddingLeft="23dip"
+                android:text="时间"
+                android:textColor="#bac0c9"
+                android:textSize="10dip"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginTop="12dp"
+                    android:text="上下班时间:"
+                    android:textColor="@color/attention_text"
+                    android:textSize="15dp"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/sign_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginTop="12dp"
+                        android:text="到"
+                        android:textColor="@color/attention_text"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_check_in_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toLeftOf="@id/sign_tv"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/attention_text"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/signout_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@id/sign_tv"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/attention_text"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="@drawable/list_divider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@drawable/contact_list_division"
+                android:gravity="center_vertical"
+                android:paddingLeft="23dip"
+                android:text="区域人员管理"
+                android:textColor="#bac0c9"
+                android:textSize="10dip"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/member_manage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp" >
+
+                <TextView
+                    android:id="@+id/tag_manage_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="管理本区域的人员"
+                    android:textColor="@color/title_text"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tag_manage_title"
+                    android:layout_marginLeft="10dp"
+                    android:text="添加、删除本考勤区域的人员"
+                    android:textColor="@color/attention_text"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/setting_more" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/list_divider" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

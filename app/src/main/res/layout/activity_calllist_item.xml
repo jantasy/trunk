@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="15dp"  
+    android:paddingBottom="15dp"    
+     >
+
+    <TextView 
+        android:id="@+id/tv_time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:text="2015-05-23 13:30"
+		android:textColor="#887e81"
+		android:textSize="12dp"
+        />
+
+    
+    <TextView 
+        android:id="@+id/tv_id"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:text="991211"
+		android:textColor="#887e81"
+		android:textSize="12dp"		
+        />    
+</RelativeLayout>

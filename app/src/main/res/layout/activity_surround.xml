@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal" 
+    android:orientation="vertical" 
+    android:background="@color/white" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" >
+    
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:background="@color/white" 
+            android:padding="8.0dip" 
+            android:paddingTop="10.0dip" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"                      
+            android:baselineAligned="false" >
+            <LinearLayout 
+                android:gravity="center" 
+                android:layout_width="0.0dip" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1.0">
+                <TextView 
+                    android:textSize="12.0dp"                     
+                    android:gravity="center" 
+                    android:id="@+id/tv_area" 
+                    android:background="@color/transparent" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="36.0dip" 
+                    android:text="商圈" 
+                    android:textColor="#ff1f1f1f"
+                    android:singleLine="true" 
+                    android:drawableRight="@drawable/expend_down" 
+                    android:drawablePadding="2.0dip" />
+            </LinearLayout>
+            <View 
+                android:layout_gravity="center"
+                 android:background="#20000000" 
+                 android:layout_width="0.100000024dip" 
+                 android:layout_height="20.0dip" 
+                 android:layout_marginLeft="10.0dip" />
+            <LinearLayout 
+                android:gravity="center" 
+                android:layout_width="0.0dip" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1.0">
+                <TextView 
+                    android:textSize="12.0dp" 
+                    android:textColor="#ff1f1f1f" 
+                    android:gravity="center" 
+                    android:id="@+id/tv_type" 
+                    android:background="@color/transparent" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="36.0dip" 
+                    android:text="类型" 
+                    android:singleLine="true" 
+                    android:drawableRight="@drawable/expend_down" 
+                    android:drawablePadding="2.0dip" />
+            </LinearLayout>
+            <View 
+                android:layout_gravity="center" 
+                android:background="#20000000" 
+                android:layout_width="0.100000024dip" 
+                android:layout_height="20.0dip" 
+                android:layout_marginLeft="10.0dip" />
+            <LinearLayout 
+                android:gravity="center" 
+                android:layout_width="0.0dip" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1.0">
+                <TextView 
+                    android:textSize="12.0dp" 
+                    android:textColor="#ff1f1f1f" 
+                    android:gravity="center" 
+                    android:id="@+id/tv_order" 
+                    android:background="@color/transparent" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="36.0dip" 
+                    android:text="排序" 
+                    android:singleLine="true" 
+                    android:drawableRight="@drawable/expend_down" 
+                    android:drawablePadding="2.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <View 
+            android:id="@+id/popuptop" 
+            android:background="#20000000" 
+            android:layout_width="fill_parent" 
+            android:layout_height="1.0px" />
+    
+    <LinearLayout 
+        android:gravity="center" 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" >
+        <ProgressBar 
+            android:layout_gravity="center" 
+            android:id="@+id/progress_center" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            style="?android:attr/progressBarStyle" />
+        <LinearLayout 
+            android:orientation="vertical" 
+            android:id="@+id/select_body" 
+            android:visibility="gone" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" />
+        <cn.yjt.oa.app.lifecircle.view.FooterListView 
+            android:id="@+id/list" 
+            android:visibility="gone" 
+            android:fadingEdge="none" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" 
+            android:listSelector="@color/transparent" 
+            android:cacheColorHint="@color/transparent" 
+            android:divider="#20000000" 
+            android:dividerHeight="0.100000024dip" />
+    </LinearLayout>
+</LinearLayout>

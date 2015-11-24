@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="27dp" >
+
+    <RelativeLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/income_top_simple_bg"
+        android:paddingBottom="25dp" >
+
+        <ImageView
+            android:id="@+id/income_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/incoming_close" />
+
+        <RelativeLayout
+            android:id="@+id/rl_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" >
+
+            <TextView
+                android:id="@+id/income_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="董石磊"
+                android:textColor="#fff"
+                android:singleLine="true"
+                android:textSize="20dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/income_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/income_name"
+                android:layout_below="@+id/income_name"
+                android:layout_marginTop="2dp"
+                android:text="工程师"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textSize="9dp"
+                android:typeface="sans" />
+
+            <View
+                android:id="@+id/tv_line"
+                android:layout_width="0.7dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/income_name"
+                android:background="#fff" />
+
+            <TextView
+                android:id="@+id/income_enterprisename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/tv_line"
+                android:text="中国电信北京研究院"
+                android:textColor="#fff"
+                android:singleLine="true"
+                android:textSize="12dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/income_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/income_enterprisename"
+                android:layout_alignTop="@+id/income_position"
+                android:layout_below="@+id/income_enterprisename"
+                android:text="移动互联网领域 - 电子金融产品线"
+                android:textColor="#fff"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="9dp"
+                android:typeface="sans" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/income_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_0"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="+86-18998123123"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/incoming_bottom_bg" >
+
+        <LinearLayout
+            android:id="@+id/income_messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/income_message_remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="9dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/ic_income_arrow_down"
+                android:text="2条未读消息"
+                android:textColor="#4c5357"
+                android:textSize="13dp"
+                android:typeface="sans" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

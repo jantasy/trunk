@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_selected_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#5c9fe3"
+                android:text="已选择的与会人员（0）" />
+
+            <ImageButton
+                android:id="@+id/ibtn_add_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/tc_ibtn_add_user"
+                android:background="#00000000"
+                android:text="添加" />
+        </RelativeLayout>
+		<View 
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="#d1dae3"/>
+        <ListView
+            android:id="@+id/tc_user_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/charges_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#5c9fe3"
+            android:text="查看资费说明" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tc_btn_start"
+            android:text="开始会议" />
+    </RelativeLayout>
+
+</LinearLayout>

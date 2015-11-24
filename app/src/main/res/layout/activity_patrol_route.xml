@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="@dimen/activity_horizontal_margin"
+              android:layout_marginRight="@dimen/activity_horizontal_margin"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名称:"
+            android:textColor="@color/TextColorBlack"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_route_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/TextColorGray"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="描述:"
+            android:textColor="@color/TextColorBlack"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_route_decription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/TextColorGray"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/personal_divider_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_patrol_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/TextColorBlack"
+            android:text="巡检开始于:"/>
+
+        <EditText
+            android:id="@+id/et_patrol_starttime"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_toRightOf="@id/tv_patrol_start"
+            android:layout_alignBottom="@id/tv_patrol_start"
+            android:textSize="14sp"
+            android:editable="false"
+            android:focusable="false"
+            android:textColor="@color/TextColorBlack"
+            android:text="2015-9-10 19:30"
+            />
+
+        <TextView
+            android:id="@+id/tv_patrol_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_patrol_start"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:paddingBottom="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/TextColorBlack"
+            android:text="巡检结束于:"/>
+
+        <EditText
+            android:id="@+id/et_patrol_stoptime"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_alignBottom="@id/tv_patrol_stop"
+            android:layout_toRightOf="@id/tv_patrol_stop"
+            android:editable="false"
+            android:focusable="false"
+            android:textSize="14sp"
+            android:textColor="@color/TextColorBlack"
+            android:text="2015-9-10 19:30"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/personal_divider_line"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_manager_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_manager_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管理本路线巡检点"
+                android:textColor="#000"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_manager_point"
+                android:layout_marginLeft="10dp"
+                android:text="添加、删除本路线考勤点"
+                android:textColor="@color/TextColorGray"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/setting_more"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/personal_divider_line"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_manager_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_manager_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管理本路线人员"
+                android:textColor="#000"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_manager_person"
+                android:layout_marginLeft="10dp"
+                android:text="添加、删除本路线人员"
+                android:textColor="@color/TextColorGray"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/setting_more"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/personal_divider_line"/>
+
+</LinearLayout>

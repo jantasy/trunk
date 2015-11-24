@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="20dp" >
+
+    <TextView
+        android:id="@+id/applicant_handle_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="这是一个标题"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+
+      <Button
+        android:id="@+id/applicant_handle_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dip"
+         android:layout_alignParentBottom="true"
+        android:background="@drawable/contact_list_button"
+        android:text="查看通讯录" />
+
+    <TextView
+        android:id="@+id/applicant_handle_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/applicant_handle_title"
+        android:layout_below="@+id/applicant_handle_icon"
+        android:layout_marginTop="33dp"
+        android:maxLines="2"
+        android:textSize="14dp"
+        android:text="这是内容" />
+     <ImageView
+        android:id="@+id/applicant_handle_icon_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/applicant_handle_icon"
+        android:layout_alignTop="@+id/applicant_handle_title"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/ic_apply_accept_tip" />
+
+     <ImageView
+         android:id="@+id/applicant_handle_icon"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/applicant_handle_icon_tip"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="12dp"
+         android:src="@drawable/ic_apply_accept" />
+
+</RelativeLayout>

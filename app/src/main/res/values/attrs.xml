@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SimpleTableView">
+        <attr name="dividerH" format="reference|color" />
+        <attr name="dividerV" format="reference|color" />
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="tableCols" format="integer" />
+        <attr name="tableRows" format="integer" />
+        <attr name="tableRowHeight" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="TimeLineView">
+        <attr name="lineDrawable" format="reference|color" />
+        <attr name="nodeDrawable" format="reference|color" />
+        <attr name="nodeWidth" format="dimension" />
+        <attr name="nodeHeight" format="dimension" />
+        <attr name="timelineWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ClockWidget">
+        <attr name="hourDrawable" format="reference" />
+        <attr name="minuteDrawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ProgressView">
+        <attr name="effect_speed" format="integer" />
+        <attr name="style">
+            <flag name="small" value="0x0" />
+            <flag name="medium" value="0x1" />
+            <flag name="large" value="0x2" />
+        </attr>
+    </declare-styleable>
+      <!--
+         SlidingDrawer specific attributes. These attributes are used to configure
+         a SlidingDrawer from XML.
+    -->
+    <declare-styleable name="SlidingDrawer">
+
+        <!-- Identifier for the child that represents the drawer's handle. -->
+        <attr name="handle" format="reference" />
+        <!-- Identifier for the child that represents the drawer's content. -->
+        <attr name="content" format="reference" />
+        <!-- Orientation of the SlidingDrawer. -->
+        <attr name="orientation" format="enum">
+            <enum name="topDown" value="1" />
+            <enum name="bottomUp" value="2" />
+            <enum name="leftToRight" value="4" />
+            <enum name="rightToLeft" value="8" />
+        </attr>
+        <!--
+             Indicates whether the drawer can be opened/closed by a single tap
+             on the handle.  (If false, the user must drag or fling, or click
+             using the trackball, to open/close the drawer.)  Default is true.
+        -->
+        <attr name="collapsedOffset" format="dimension" />
+        <attr name="expandedOffset" format="dimension" />
+        <attr name="allowSingleTap" format="boolean" />
+        <!--
+             Indicates whether the drawer should be opened/closed with an animation
+             when the user clicks the handle. Default is true.
+        -->
+        <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+</resources>

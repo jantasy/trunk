@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name_lib">com.telecom.pp.extend</string>
+    <string name="str_prompt">提示</string>
+    <!-- 按钮 -->
+    <string name="btn_confirm_lib">确定</string>
+    <string name="btn_cancel_lib">取消</string>
+    <string name="title_activity_result_lib">ResultActivity</string>
+
+</resources>

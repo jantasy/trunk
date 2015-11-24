@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f6fc" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_enterprise"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/enterprise_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="43dp"
+                android:textColor="@color/button_text_color"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/comm_res_divider" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp" >
+
+                <TextView
+                    android:id="@+id/create_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/enterprises_create_time"
+                    android:textColor="@color/enterprise_item_name"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/create_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/create_time_tv"
+                    android:textColor="@color/enterprise_item_name"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/comm_res_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp" >
+
+                <TextView
+                    android:id="@+id/creater_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/enterprises_creater"
+                    android:textColor="@color/enterprise_item_name"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/creater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/creater_tv"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/enterprise_item_name"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/comm_res_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp" >
+
+                <TextView
+                    android:id="@+id/members_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/enterprises_members"
+                    android:textColor="@color/enterprise_item_name"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/members_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/members_tv"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/enterprise_item_name"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/comm_res_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:maxHeight="57dp" >
+
+                <TextView
+                    android:id="@+id/adress_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/enterprises_adress"
+                    android:textColor="@color/enterprise_item_name"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/adress_tv"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/enterprise_item_name"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/comm_res_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp" >
+
+                <TextView
+                    android:id="@+id/review_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/enterprises_review"
+                    android:textColor="@color/enterprise_item_name"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/is_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/review_tv"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/enterprise_item_name"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/comm_res_divider" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/comm_res_divider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/join_reasons"
+                android:textColor="@color/attention_text"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/join_reasons"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/contact_list_input"
+                android:gravity="top|left"
+                android:hint="@string/join_reasons_hint"
+                android:padding="10dp"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add_enterprise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/contact_list_button"
+        android:text="@string/join_enterprise"
+        android:textColor="#cc000000"
+        android:textSize="17sp" />
+
+</RelativeLayout>

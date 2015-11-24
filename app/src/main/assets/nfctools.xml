@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<groups>
+
+    <group name="连接" >
+
+        <operator name="Wifi" default_operation="0x0000" type="data" icon="res://drawable/nfc_icon_wifi">
+            <operation id="0x0000" name="打开" icon="res://drawable/xxx"/>
+            <operation id="0x0001" name="关闭" icon="res://drawable/xxx"/>
+            <operation id="0x0002" name="切换" icon="res://drawable/xxx"/>
+            <!-- <operation id="0x0003" name="连接特定" icon="res://drawable/xxx"/> -->
+        </operator>
+
+       <!--  <operator name="数据" default_operation="0x0004" icon="res://drawable/nfc_icon_data">
+            <operation id="0x0004" name="打开" icon="res://drawable/xxx"/>
+            <operation id="0x0005" name="关闭" icon="res://drawable/xxx"/>
+            <operation id="0x0006" name="切换" icon="res://drawable/xxx"/>
+        </operator> 
+        
+       <operator name="蓝牙" default_operation="0x0007" icon="res://drawable/nfc_icon_airplane">
+            <operation id="0x0007" name="打开" icon="res://drawable/xxx"/>
+            <operation id="0x0008" name="关闭" icon="res://drawable/xxx"/>
+            <operation id="0x0009" name="切换" icon="res://drawable/xxx"/>
+        </operator>
+
+        <operator name="飞行" default_operation="0x000a" icon="res://drawable/nfc_icon_bluetooth">
+            <operation id="0x000a" name="打开" icon="res://drawable/xxx"/>
+            <operation id="0x000b" name="关闭" icon="res://drawable/xxx"/>
+            <operation id="0x000c" name="切换" icon="res://drawable/xxx"/>
+        </operator> -->
+    </group>
+    
+    <group name="场景模式">
+        <operator name="静音模式" default_operation="0x000d" icon="res://drawable/nfc_icon_sound">
+            <operation id="0x000d" name="关闭" />
+            <operation id="0x000e" name="静音" />
+            <operation id="0x000f" name="震动" />
+        </operator>
+       <!--  <operator name="音量" default_operation="0x0010" type="data" >
+            <operation id="0x0010" name="媒体" />
+            <operation id="0x0011" name="铃声" />
+            <operation id="0x0012" name="闹钟" />
+        </operator>
+        <operator name="震动" default_operation="0x0013">
+            <operation id="0x0013" name="打开" />
+            <operation id="0x0014" name="关闭" />
+            <operation id="0x0015" name="切换" />
+        </operator>
+         -->
+    </group>
+    
+    <group name="" hide="true">
+        <operator name="签到" default_operation="0x0016" icon="">
+            <operation id="0x0016" name="NFC签到"  notification_format="已签到：%s"/>
+        </operator>
+        <operator name="巡检" default_operation="0x0018" icon="">
+            <operation id="0x0018" name="NFC巡检"  notification_format="已巡检：%s"/>
+        </operator>
+    </group>
+    
+      <group name="应用程序">
+        <operator name="应用" default_operation="0x0017" icon="res://drawable/nfc_icon_sound">
+            <operation id="0x0017" name="打开应用" singleChoose="true" />
+        </operator>
+    </group>
+
+</groups>

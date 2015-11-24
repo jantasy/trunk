@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="nfc_app_bg">#F2F6FC</color>
+    
+    <color name="nfc_deep_grey">#d2d2d2</color>
+    <color name="nfc_chinattelecom_bg">#383d43</color>
+    <color name="nfc_welcome_bg">#00469d</color>
+    <color name="nfc_black">#000000</color>
+    <color name="nfc_red">#ff0000</color>
+    <color name="nfc_write">#fff</color>
+    <color name="nfc_grey">#f4f4f4</color>
+    <color name="nfc_bg">#fAfAfA</color>
+    <color name="nfc_light_black">#2F2F2F</color>
+    <color name="nfc_light_blue">#92CAEE</color>
+    <color name="nfc_deep_blue">#3B8EC4</color>
+    <color name="nfc_orange">#3B8EC4</color>
+    <color name="nfc_orange_">#ff7e00</color>
+    <!-- <color name="nfc_orange">#ff7e00</color> -->
+
+    <color name="nfc_title_color">#443B8EC4</color>
+    
+    <color name="nfc_tag_title">#0860a6</color>
+    <color name="nfc_tag_content">#5d9cd1</color>
+    <color name="nfc_tag_time">#5c9dd1</color>
+    
+    <color name="nfc_transparent">#00000000</color>
+    <color name="nfc_white">#ffffff</color>
+    <color name="nfc_meetting_title">#808080</color>
+    <color name="nfc_gold">#b89766</color>
+    <color name="nfc_grey_time">#666666</color>
+    <color name="nfc_tag_view_text_bg_color">#EBEBEB</color>
+    <!-- ashley 0923 -->
+    <!-- <color name="nfc_mood">#fabe00</color> -->
+    <color name="nfc_mood">#d29654</color>
+    <color name="nfc_green_tag">#39711b</color>
+    <color name="nfc_red_tag">#911313</color>
+    <color name="nfc_pink_tag">#ffdcdb</color>
+    <color name="nfc_namecard_bg">#ffeed8</color>
+    <!-- ashley 0923 -->
+    <!-- <color name="nfc_namecard__bottom_bg">#e96d02</color> -->
+    <color name="nfc_namecard_text">#88000000</color>
+    <color name="nfc_namecard_text1">#A67600</color>
+    <color name="nfc_namecard_text2">#A65600</color>
+    
+     <color name="nfc_translucent_background">#60000000</color>
+     
+     
+
+</resources>

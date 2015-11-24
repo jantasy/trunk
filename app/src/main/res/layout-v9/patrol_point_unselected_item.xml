@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#f2f6fc">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f2f6fc">
+
+        <TextView
+            android:id="@+id/tv_patrol_point_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/cb_selected"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="尘沙"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="#cc000000"
+            android:textSize="12sp"
+            android:padding="5dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableRight="@drawable/contactlist_contact_selector"
+            android:padding="5dp">
+        </CheckBox>
+    </RelativeLayout>
+</RelativeLayout>

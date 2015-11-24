@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/task_publishing_top_left_margin"
+    android:paddingRight="@dimen/task_publishing_top_left_margin" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/task_publishing_top_bottom_margin"
+        android:layout_marginTop="@dimen/task_publishing_top_top_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/task_publishing_content_edit_title"
+            android:textColor="#96000000"
+            android:textSize="13dp" />
+
+        <CheckBox
+            android:id="@+id/daily_report_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:checked="false"
+            android:drawablePadding="@dimen/task_publishing_daily_check_drawablepadding"
+            android:drawableRight="@drawable/contactlist_contact_selector"
+            android:text="@string/task_publishing_daily_report_hint"
+            android:textColor="#96000000"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <cn.yjt.oa.app.task.TaskEditText
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/task_publishing_content_input_background"
+        android:gravity="top"
+        android:hint="@string/task_publishing_task_content_hint"
+        android:textColor="#cc000000"
+        android:textColorHint="#48000000"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/task_publishing_action_bottom_margin"
+        android:layout_marginTop="@dimen/task_publishing_action_top_margin" >
+
+        <ImageView
+            android:id="@+id/add_new_recipient"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/task_publishing_action_button_height"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/task_publishing_command_button_background"
+            android:scaleType="center"
+            android:src="@drawable/task_publishing_alt" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/task_publishing_action_button_height"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/speech_input"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/task_publishing_action_button_height"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/task_publishing_command_button_background"
+                android:scaleType="center"
+                android:src="@drawable/task_publishing_speech" />
+
+            <ImageView
+                android:id="@+id/task_speech_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/speech_input"
+                android:layout_alignTop="@+id/speech_input"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/task_speech_new"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/task_publishing_action_button_height"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/camera_input"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/task_publishing_action_button_height"
+                android:background="@drawable/task_publishing_command_button_background"
+                android:scaleType="center"
+                android:src="@drawable/task_publishing_camera" />
+
+            <ImageView
+                android:id="@+id/task_camera_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/camera_input"
+                android:layout_alignTop="@+id/camera_input"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/task_speech_new"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/send_new_task"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/task_publishing_action_button_height"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@drawable/task_publishing_command_button_background"
+            android:text="发送"
+            android:textColor="#4D6278"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/borad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="121dp"
+    android:layout_height="49dp"
+    android:background="@drawable/clock_handler"
+    android:gravity="center_vertical"
+    android:paddingLeft="7dip"
+    android:orientation="horizontal" >
+    
+	<cn.yjt.oa.app.widget.ClockWidget 
+	    android:id="@+id/clockwidget"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/clock_pannel"
+    	app:hourDrawable="@drawable/clock_hour"
+    	app:minuteDrawable="@drawable/clock_minute" />
+	
+	<LinearLayout android:layout_width="0dip"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:orientation="vertical"
+    	android:paddingLeft="7dip"
+    	android:layout_gravity="center_vertical">
+	    <TextView android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/time"
+    		android:text="上午12:00"
+    		android:textColor="#ffffff"
+    		android:alpha="0.9"
+    		android:textSize="13dip"
+    		android:layout_marginBottom="5dip"/>
+	    <TextView android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/date"
+    		android:text="2014-09-11"
+    		android:textColor="#ffffff"
+    		android:alpha="0.4"
+    		android:textSize="11dip"/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="31.4dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/duty_time"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_duty_times_dot"
+        android:padding="8dp"
+        android:textColor="#66000000"
+        android:drawablePadding="8dp"
+        android:textSize="15dp" />
+    
+    <View 
+         android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@color/line"
+        />
+
+</RelativeLayout>

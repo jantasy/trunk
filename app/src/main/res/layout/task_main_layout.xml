@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f6fb"
+    android:orientation="vertical" >
+	
+	<FrameLayout android:id="@+id/task_fragment_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_above="@+id/start_new_task_container" />
+	
+	<FrameLayout android:id="@+id/start_new_task_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/task_list_start_new_task_height"
+	    android:layout_alignParentBottom="true" >
+	    
+	    <Button android:id="@+id/start_new_task"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginLeft="@dimen/task_list_start_new_task_left_padding"
+	    	android:layout_marginStart="@dimen/task_list_start_new_task_left_padding"
+	    	android:layout_marginRight="@dimen/task_list_start_new_task_right_padding"
+	    	android:layout_marginEnd="@dimen/task_list_start_new_task_right_padding"
+	    	android:layout_marginTop="@dimen/task_list_start_new_task_top_padding"
+	    	android:layout_marginBottom="@dimen/task_list_start_new_task_bottom_padding"
+	    	android:background="@drawable/contact_list_button"
+	    	android:textSize="14dp"
+	    	android:textColor="#cc4d6278"
+	    	android:text="发起任务" />
+	</FrameLayout>
+	
+	
+</RelativeLayout>

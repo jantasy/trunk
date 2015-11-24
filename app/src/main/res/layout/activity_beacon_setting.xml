@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nfc_tag_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="蓝牙标签名称"
+        android:textColor="#57595b"
+        android:textSize="14dp" />
+
+    <!-- 由edittext改为AutoCompleteTextView -->
+
+    <AutoCompleteTextView
+        android:id="@+id/beacon_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/tc_input_bg"
+        android:completionThreshold="1"
+        android:hint="蓝牙标签位置 例：正门"
+        android:maxLength="15"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="#57595b"
+        android:textCursorDrawable="@drawable/clock_hour"
+        android:textSize="14dp" >
+    </AutoCompleteTextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/nfc_tag_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="选择考勤区域"
+        android:textColor="#57595b"
+        android:textSize="14dp" />
+
+    <Spinner
+        android:id="@+id/attendance_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/nfc_tag_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="附近最近的蓝牙标签"
+        android:textColor="#57595b"
+        android:textSize="14dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <cn.yjt.oa.app.widget.listview.PullToRefreshListView
+            android:id="@+id/beacon_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_content_background"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0dip"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+
+        <Button
+            android:id="@+id/beacon_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="25dp"
+            android:background="#00000000"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/icon_nfc_write_big"
+            android:text="登记蓝牙标签"
+            android:textColor="#57595b" />
+    </FrameLayout>
+
+</LinearLayout>

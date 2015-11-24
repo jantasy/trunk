@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="109dip"
+    android:background="#F2F6FC"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="23dip"
+        android:paddingRight="24dip" >
+
+        <RelativeLayout
+            android:layout_width="56dip"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/item_icon"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:layout_marginTop="8dip" />
+
+            <ImageView
+                android:id="@+id/unread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="6dip"
+                android:src="@drawable/message_center_unread_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dip"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="Andi@我"
+                    android:textColor="#57595b"
+                    android:textSize="16dip" />
+
+                <ImageView
+                    android:id="@+id/mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t"
+                android:layout_marginTop="11dip"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="Version2.0的设计工作尽快着手，一定要在9月20日前完成。"
+                android:textColor="#797b7e"
+                android:textSize="13dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dip" >
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="28dip"
+            android:text="2014-08-20 16:20"
+            android:textColor="#797b7e"
+            android:textSize="9dip" />
+        
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/set_top_bg"
+            android:gravity="center">
+            <TextView
+	            android:id="@+id/top"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="置顶"
+	            android:textSize="12dip" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/last_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:src="@drawable/personal_divider_line" />
+
+</LinearLayout>

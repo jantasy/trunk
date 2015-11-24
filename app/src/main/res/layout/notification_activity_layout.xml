@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/view_progress" />
+
+    <cn.yjt.oa.app.widget.listview.PullToRefreshListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/textf2f6fc"
+        android:divider="@color/textd9dde2"
+        android:dividerHeight="1px" >
+    </cn.yjt.oa.app.widget.listview.PullToRefreshListView>
+
+</LinearLayout>

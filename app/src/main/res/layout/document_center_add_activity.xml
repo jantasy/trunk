@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/img_moment"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="83dp"
+        android:src="@drawable/document_center_add" />
+
+    <TextView
+        android:id="@+id/document_center_download_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#85878b"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/document_center_download_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:textColor="#85878b"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/et_moment"
+        android:layout_width="match_parent"
+        android:layout_height="209dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="15dp"
+        android:padding="14dp"
+        android:layout_below="@id/img_moment"
+        android:background="@drawable/contact_list_input"
+        android:gravity="top|left"
+        android:hint="@string/quiz_moment_add_hint"
+        android:textColor="#cc000000"
+        android:textColorHint="#48000000"
+        android:textSize="16sp" />
+    
+    
+
+
+    <Button
+        android:id="@+id/btn_add_moment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/contact_list_button"
+        android:text="@string/quiz_moment_commit"
+        android:textColor="#cc4d6278" />
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/personal_divider_line"
+        android:layout_above="@id/btn_add_moment"/>
+
+</RelativeLayout>

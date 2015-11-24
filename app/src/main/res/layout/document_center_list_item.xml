@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/document_centre_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp"
+        android:paddingRight="23dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/img_moment"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/document_center_add" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5" >
+
+                <TextView
+                    android:id="@+id/tv_moment_who"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="Andy"
+                    android:textColor="#57595b"
+                    android:textSize="14dip" />
+
+                <TextView
+                    android:id="@+id/tv_moment_time"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="2014-10-21 18:00"
+                    android:textColor="#797b7e"
+                    android:textSize="13dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_moment_des"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="3"
+                android:text="我的家乡在东北松花江少啊，那里有~~，水灵灵的妹子啊！~"
+                android:textColor="#797b7e"
+                android:textSize="11dip" />
+
+            <TextView
+                android:id="@+id/tv_moment_size"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="北京市  海淀区"
+                android:textColor="#797b7e"
+                android:textSize="9dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/last_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="23dp"
+        android:src="@drawable/personal_divider_line" />
+
+</LinearLayout>

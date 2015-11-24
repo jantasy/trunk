@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/modify_member_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/enterprise_member_detail_height"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/member_detail_bg" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="12dp"
+            android:src="@drawable/navigation_back" />
+
+        <ImageView
+            android:id="@+id/member_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="12dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="12dp"
+            android:src="@drawable/contact_list_save" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/member_texture" />
+
+        <TextView
+            android:id="@+id/member_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/member_phone_tv"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/white"
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/member_phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="34dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_marginTop="12dp"
+            android:text="姓名:"
+            android:textColor="@color/attention_text"
+            android:textSize="15dp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/et_member_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="11dp"
+            android:background="@null"
+            android:drawableRight="@drawable/enterpris_edit"
+            android:padding="10dp"
+            android:textColor="@color/attention_text"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/list_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="34dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_marginTop="12dp"
+            android:text="部门:"
+            android:textColor="@color/attention_text"
+            android:textSize="15dp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/et_member_department"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="11dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:editable="false"
+            android:focusable="false"
+            android:textColor="@color/attention_text"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/list_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="34dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_marginTop="12dp"
+            android:text="职位:"
+            android:textColor="@color/attention_text"
+            android:textSize="15dp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/et_member_position"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="11dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:focusable="false"
+            android:textColor="@color/attention_text"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/list_divider" />
+
+</LinearLayout>

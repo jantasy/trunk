@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/widget_selected_front" />
+            <padding android:left="2.0dip" android:right="2.0dip" />
+            <corners android:topLeftRadius="2.0dip" android:topRightRadius="2.0dip" />
+        </shape>
+    </item>
+    <item android:drawable="@color/transparent" />
+</selector>

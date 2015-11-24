@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip">
+	<TextView android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:text="标题"
+	    android:layout_marginTop="8dip"/>
+	<EditText android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:hint="输入标题"
+	    android:layout_marginTop="5dip"/>
+	<TextView android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:text="通知内容"
+	    android:layout_marginTop="8dip"/>
+	<EditText android:layout_height="200dip"
+	    android:layout_width="match_parent"
+	    android:hint="输入发布的内容"
+	    android:layout_marginTop="5dip"/>
+	</LinearLayout>
+</LinearLayout>

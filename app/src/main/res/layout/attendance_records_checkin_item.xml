@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/signin_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="83dp" >
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_attendance_bottom"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/signin_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:drawablePadding="5dp"
+            android:text="ss"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+        <TextView
+            android:id="@+id/actrual_poi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.6"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_check_in_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:alpha="0.4"
+            android:text="2015-01-26 18:14:41"
+            android:textColor="@color/black"
+            android:textSize="11dip" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/content_layout"
+        android:layout_alignTop="@+id/content_layout"
+        android:layout_marginLeft="33.5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_timeline" />
+
+    <ImageView
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+         android:layout_marginLeft="90dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/list_divider" />
+
+</RelativeLayout>

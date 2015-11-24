@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="14dp"
+            android:drawableTop="@drawable/ic_launcher"
+            android:text="@string/app_name"
+            android:textColor="#535457"
+            android:textSize="24dip"/>
+
+        <TextView
+            android:id="@+id/about_version"
+            android:paddingTop="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#686a6c"/>
+
+        <TextView
+            android:id="@+id/check_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="版本检查"
+            android:gravity="center"
+            android:background="@drawable/set_top_bg"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:lineSpacingExtra="3dp"
+                android:autoLink="all"
+                android:text="客服电话：400-898-9993\n客服邮箱：yjt@ctbri.com.cn"
+                android:textColor="#686a6c"/>
+
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:lineSpacingExtra="3dp"
+                android:text="QQ客服：2196657360(昵称：翼机通+)\nQQ客服群： 178025326(昵称：翼机通+)\n微信公众号： 中国电信翼机通\n易信公众号： 中国电信翼机通\n服务时限：7*12   早9:00——晚9:00"
+                android:textColor="#686a6c"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/icon_yjtoa_down"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<menus>
+    <!-- 签到 -->
+    <menu id="singin">
+        <bigZoonId>icon_sign_in</bigZoonId>
+        <smallZoonId>icon_sign_in</smallZoonId>
+        <title>singin</title>
+        <bgcolor>zi1</bgcolor>
+        <intent>cn.yjt.oa.app.signin.SigninActivity</intent>
+    </menu>
+      <!-- 充值消费 -->
+     <menu id="charge">
+        <bigZoonId>icon_charge</bigZoonId>
+        <smallZoonId>icon_charge</smallZoonId>
+        <title>charge</title>
+        <bgcolor>green1</bgcolor>
+        <intent>cn.yjt.oa.app.app.activity.AppDetailsActivity</intent>
+    </menu>
+      <!-- 通信 -->
+      <menu id="communication">
+        <bigZoonId>contact</bigZoonId>
+        <smallZoonId>contact</smallZoonId>
+        <title>contact</title>
+        <bgcolor>yellow</bgcolor>
+        <intent>cn.yjt.oa.app.contactlist.ContactlistActivity</intent>
+    </menu>
+      <!-- 及时沟通 -->
+       <menu id="im">
+        <bigZoonId>contact</bigZoonId>
+        <smallZoonId>contact</smallZoonId>
+        <title>im</title>
+         <bgcolor>red</bgcolor>
+         <intent>cn.yjt.oa.app.app.activity.AppDetailsActivity</intent>
+    </menu>
+    
+          <!-- 任务代办 -->
+       <menu id="task">
+        <bigZoonId>icon_task</bigZoonId>
+        <smallZoonId>icon_task</smallZoonId>
+        <title>task</title>
+        <bgcolor>green</bgcolor>
+        <intent>cn.yjt.oa.app.task.TaskMainActivity</intent>
+    </menu>
+    
+            <!-- 行业资讯 -->
+       <menu id="info">
+        <bigZoonId>icon_info</bigZoonId>
+        <smallZoonId>icon_info</smallZoonId>
+        <title>info</title>
+        <bgcolor>zi</bgcolor>
+        <intent>cn.yjt.oa.app.notifications.NewsActivity</intent>
+    </menu>
+    
+               <!-- 综合办公 -->
+       <menu id="office">
+        <bigZoonId>icon_task</bigZoonId>
+        <smallZoonId>icon_task</smallZoonId>
+        <title>office</title>
+        <bgcolor>grey</bgcolor>
+        <intent>cn.yjt.oa.app.dashboard.DashBoardActivity</intent>
+    </menu> 
+    
+                     <!-- 会议通 -->
+       <menu id="meeting">
+        <bigZoonId>contact</bigZoonId>
+        <smallZoonId>contact</smallZoonId>
+        <title>meeting</title>
+        <bgcolor>orange</bgcolor>
+        <intent>cn.yjt.oa.app.notifications.NotificationActivity</intent>
+    </menu> 
+    
+                         <!-- 外勤助手-->
+       <menu id="helper">
+        <bigZoonId>icon_helper</bigZoonId>
+        <smallZoonId>icon_helper</smallZoonId>
+        <title>helper</title>
+        <bgcolor>blued</bgcolor>
+        <intent>cn.yjt.oa.app.app.activity.AppDetailsActivity</intent>
+    </menu> 
+    
+                           <!-- 应用商店-->
+       <menu id="appstore">
+        <bigZoonId>icon_appstore</bigZoonId>
+        <smallZoonId>icon_appstore</smallZoonId>
+        <title>appstore</title>
+        <bgcolor>rred</bgcolor>
+        <intent>cn.yjt.oa.app.app.activity.AppActivity</intent>
+    </menu> 
+                              <!-- 发现-->
+       <menu id="find">
+        <bigZoonId>icon_find</bigZoonId>
+        <smallZoonId>icon_find</smallZoonId>
+        <title>find</title>
+        <bgcolor>hotred</bgcolor>
+        <intent>cn.yjt.oa.app.signin.SigninRecordActivity</intent>
+    </menu> 
+                             <!-- 个人-->
+        <menu id="personal">
+        <bigZoonId>icon_personal</bigZoonId>
+        <smallZoonId>icon_personal</smallZoonId>
+        <title>find</title>
+        <bgcolor>green</bgcolor>
+        <intent>cn.yjt.oa.app.personalcenter.PersonalHomeActivity</intent>
+    </menu> 
+</menus>

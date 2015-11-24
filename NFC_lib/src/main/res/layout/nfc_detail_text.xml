@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/nfc_green_tag"
+        android:orientation="horizontal" >
+
+
+        <LinearLayout
+            android:id="@+id/llShareTag"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" 
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nfc_nc_share_normal" />
+
+            <TextView
+                style="@style/nfc_style_bottom_text"
+                android:gravity="center"
+                android:text="@string/nfc_share_tag" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEditOrSelect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" 
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivEditOrSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nfc_nc_edit_normal" />
+
+            <TextView
+                android:id="@+id/tvEditOrSelect"
+                style="@style/nfc_style_bottom_text"
+                android:gravity="center"
+                android:text="@string/nfc_edit" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/llBottom"
+        android:layout_alignParentTop="true"
+        android:background="@color/nfc_app_bg"
+        android:orientation="vertical">
+
+        <!-- Title -->
+
+        <LinearLayout
+            android:id="@+id/llTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:gravity="center"
+            android:background="@drawable/nfc_top" >
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nfc_edit_text"
+                android:shadowRadius="2.75"
+                android:text="@string/nfc_tag_text_title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/nfc_white"
+                android:textSize="@dimen/nfc_title_text_size"
+                android:textStyle="bold" 
+                android:gravity="center"
+                 android:singleLine="true"/>
+        </LinearLayout>
+
+        <!-- Content -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/nfc_bg_text_detail_2"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/etContent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/nfc_edit_text"
+                        android:gravity="top"
+                        android:padding="5dip"
+                        android:textColor="@color/nfc_black"
+                        android:hint="@string/nfc_all_content_hint" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="90dip"
+        android:background="@drawable/nfc_edit_text"
+        android:gravity="right"
+        android:maxLength="50"
+        android:textColor="@color/nfc_black" />
+
+</RelativeLayout>

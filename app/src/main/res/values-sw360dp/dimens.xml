@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="contact_list_title_padding">58dp</dimen>
+    <dimen name="contact_list_search_padding">13dp</dimen>
+    <dimen name="contact_list_item_margin">23dp</dimen>
+    <dimen name="contact_list_item_divider_width">313dp</dimen>
+    <dimen name="contact_list_child_item_margin">77dp</dimen>
+    <dimen name="contact_list_detail_bottom_margin">23dp</dimen>
+    <dimen name="contact_list_detail_margin">42dp</dimen>
+    <dimen name="contact_list_group_detail_margin">23dp</dimen>
+    <dimen name="contact_list_group_detail_padding">23dp</dimen>
+    <dimen name="task_list_start_new_task_height">60dp</dimen>
+    <dimen name="task_list_start_new_task_top_padding">10dp</dimen>
+    <dimen name="task_list_start_new_task_bottom_padding">10dp</dimen>
+    <dimen name="task_list_start_new_task_left_padding">16dp</dimen>
+    <dimen name="task_list_start_new_task_right_padding">16dp</dimen>
+    <dimen name="task_list_timeline_left_margin">11dp</dimen>
+    <dimen name="task_list_timeline_right_margin">8dp</dimen>
+    <dimen name="task_search_list_divder_bottom_margin">8dp</dimen>
+    <dimen name="task_list_item_operation_bar_height">32dp</dimen>
+    <dimen name="task_list_item_operation_bar_divider_height">16dp</dimen>
+    <dimen name="task_list_item_top_margin">6dp</dimen>
+    <dimen name="task_list_item_bottom_margin">15dp</dimen>
+    <dimen name="task_list_item_right_margin">11dp</dimen>
+    <dimen name="task_list_item_from_user_icon_top_margin">6dp</dimen>
+    <dimen name="task_list_item_from_user_icon_left_margin">6dp</dimen>
+    <dimen name="task_list_item_content_top_margin">10dp</dimen>
+    <dimen name="task_list_item_content_bottom_margin">25dp</dimen>
+    <dimen name="task_list_item_content_left_margin">6dp</dimen>
+    <dimen name="task_list_item_content_right_margin">6dp</dimen>
+    <dimen name="task_publishing_top_left_margin">22dp</dimen>
+    <dimen name="task_publishing_top_top_margin">17dp</dimen>
+    <dimen name="task_publishing_top_bottom_margin">10dp</dimen>
+    <dimen name="task_publishing_action_top_margin">23dp</dimen>
+    <dimen name="task_publishing_action_bottom_margin">23dp</dimen>
+    <dimen name="task_publishing_daily_check_drawablepadding">22dp</dimen>
+    <dimen name="task_publishing_action_button_height">28dp</dimen>
+    <dimen name="task_detail_from_user_info_top_margin">8dp</dimen>
+    <dimen name="task_detail_from_user_info_bottom_margin">6dp</dimen>
+    <dimen name="task_detail_from_user_info_left_margin">20dp</dimen>
+    <dimen name="task_detail_from_user_info_right_margin">23dp</dimen>
+    <dimen name="task_detail_from_user_name_left_margin">13dp</dimen>
+    <dimen name="task_detail_listview_right_margin">13dp</dimen>
+    <dimen name="task_detail_content_top_margin">22dp</dimen>
+    <dimen name="task_detail_content_bottom_margin">30dp</dimen>
+    <dimen name="task_detail_reply_item_top_margin">16dp</dimen>
+    <dimen name="task_detail_reply_item_bottom_margin">16dp</dimen>
+    <dimen name="task_detail_radio_group_left_margin">60dp</dimen>
+    <dimen name="task_detail_radio_group_right_margin">60dp</dimen>
+    <dimen name="task_detail_radio_group_top_margin">20dp</dimen>
+    <dimen name="task_detail_radio_group_bottom_margin">10dp</dimen>
+    <dimen name="task_detail_radio_drawablepadding">16dp</dimen>
+    <dimen name="task_detail_reply_part_top_margin">9dp</dimen>
+    <dimen name="task_detail_reply_part_bottom_margin">11dp</dimen>
+    <dimen name="task_detail_reply_part_left_margin">24dp</dimen>
+    <dimen name="task_detail_reply_part_right_margin">24dp</dimen>
+    <dimen name="task_detail_reply_part_content_height">40dp</dimen>
+    <dimen name="task_detail_reply_part_content_send_left_margin">10dp</dimen>
+    <dimen name="login_icon_top_margin">97dp</dimen>
+    <dimen name="login_icon_bottom_margin">96dp</dimen>
+    <dimen name="regist_divier_top_margin">41dp</dimen>
+    <dimen name="regist_divier_bottom_margin">41dp</dimen>
+    <dimen name="regist_bt_top_margin">81dip</dimen>
+    <dimen name="personal_icon_top_margin">42dp</dimen>
+    <dimen name="personal_sex_top_margin">25dip</dimen>
+    <dimen name="personal_sex_bottom_margin">24dip</dimen>
+    <dimen name="personal_padding">23dp</dimen>
+    <dimen name="personal_sex_margin_left">98dip</dimen>
+    <dimen name="personal_sex_margin_right">90dip</dimen>
+
+    <!-- 考勤签到 -->
+    <dimen name="signin_bg">240dip</dimen>
+    <dimen name="signin_clock_margin_top">28dip</dimen>
+    <dimen name="signin_seekbar_width">240dp</dimen>
+    <!-- 充值消费 -->
+    <dimen name="consume_bg">240dip</dimen>
+    <dimen name="icon_consume_money_margin_top">28dip</dimen>
+
+</resources>

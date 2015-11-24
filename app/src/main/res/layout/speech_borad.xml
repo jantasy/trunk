@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="215dp" >
+
+    <RelativeLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/rerecord_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/progress_btn"
+            android:layout_alignTop="@+id/progress_btn"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/task_speech_rerecord"
+            android:gravity="center"
+            android:text="重录"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/progress_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/progress_btn"
+            android:background="@drawable/task_voice_left" />
+
+        <cn.yjt.oa.app.task.RecorderButton
+            android:id="@+id/progress_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/progress_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/progress_btn"
+            android:background="@drawable/task_voice_right" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/record_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28.3dp"
+        android:text="长按开始语音"
+        android:textColor="#4e6278"
+        android:textSize="13dp"
+        />
+
+    <TextView
+        android:id="@+id/record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/task_speech_recordtime_bg"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+</RelativeLayout>

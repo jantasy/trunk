@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">翼机通+</string>
+    <string name="action_settings">Settings</string>
+    <string name="wallpaper_pager_title_network">在线壁纸</string>
+    <string name="wallpaper_pager_title_local">本地壁纸</string>
+    <string name="wallpaper_pager_title_default">本地壁纸</string>
+    <string name="btn_back">返回</string>
+    <string name="app_main_entrance">主页</string>
+
+    <!-- 微任务 -->
+    <string name="pull_to_refresh_pull_label">下拉刷新...</string>
+    <string name="pull_to_refresh_release_label">释放立即刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新...</string>
+    <string name="pull_to_load_more_tap_label">上拉加载更多...</string>
+    <string name="pull_to_load_more_release_label">释放将加载更多...</string>
+    <string name="pull_to_load_more_loading_label">正在加载更多...</string>
+    <string name="task_download_network_failure">无网络，请联网再刷新试试</string>
+    <string name="task_download_refresh_hint">刷新</string>
+    <string name="task_fiter_item_all">全部任务</string>
+    <string name="task_filter_item_inited_by_me">我发起的</string>
+    <string name="task_filter_item_sent_to_me">发给我的</string>
+    <string name="task_publishing_content_edit_title">任务内容 :</string>
+    <string name="task_publishing_daily_report_hint">日报</string>
+    <string name="task_publishing_task_content_hint">输入内容</string>
+    <string name="task_no_existing_to_user_alert">需要至少一个联系人</string>
+    <string name="activity_title_bar_back_name">返回</string>
+    <string name="task_main_title_name">任务待办</string>
+    <string name="task_publishing_title_name">发起任务</string>
+    <string name="task_detail_title_name">任务详情</string>
+    <string name="task_publishing_action_name">发送</string>
+    <string name="task_list_refresh_failure">任务列表刷新失败</string>
+    <string name="task_reply_color_mark_normal">正常</string>
+    <string name="task_reply_color_mark_delay">延迟</string>
+    <string name="task_reply_color_mark_alarming">告警</string>
+    <string name="task_reply_color_mark_normal_hint">一切正常</string>
+    <string name="task_reply_color_mark_delay_hint">有些延迟</string>
+    <string name="task_reply_color_mark_alarming_hint">我遇到了困难</string>
+    <string name="task_reply_illegal_no_content">回复内容不能为空</string>
+    <string name="task_reply_list_refresh_failure">回复列表刷新失败</string>
+    <string name="task_replying_progress_dialog_message">发送回复中, 请稍等</string>
+    <string name="task_replying_result_success">回复成功</string>
+    <string name="task_replying_result_failure">回复失败</string>
+    <string name="task_owner_closing_task">关闭</string>
+    <string name="task_owner_closed_task">已关闭</string>
+    <string name="task_owner_deleting_task">删除</string>
+    <string name="task_closing_progress_dialog_message">任务关闭中, 请稍等</string>
+    <string name="task_closing_result_success">任务关闭成功</string>
+    <string name="task_closing_result_failure">任务关闭失败</string>
+    <string name="task_deleting_progress_dialog_message">任务删除中, 请稍等</string>
+    <string name="task_deleting_result_success">任务删除成功</string>
+    <string name="task_deleting_result_failure">任务删除失败</string>
+    <string name="task_date_today">今天</string>
+    <string name="task_date_yesterday">昨天</string>
+    <string name="task_date_before_yesterday">前天</string>
+    <string name="screen_width">临时测试</string>
+    
+    <!-- 通讯录 -->
+    <string name="contactlist_all">全员</string>
+    <string name="contactlist_groups">群组</string>
+    <string name="contactlist_public_service">服务</string>
+    <string name="contactlist_groups_my_groups">我的群组</string>
+    <string name="contactlist_search_hint">搜索联系人</string>
+    <string name="contactlist_search_cancle">取消</string>
+    <string name="contactlist_add_new_address">邀请新同事</string>
+    <string name="contactlist_add_new_group">创建群组</string>
+    <string name="contactlist_add_new_service">添加服务</string>
+    <string name="contactlist_search_no_result">对不起,没有搜索结果</string>
+    <string name="contactlist_ask_for_leave">请&#160;&#160;&#160;&#160;假</string>
+    <string name="contactlist_assigned_tasks">指派任务</string>
+    <string name="contactlist_contacts">通讯录</string>
+    <string name="contactlist_contact_unregister">未注册用户</string>
+    <string name="finish">完成</string>
+    <string name="contactlist_contact_detail">详情</string>
+    <string name="contactlist_group_detail_store">保存</string>
+    <string name="contactlist_group_detail_groupname">群组名称:</string>
+    <string name="contactlist_group_detail_groupname_hint">输入群组名称</string>
+    <string name="contactlist_group_detail_groupdescription">群组简介:</string>
+    <string name="contactlist_group_detail_groupdescription_hint">群组简介,不超过%1$d个字</string>
+    <string name="group_add_new_contact">选择同事</string>
+    <string name="group_members">群组成员:</string>
+    <string name="create_group_success">群组信息保存成功</string>
+    <string name="create_group_failed">群组信息保存失败</string>
+    <string name="create_group_no_group_name">群组名称不能为空</string>
+    <string name="create_group_no_group_members">请选择群组成员</string>
+    <string name="contacts_loading">正在加载联系人</string>
+    <string name="contacts_loading_failed">联系人加载失败，请检查网络或重试</string>
+    <string name="contactlist_group_members">共%1$d人</string>
+    <string name="invite_user">邀请%s成功</string>
+    <!-- 个人中心 -->
+    <string name="contact_company">公司:</string>
+    <string name="contact_department">部门:</string>
+    <string name="contact_position">职位:</string>
+    <string name="contact_phone">手机:</string>
+    <string name="contact_email">邮箱:</string>
+    <string name="contact_call">电话</string>
+    <string name="contact_msg">短信</string>
+    <string name="contact_info">消息</string>
+    <string name="contactlist_add_new_contact_to_group">选择同事</string>
+    <string name="contact_info_not_support">该功能暂不支持,敬请期待!</string>
+    <string name="exit_login">退出登录</string>
+    <string name="exit_login_message">确认是否退出登录</string>
+    <string name="logining">正在登录,请稍候...</string>
+    <string name="login_fail">登录失败，请重试</string>
+    <string name="login_info_fail">帐号或者密码输入不完整</string>
+    <string name="connect_network_fail">亲，网络不给力</string>
+    <string name="dialog_title">提示</string>
+    <string name="dialog_sure">确认</string>
+    <string name="regist">注册</string>
+    <string name="verify_code">获取验证码</string>
+    <string name="phone_munber_format_error">手机号码格式错误</string>
+    <string name="recommend_phone_munber_format_error">推荐人手机号码格式错误</string>
+    <string name="has_not_completed_regist_info">输入信息不完整，请先完善注册信息</string>
+    <string name="password_can_not_the_same_twice">两次密码不能一样</string>
+    <string name="send_verify_code_file">发送验证码失败，请重试</string>
+    <string name="password_not_same">两次密码不一致</string>
+    <string name="registing">正在为您落户，请稍候...</string>
+    <string name="forget_password">正在为您修改密码，请稍候...</string>
+    <string name="regist_fail">注册失败，请重试...</string>
+    <string name="feed_back">意见反馈</string>
+    <string name="feedback_empty">反馈内容不能为空</string>
+    <string name="feedback_type_empty">反馈类型不能为空</string>
+    <string name="commit_feedback">正在提交反馈信息...</string>
+    <string name="feedback_commit_success">提交成功,感谢您的支持和建议</string>
+    <string name="feedback_commit_fail">提交失败...</string>
+    <string name="system_setting">系统设置</string>
+    <string name="upload_headicon_success">上传头像成功</string>
+    <string name="upload_headicon_fail">上传头像失败</string>
+    <string name="get_data_fail">获取数据失败</string>
+    <string name="edit_info">编辑资料</string>
+    <string name="saving_info">正在保存修改</string>
+    <string name="edit_info_success">修改信息成功</string>
+    <string name="edit_info_fail">修改信息失败</string>
+    <string name="saving_headicon">正在保存头像</string>
+    <string name="send_verify_code">验证码已发送，请及时输入</string>
+    <string name="name">姓名：</string>
+    <string name="sex">性别：</string>
+    <string name="company">公司名称：</string>
+    <string name="user_code">员工编号：</string>
+    <string name="department">部门：</string>
+    <string name="position">职位：</string>
+    <string name="email">邮箱：</string>
+    <string name="optional">可选填写</string>
+    <string name="phone_munber">电话号码：</string>
+    <string name="telephone_munber">座机号码：</string>
+    <string name="new_info">行业资讯</string>
+
+    <!-- App -->
+    <string name="app_head_title">应用汇</string>
+    <string name="description"></string>
+    <string name="app_enterprise">企业应用</string>
+    <string name="app_personage">个人应用</string>
+
+    <!-- 首页菜单项名称 -->
+    <string name="singin">签到、考勤</string>
+    <string name="charge">充值、消费</string>
+    <string name="contact">通讯录</string>
+    <string name="communication">通讯录</string>
+    <string name="im">即时通讯</string>
+    <string name="task">任务、代办</string>
+    <string name="info">行业信息</string>
+    <string name="office">综合办公</string>
+    <string name="meeting">会议通</string>
+    <string name="helper">外勤助手</string>
+    <string name="appstore">应用市场</string>
+    <string name="find">发现</string>
+    <string name="personal">个人</string>
+
+    <!-- 消息widget -->
+    <string name="notice">电子公告</string>
+    <string name="notice_detail">公告详情</string>
+    <string name="issued_notice">发布公告</string>
+    <!-- 考勤 -->
+    <string name="loading_wait">正在加载，请稍后...</string>
+    <string name="load_fail">加载失败，请稍后重试</string>
+    <string name="clockin_title">考勤记录</string>
+    <string name="card_clockin_title">打卡记录</string>
+    <string name="signin_title">签到记录</string>
+    <string name="get_location_fail">获取位置失败，请稍后重试</string>
+    <string name="image_content"></string>
+    <string name="search_poi_hint">搜索地点</string>
+
+    <!-- 充值消费 -->
+    <string name="consume_title">消费记录</string>
+    <string name="consume_yuan">元</string>
+    <string name="consume_msg">充值功能正在开发中，请期待</string>
+    <string name="recharge_title">自助充值</string>
+
+    <!-- 签到 -->
+    <string name="signin_tips_day">今日排班</string>
+    <string name="signin_tips_morning">上午班:08:30-12:00</string>
+    <string name="signin_tips_afternoon">下午班:13:00-17:00</string>
+    <string name="signin_title_checkin">考勤</string>
+    <string name="signin_checkin">上班</string>
+    <string name="signin_checkout">下班</string>
+    <string name="signin_title_sigin">签到</string>
+    <string name="signin_location">位置</string>
+    <string name="signin_phone">拍照</string>
+    <string name="signin_leave">签到请假</string>
+    <string name="leave">请   假</string>
+    <string name="signin_ok">签    到</string>
+    <string name="signinleave_title">考勤记录</string>
+    <string name="signin_success">签到成功</string>
+    <string name="signin_error">签到失败</string>
+    <string name="signin_success_ok">确定</string>
+    <string name="signin_fail_cancel">取消</string>
+    <string name="message_center">消息中心</string>
+    <string name="app_description">应用介绍</string>
+    <string name="title_about">关于</string>
+    <string name="title_finder">发现</string>
+    <string name="imageview_desc">TODO</string>
+    <string name="phone_meeting">电话会议</string>
+    <string name="sms_helper">短信助手</string>
+    <string name="work_circle">工作圈</string>
+    <string name="quiz_moment">精彩瞬间</string>
+    <string name="wei_live">微直播</string>
+    <string name="doc_center">文档中心</string>
+    <string name="industry_info">资讯专递</string>
+    <string name="finder_title">专享优惠</string>
+    <string name="attendance_set">考勤区域</string>
+    <string name="attendance_set_list">考勤区域列表</string>
+    <string name="location_signin">定位考勤</string>
+    <string name="scanning_signin">扫一扫</string>
+    <string name="beacon_signin">蓝牙考勤</string>
+
+    <!-- 修改密码 -->
+    <string name="change_pwd_title">修改密码</string>
+    <string name="change_pwd_old_pwd">旧密码</string>
+    <string name="change_pwd_new_pwd">新密码</string>
+    <string name="change_pwd_sure_pwd">密码确认</string>
+    <string name="change_pwd_sure">确定</string>
+    <string name="change_pwd_cancle">取消</string>
+    <string name="change_pwd_old_pwd_wrong">原始密码错误</string>
+    <string name="change_pwd_not_same_twice">两次密码不一致</string>
+    <string name="change_pwd_new_pwd_can_not_null">新密码不能为空</string>
+    <string name="change_pwd_change_pwd_fail">修改密码失败</string>
+    <string name="change_pwd_change_pwd_sucess">修改密码成功</string>
+    <string name="change_pwd_wait">正在修改，请稍后</string>
+
+    <!-- 电话会议 -->
+
+
+    <!-- 版本更新 -->
+    <string name="check_updating">检查更新中</string>
+    <string name="no_update">当前已是最新版本</string>
+
+    <!-- 工作台 -->
+    <string name="operation_hide">隐藏</string>
+    <string name="operation_unstall">卸载</string>
+    <string name="operation_desktop">发送桌面</string>
+    <string name="meeting_signin">会议签到</string>
+
+    <!-- 精彩瞬间 -->
+    <string name="quiz_moment_main_title_name">精彩瞬间</string>
+    <string name="quiz_moment_add_title_name">发布我的精彩瞬间</string>
+    <string name="quiz_moment_add_hint">输入内容</string>
+    <string name="quiz_moment_commit">提交</string>
+    <string name="quiz_select_pic">选择图片</string>
+    <string name="quiz_take_pic">拍照</string>
+    <string name="quiz_gallery_pic">本地相册</string>
+    <string name="quiz_pic_sure">确定</string>
+    <string name="saving_quiz_moment">正在提交精彩瞬间</string>
+    <string name="upload_moment_success">您的精彩瞬间已提交</string>
+    <string name="upload_moment_failure">您的精彩瞬间提交失败</string>
+    <string name="quiz_moment_location">您当前所在的位置：</string>
+    <string name="quiz_moment_content_empty">文件内容不能为空</string>
+
+    <!-- 文档下载 -->
+    <string name="document_center_download_file">文件下载</string>
+    <string name="document_center_add_faild">添加失败</string>
+    <string name="document_center_add_sucess">添加成功</string>
+    <string name="document_center_main_title_name">文档中心</string>
+    <string name="document_center_release">发布文件</string>
+    <string name="document_center_content_empty">文件内容不能为空</string>
+    <string name="document_center_uploading">正在上传</string>
+    <string name="document_center_downloading">正在下载</string>
+    <string name="document_center_download_sucess">文件成功下载到</string>
+    <string name="document_center_download_fail">下载失败，请稍后重试</string>
+    <string name="title_bestpay">翼支付</string>
+    <string name="title_wallet">手机钱包</string>
+
+    <!-- NFC 小工具 -->
+
+    <string name="nfc_serial_number">序列号:</string>
+    <string name="nfc_type">类型:</string>
+    <string name="nfc_data_format">数据格式:</string>
+    <string name="nfc_space">空间:</string>
+    <string name="nfc_read_only">只读</string>
+    <string name="nfc_tools">NFC互动标签</string>
+    <string name="connection_specific_wifi">是否连接特定wifi</string>
+    <string name="network_ssid">网络SSID</string>
+    <string name="network_safety">安全</string>
+    <string name="network_pwd">密码</string>
+    <string name="display_pwd">显示密码</string>
+    <string name="nfc_tag_name_empty">标签名称不能为空！</string>
+    <string name="nfc_copytag_title">复制标签</string>
+    <string name="nfc_copytag_title_one">复制标签1/2</string>
+    <string name="nfc_copytag_title_tow">复制标签2/2</string>
+    <string name="nfc_copytag_complete">复制完成</string>
+    <string name="nfc_copytag_error">写入错误</string>
+    <string name="nfc_copytag_read">将要复制的NFC标签靠近手机</string>
+    <string name="nfc_copytag_write">将NFC卡靠近手机，写入要复制的标签的数据</string>
+    <string name="nfc_copytag_write_sucess">复制成功</string>
+    <string name="nfc_copytag_write_error">写入错误</string>
+    
+    <!--巡检-->
+    <string name="patrol_manager">巡检</string>
+    
+    <!--企业 -->
+    <string name="create_enterprise">创建或加入企业</string>
+    <string name="join_enterprise">加入企业</string>
+    <string name="next_step">下一步</string>
+    <string name="enterprise_name_attention">请注意，企业名称需要和营业执照上的名称完全一致</string>
+    <string name="enterprises_list_empty">目前没有同名企业\n您可以创建这个企业</string>
+    <string name="enterprises_create_time">创建时间:</string>
+    <string name="enterprises_creater">创建人:</string>
+    <string name="enterprises_members">成员:</string>
+    <string name="enterprises_adress">地址:</string>
+    <string name="enterprises_review">是否需要审核:</string>
+    <string name="join_reasons">请说明加入企业的理由，以便管理员审核</string>
+    <string name="experience">先去体验一下</string>
+    <string name="join_reasons_hint">输入附加信息...</string>
+    <string name="application_enterprise_success">您已成功申请加入！\n请等待企业管理者批准！</string>
+    <string name="modify_enterprise">修改企业信息</string>
+    
+    <string name="audit_faile">抱歉，你的创建申请被驳回了。你可以查看原因并在修改后重新提交申请</string>
+    <string name="audit_success_1">恭喜您，您创建的企业"</string>
+    <string name="audit_success_2">"通过了审核，现在您可以以管理员的身份对企业进行管理了。</string>
+    <string name="enterprise_manage">企业管理</string>
+    <string name="enterprise_users">企业成员列表</string>
+
+    <string name="add_enterprise_users">手动添加</string>
+    <string name="enterprise_loading">正在加载企业信息</string>
+    <string name="enterprise_update">正在修改企业信息</string>
+    
+    
+    <string name="setting_industry">设置所属行业</string>
+    <string name="select_contacts">选择联系人</string>
+    <string name="member_search_hint">搜索成员</string>
+    <string name="live_circle">生活圈</string>
+    
+    <string name="shake_signin">摇一摇</string>
+    <string name="ic_lifecircle">周边翼支付商户</string>
+    <string name="ic_cardpack">刮刮卡抽奖</string>
+
+    <string name="patrol">巡检</string>
+    <string name="checkin_info_identified">签到信息已识别</string>
+    <string name="checkin_calculating">签到计算中...</string>
+    <string name="comfirm">确定</string>
+    <string name="copy_characters">复制文字</string>
+</resources>

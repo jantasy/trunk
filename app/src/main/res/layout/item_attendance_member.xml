@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="#f2f6fc" >
+
+    <ImageView
+        android:id="@+id/attendance_member_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/contactlist_contact_icon_default" />
+
+    <TextView
+        android:id="@+id/attendance_member_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/attendance_member_icon"
+        android:text="尘沙"
+        android:textColor="#cc000000"
+        android:textSize="15dp" />
+
+    <CheckBox
+        android:id="@+id/attendance_member_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@null"
+        android:drawableRight="@drawable/contactlist_contact_selector"
+        android:padding="5dp" >
+    </CheckBox>
+
+</RelativeLayout>

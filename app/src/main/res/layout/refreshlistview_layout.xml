@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="?android:attr/progressBarStyleInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <cn.yjt.oa.app.widget.listview.PullToRefreshListView
+        android:id="@+id/prlv_showdata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/textf2f6fc"
+        android:divider="@color/textd9dde2"
+        android:dividerHeight="1px" >
+    </cn.yjt.oa.app.widget.listview.PullToRefreshListView>
+
+</FrameLayout>

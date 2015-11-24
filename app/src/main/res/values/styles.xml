@@ -1,0 +1,67 @@
+<resources>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowBackground">@color/window_bg_color</item>
+    </style>
+    
+    <style name="DialogBaseTheme" parent="android:Theme.Dialog"></style>
+    
+    <style name="AppTheme.NoTitle" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- StoreTheme -->
+    <style name="PageIndicatorDefaults" parent="Theme.PageIndicatorDefaults">
+        <item name="vpiIconPageIndicatorStyle">@style/Store.Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Store.Widget.TabPageIndicator</item>
+    </style>
+
+    <style name="Store.Widget.TabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+    </style>
+
+    <style name="Store.Widget.IconPageIndicator" parent="Widget.IconPageIndicator"></style>
+    <style name="AnimBottom" parent="@android:style/Animation">  
+    	<item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+	</style>
+	
+    <style name="setting_text">
+		<item name="android:textSize">16dp</item>
+		<item name="android:textColor">@color/title_text</item>
+		<item name="android:gravity">left</item>
+    </style>
+    
+    
+
+	<!-- 定义一个样式，继承android系统的对话框样式 android:style/Theme.Dialog-->
+	<style name="Theme.MessageWidget" parent="DialogBaseTheme">
+		<item name="android:windowBackground">@drawable/message_widget</item>
+	</style>
+	
+	<!-- 签到成功对话框样式 -->
+	<style name="dialogNoTitle" parent="@android:style/Theme.Dialog">
+            　　<item name="android:windowNoTitle">true</item> 
+            　　<item name="android:windowBackground">@android:color/transparent</item> 
+    </style>
+
+    
+    <style name="AttendaceTheme" parent="android:Theme.Translucent.NoTitleBar"></style>
+    <style name="ServerSettingsTheme" parent="android:Theme.NoTitleBar"></style>
+    
+    
+  
+    
+</resources>

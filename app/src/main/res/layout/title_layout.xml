@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="47dip"
+    android:background="#000" >
+
+    <FrameLayout
+        android:id="@+id/title_panel"
+        android:layout_width="match_parent"
+        android:layout_height="47dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/title_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:shadowColor="#000"
+            android:shadowDy="3"
+            android:shadowRadius="1"
+            android:singleLine="true"
+            android:text="title"
+            android:textColor="#fff5f8fd"
+            android:textSize="18dip" />
+        
+        <ImageView
+            android:id="@+id/left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="26dp" />
+
+        <ImageView
+            android:id="@+id/right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center_vertical"
+            android:paddingLeft="26dp"
+            android:paddingRight="15dp" />
+
+        <ProgressBar
+            android:id="@+id/pb_updating"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:paddingLeft="26dp"
+            android:visibility="gone"
+            android:paddingRight="15dp" 
+            />
+    </FrameLayout>
+
+</FrameLayout>

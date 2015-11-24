@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f6fc" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp" >
+
+        <TextView
+            android:id="@+id/enterprise_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="43dp"
+            android:textColor="@color/button_text_color"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/application_enterprise_success" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/application_enterprise_success"
+            android:textColor="@color/attention_text"
+            android:textSize="13sp" />
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/experience_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/contact_list_button"
+        android:text="@string/experience"
+        android:textColor="#cc000000"
+        android:textSize="17sp" />
+
+</RelativeLayout>

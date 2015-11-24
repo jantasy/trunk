@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/signin_baidu_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false" />
+
+    <LinearLayout
+        android:id="@+id/show_signin_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+            <ImageView
+                android:id="@+id/show_signin_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#efefef"
+                android:contentDescription="@string/description"
+                android:scaleType="centerCrop" />
+            <ProgressBar
+                android:id="@+id/signin_image_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                style="?android:style/Widget.ProgressBar.Small"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/show_signin_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:text="签到图片"
+            android:textColor="#000" />
+    </LinearLayout>
+
+</RelativeLayout>

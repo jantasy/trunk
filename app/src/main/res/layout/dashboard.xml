@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="24dip"
+        android:paddingLeft="24dip"
+        android:paddingRight="24dip"
+        android:paddingTop="24dip" >
+
+        <FrameLayout
+            android:id="@+id/addtask"
+            android:layout_width="match_parent"
+            android:layout_height="77.8dip"
+            android:layout_marginBottom="24dip"
+            android:background="@drawable/icon_add_task" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/icon_add_task_left"
+                android:drawablePadding="5.5dp"
+                android:drawableStart="@drawable/icon_add_task_left"
+                android:gravity="center"
+                android:shadowColor="#8000"
+                android:shadowDy="8"
+                android:shadowRadius="8"
+                android:text="发起任务"
+                android:textColor="#ffffff"
+                android:textSize="24dp" />
+        </FrameLayout>
+
+        <cn.yjt.oa.app.widget.dragdrop.DragContainer
+            android:id="@+id/dragcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <cn.yjt.oa.app.widget.GridViewDropSpace
+                android:id="@+id/gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:horizontalSpacing="@dimen/dash_item_horizontal"
+                android:listSelector="@null"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:verticalSpacing="22dip" />
+        </cn.yjt.oa.app.widget.dragdrop.DragContainer>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/dashboard_promt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/promt1"
+            android:layout_width="match_parent"
+            android:layout_height="101.8dp"
+            android:background="#99000000" />
+        
+        <View
+            android:layout_below="@+id/promt1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dashborad_guide"/>
+    </RelativeLayout>
+
+</RelativeLayout>

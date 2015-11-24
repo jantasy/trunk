@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/contact_search_parent"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#f2f6fc"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/contact_search"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/contact_list_search_padding"
+            android:layout_marginRight="@dimen/contact_list_search_padding"
+            android:layout_toLeftOf="@+id/search_cancel"
+            android:background="@drawable/search_input_box"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/contact_search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/contactlist_search_icon" />
+
+            <EditText
+                android:id="@+id/address_search_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/contact_search_icon"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="none"
+                android:gravity="center_vertical"
+                android:hint="搜索联系人"
+                android:singleLine="true"
+                android:textColor="#57595B"
+                android:textColorHint="#4c000000"
+                android:textCursorDrawable="@drawable/clock_hour"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/contact_search_clear_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignRight="@+id/address_search_input"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/address_search_text_clear" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="取消"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:background="#ECF3FD"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/unselected"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tab_bg_selector"
+                android:gravity="center"
+                android:text="未关联"
+                android:textColor="@color/label_tab_selector"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/all_unselect_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/all_unselect"
+                android:layout_alignTop="@+id/all_unselect"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/all_unselect"
+                android:gravity="center"
+                android:text="全选"
+                android:textColor="@color/label_tab_selector"
+                android:textSize="9dp" />
+
+            <CheckBox
+                android:id="@+id/all_unselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:drawableRight="@drawable/contactlist_contact_selector"
+                android:padding="5dp"
+                android:checked="false"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.4dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/selected"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_bg_selector"
+                android:gravity="center"
+                android:text="已关联"
+                android:textColor="@color/label_tab_selector"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/all_select_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/all_select"
+                android:layout_alignTop="@+id/all_select"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/all_select"
+                android:gravity="center"
+                android:text="全选"
+                android:textColor="@color/label_tab_selector"
+                android:textSize="9dp" />
+
+            <CheckBox
+                android:id="@+id/all_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:drawableRight="@drawable/contactlist_contact_selector"
+                android:padding="5dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <CheckBox
+                android:id="@+id/all_unselect1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:drawableRight="@drawable/contactlist_contact_selector"
+                android:padding="5dp"
+                android:text="全选"
+                android:textColor="@color/label_tab_selector"
+                android:textSize="9sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.4dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <CheckBox
+                android:id="@+id/all_select1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:drawableRight="@drawable/contactlist_contact_selector"
+                android:padding="5dp"
+                android:text="全选"
+                android:textColor="@color/label_tab_selector"
+                android:textSize="9sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/unselected_list"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/app_content_background"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:scrollbars="none" />
+
+            <View
+                android:layout_width="0.4dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/line" />
+
+            <ListView
+                android:id="@+id/selected_list"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/app_content_background"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/add"
+                android:layout_width="26dp"
+                android:layout_height="38dp"
+                android:background="@drawable/verify_code_bg"
+                android:gravity="center"
+                android:text=">>"
+                android:textColor="#88000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/remove"
+                android:layout_width="26dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/verify_code_bg"
+                android:gravity="center"
+                android:text="&lt;&lt;"
+                android:textColor="#88000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,1422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="cn.yjt.oa.app"
+          android:versionCode="10326"
+          android:versionName="1.0.27.10326">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19"/>
+    <!--<uses-sdk-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--tools:node="replace" />-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.NFC"/>
+
+    <!-- 百度地图 -->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION">
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION">
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE">
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE">
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE">
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE">
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+    </uses-permission>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS">
+    </uses-permission>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS">
+    </uses-permission>
+    <!-- MapView -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- 友盟推送权限 允许解锁，震动 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD"/>
+
+    <!-- 百度推送还需要的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+
+    <!-- 碰碰支付需要的开机自启动权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+
+    <!-- nfc tools -->
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.ACCESS_BLUETOOTH_SHARE"/>
+    <uses-permission android:name="andorid.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <application
+        android:name="MainApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.NoTitle">
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false"/>
+
+        <activity
+            android:name="cn.yjt.oa.app.LaunchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.yjt.oa.app.IntentDispatcher">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="dispather"
+                    android:scheme="yjt"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.ReloginAlertActivity"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="cn.yjt.oa.app.LeaveEnterpriseActivity"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="cn.yjt.oa.app.MainActivity"
+            android:label="@string/message_center"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app"
+            android:windowSoftInputMode="adjustNothing|stateHidden">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.task.TaskMainActivity"
+            android:label="@string/task_main_title_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app"
+            android:windowSoftInputMode="adjustNothing|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.task.TaskPublishingActivity"
+            android:label="@string/task_publishing_title_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.task.TaskDetailActivity"
+            android:label="@string/task_detail_title_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <!-- 应用汇 -->
+        <activity
+            android:name="cn.yjt.oa.app.app.activity.AppEntranceActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.app.activity.AppDetailsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.app.activity.AppManagerActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <receiver android:name="cn.yjt.oa.app.app.fragment.InstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="cn.yjt.oa.app.app.activity.NetworkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.app.activity.PreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.app.activity.LocalActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.personalcenter.PersonalHomeActivity"
+            android:label="个人中心"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.personalcenter.LoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.personalcenter.RegistActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.personalcenter.LoginOrRegistFail"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.personalcenter.FeedBackActivity"
+            android:label="@string/feed_back"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.personalcenter.SettingActivity"
+            android:label="@string/system_setting"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.personalcenter.AboutActivity"
+            android:label="@string/title_about"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.personalcenter.ToneSetting"
+            android:label="@string/title_about"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.personalcenter.ChangePassword"
+            android:label="@string/change_pwd_title"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.app.personalcenter.EditPersonalFragment"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.app.personalcenter.UpdateWeakPasswordActivity"
+            android:label="修改密码"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.notifications.NotificationActivity"
+            android:label="@string/notice"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.notifications.NotificationDetailActivity"
+            android:label="@string/notice_detail"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.notifications.NewsActivity"
+            android:label="@string/new_info"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.notifications.NewsDetaileActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 消息widget -->
+        <activity
+            android:name="cn.yjt.oa.app.push.MessageWigetActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MessageWidget">
+        </activity>
+
+        <!-- 通讯录 -->
+        <activity
+            android:name="cn.yjt.oa.app.contactlist.ContactlistActivity"
+            android:label="@string/contactlist_add_new_contact_to_group"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.contactlist.ContactDetailActivity"
+            android:label="@string/contactlist_contact_detail"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.contactlist.GroupDetailActivity"
+            android:label="@string/contactlist_groups"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.contactlist.InviteContactActivity"
+            android:label="@string/select_contacts"
+            android:screenOrientation="portrait"/>
+
+        <!-- signin -->
+        <activity
+            android:name="cn.yjt.oa.app.signin.SigninActivity"
+            android:label="@string/signinleave_title"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.signin.POIActivity"
+            android:label="附近位置"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 签到 -->
+        <service
+            android:name="com.ct.bri.wifi.service.CtbriWifiLocService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.ct.bri.wifi.service.ICtbriWifiLocService"/>
+            </intent-filter>
+        </service>
+        <!-- 百度key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="mQ5yAQYmbLWusdhdWZzgvKI0"/>
+
+        <!--
+              tAuXsj2qLdTwboSNLlIl46xt  加入电信jar
+        	 tSE81uhrbyFcNkfC44nvf01w   原始
+        -->
+        <!-- 高德key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="cc363624f5cd00c1946f2b05922ad571"/>
+        <!-- 腾讯key -->
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="U4VBZ-4HHHS-SZPO7-64NOX-LW4MT-YJFEQ"/>
+
+        <activity
+            android:name="cn.yjt.oa.app.signin.AttendanceActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app"
+            android:theme="@style/AttendaceTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.signin.SigninPOISearchActivity"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.signin.SigninRecordActivity"
+            android:label="@string/signin_title"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.signin.SigninShowPositionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.clockin.ClockingInActivity"
+            android:label="@string/clockin_title"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.find.FinderActivity"
+            android:label="专享优惠"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 电话会议 -->
+        <!-- 电话会议 -->
+        <activity
+            android:name="cn.yjt.oa.app.teleconference.TeleconferenceActivity"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app" >
+
+            <!--
+            <intent-filter>
+                <data android:mimeType="vnd.android.cursor.item/phone" />
+            </intent-filter>
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.teleconference.ManualAddActivity"
+            android:screenOrientation="portrait"
+            android:label="添加号码"/>
+        <activity
+            android:name="cn.yjt.oa.app.teleconference.WebActivity"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="cn.yjt.oa.app"
+                    android:scheme="urlstart" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.teleconferencenew.TeleconferenceActivity"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.yjt.oa.app.teleconferencenew.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.teleconferencenew.CallListActivity"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- ========================================================== -->
+        <activity
+            android:name="cn.yjt.oa.app.ImageBrowser"
+            android:label="图片浏览"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.notifications.NotificationPublishActivity"
+            android:label="@string/issued_notice"
+            android:screenOrientation="portrait"/>
+
+        <!-- umeng update -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService">
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+        </service>
+
+        <!-- consume -->
+        <activity
+            android:name="cn.yjt.oa.app.consume.ConsumeActivity"
+            android:label="@string/consume_title"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.consume.RechargeActivity"
+            android:label="@string/recharge_title"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.industry.IndustryInfoActivity"
+            android:label="@string/industry_info"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.industry.IndustryDetailActivity"
+            android:label="@string/industry_info"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.JoinCustHandleActivity"
+            android:label="消息"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.CreateCustHandleActivity"
+            android:label="消息"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.CustJoinInviteHandleActivity"
+            android:label="消息"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.AttendanceReportsActivity"
+            android:label="考勤报表"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.EnterpriseListActivity"
+            android:label="单位列表"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.AttendanceTagListActivity"
+            android:label="企业考勤标签"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.WebViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.sharelink.ShareLinkActivity"
+            android:label="消息"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.contactlist.InviteUserHandleActivity"
+            android:label="消息"
+            android:screenOrientation="portrait"/>
+
+        <!-- 友盟推送添加的相关receiver等 -->
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false">
+        </receiver>
+        <receiver android:name="com.umeng.message.RegistrationReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.UmengBroadcastReceiver">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="cn.yjt.oa.app.intent.action.COMMAND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RE_ELECTION_V2"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.umeng.message.UmengService"
+            android:exported="true"
+            android:process=":umengService_v1">
+            <intent-filter>
+                <action android:name="cn.yjt.oa.app.intent.action.START"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="cn.yjt.oa.app.intent.action.COCKROACH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="org.android.agoo.service.ElectionService"
+            android:exported="true"
+            android:process=":umengService_v1">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_V2"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.umeng.message.UmengIntentService"/>
+
+        <!-- 友盟配置 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="541fcb90fd98c518a807ec81"/>
+        <!--
+             <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" />
+        -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}"/>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="0184a87c57a1cd9c3383d395fb85f21c">
+        </meta-data>
+
+        <!-- 创建桌面widget -->
+        <service android:name="io.luobo.launcher.floatwidget.FloatWidgetService"/>
+        <service android:name="cn.yjt.oa.app.widget.TableMsgWidget"/>
+
+        <!-- NFC Tools -->
+
+        <activity
+            android:name="com.chinatelecom.nfc.MainGridview"
+            android:label="@string/nfc_app_name"
+            android:process=":nfc"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+
+        <!-- 名片管理 -->
+        <activity-alias
+            android:name="BusinessCardManager"
+            android:targetActivity="com.chinatelecom.nfc.MainGridview"/>
+        <!-- 读公交卡 -->
+        <activity-alias
+            android:name="ReadBusCard"
+            android:targetActivity="com.chinatelecom.nfc.MainGridview"/>
+        <!-- 情景设置 -->
+        <activity-alias
+            android:name="Meeting"
+            android:targetActivity="com.chinatelecom.nfc.MainGridview"/>
+        <!-- 访问网址 -->
+        <activity-alias
+            android:name="Website"
+            android:targetActivity="com.chinatelecom.nfc.MainGridview"/>
+        <!-- 文件共享 -->
+        <activity-alias
+            android:name="FileShare"
+            android:targetActivity="com.chinatelecom.nfc.MainGridview"/>
+        <!-- 精彩瞬间 -->
+        <activity
+            android:name="cn.yjt.oa.app.quizmoment.QuizMomentMainActivity"
+            android:label="@string/quiz_moment_main_title_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.quizmoment.QuizMomentAddActivity"
+            android:label="@string/quiz_moment_add_title_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.MessageDetailActivity"
+            android:label="消息"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden">
+        </activity>
+        <!-- 文档中心 -->
+        <activity
+            android:name="cn.yjt.oa.app.documentcenter.DocumentCenterMainActivity"
+            android:label="@string/document_center_main_title_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app"
+            android:windowSoftInputMode="adjustNothing|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!-- 添加文档 -->
+        <activity
+            android:name="cn.yjt.oa.app.documentcenter.DocumentCenterAddActivity"
+            android:label="@string/document_center_release"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden">
+        </activity>
+        <!-- 下载文档 -->
+        <activity
+            android:name="cn.yjt.oa.app.documentcenter.DocumentCenterDownloadActivity"
+            android:label="@string/document_center_download_file"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <!-- 企业 -->
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.operation.EnterpriseManageActivity"
+            android:label="@string/enterprise_manage"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.industry.SettingIndustryActivity"
+            android:label="@string/setting_industry"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.operation.AddMemberActivity"
+            android:label="@string/add_enterprise_users"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.contact.MachineContactActivity"
+            android:label="@string/select_contacts"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.CreateEnterpriseActivity"
+            android:label="@string/create_enterprise"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.EnterpriseDetailActivity"
+            android:label="@string/join_enterprise"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.JoinEnterpriseSuccessActivity"
+            android:label="@string/join_enterprise"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.operation.ModifyEnterpriseInfoActivity"
+            android:label="@string/modify_enterprise"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.InfoBasicInputUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.InfoDetailInputUI"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.InfoCommitFinishUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.InfoCommitUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.operation.EnterpriseMembersActivity"
+            android:label="@string/enterprise_users"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="cn.yjt.oa.app.signin.AttendanceSetActivity"
+            android:label="@string/attendance_set"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.AttendanceSettingListActivity"
+            android:label="@string/attendance_set_list"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="cn.yjt.oa.app.nfctools.NFCActivity"
+            android:label="@string/nfc_tools"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.nfctools.NfcTagBlankExecutorActivity"
+            android:label="@string/nfc_tools"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data
+                    android:host="189.cn"
+                    android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data
+                    android:host="yjt.189.cn"
+                    android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.nfctools.CreateSigninTagActivity"
+            android:label="制作签到标签"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinatelecom.nfc.ShareFilesMain"
+            android:launchMode="singleTask"
+            android:process=":nfc"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="application/mobileinfo"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chinatelecom.nfc.MusicsManager"
+            android:process=":nfc"
+            android:theme="@style/nfc_translucent">
+        </activity>
+        <activity
+            android:name="com.chinatelecom.nfc.FilesManager"
+            android:process=":nfc"
+            android:theme="@style/nfc_translucent">
+        </activity>
+        <activity
+            android:name="com.chinatelecom.nfc.FilesResult"
+            android:process=":nfc"
+            android:theme="@style/nfc_translucent">
+        </activity>
+        <activity
+            android:name="com.chinatelecom.nfc.ShareFilesSender"
+            android:launchMode="singleTask"
+            android:process=":nfc"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+
+        <service android:name="com.chinatelecom.nfc.Service.WifiReceiverService"/>
+        <service android:name="com.chinatelecom.nfc.Service.WifiSenderService"/>
+        <service android:name="com.chinatelecom.nfc.Service.BluetoothReceiverService"/>
+        <service android:name="com.chinatelecom.nfc.Service.BluetoothSenderService"/>
+
+        <activity
+            android:name="com.chinatelecom.nfc.NameCardManageActivity"
+            android:process=":nfc"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+
+                <!-- <action android:name="android.intent.action.VIEW" /> -->
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chinatelecom.nfc.ModeManageActivity"
+            android:process=":nfc"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity
+            android:name="com.chinatelecom.nfc.MainActivity"
+            android:process=":nfc"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.chinatelecom.nfc.CardManagerActivity"
+            android:process=":nfc"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.chinatelecom.nfc.DetailMeetingActivity"
+            android:process=":nfc"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.chinatelecom.nfc.DetailWebActivity"
+            android:process=":nfc"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.chinatelecom.nfc.DetailTextActivity"
+            android:process=":nfc"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.chinatelecom.nfc.DetailMeetingModeActivity"
+            android:process=":nfc"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.chinatelecom.nfc.BaseNfcAdapter"
+            android:process=":nfc"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="application/vnd.com.example.android.beam"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chinatelecom.nfc.DetailBusActivity"
+            android:process=":nfc"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.nfctools.CreateOkActivity"
+            android:label="@string/nfc_tools"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity
+            android:name="cn.yjt.oa.app.nfctools.NFCCreateActivity"
+            android:label="@string/nfc_tools"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:name="cn.yjt.oa.app.nfctools.AddOperationActivity"
+            android:label="@string/nfc_tools"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity
+            android:name="cn.yjt.oa.app.utils.IPSettings"
+            android:label="IP设置"
+            android:screenOrientation="portrait"
+            android:theme="@style/ServerSettingsTheme"/>
+        <activity
+            android:name="com.zbar.lib.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.zbar.lib.CaptureActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.yjt.oa.app.attendance.LocationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!-- ========================百度推送=========================== -->
+        <!-- push应用定义消息receiver声明 -->
+        <receiver android:name="cn.yjt.oa.app.push.BaiduPushMessageReceiver">
+            <intent-filter android:priority="1000">
+
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE"/>
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE"/>
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK"/>
+            </intent-filter>
+        </receiver>
+        <!-- push必须的receviver和service声明 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW"/>
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK"/>
+                <!-- 以下四项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD"/>
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.baidu.android.pushservice.CommandService"
+            android:exported="true"/>
+        <!-- push结束 -->
+
+
+        <!-- push富媒体，不使用富媒体推送不需要 -->
+        <activity
+            android:name="com.baidu.android.pushservice.richmedia.MediaViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="MediaViewActivity">
+        </activity>
+        <activity
+            android:name="com.baidu.android.pushservice.richmedia.MediaListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="MediaListActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <!-- push富媒体结束 -->
+
+
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data
+            android:name="api_key"
+            android:value="mQ5yAQYmbLWusdhdWZzgvKI0"/>
+        <!-- ========================百度推送=========================== -->
+
+
+        <!-- ================碰碰翼机通圈存需要的service, receiver, activity================ -->
+        <service android:name="com.transport.service.UploadConfirmService">
+        </service>
+
+        <receiver android:name="com.transport.service.StartBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.telecompp.activity.ConfirmActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.recharge.BlankActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!-- ================碰碰翼机通圈存需要的service, receiver, activity================ -->
+
+        <receiver android:name="cn.yjt.oa.app.incomealert.IncomeReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="cn.yjt.oa.app.attendance.AttendanceService"/>
+
+        <activity
+            android:name="cn.yjt.oa.app.contactlist.ContactsStructActivity"
+            android:label="组织架构"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.BeaconSettingActivity"
+            android:label="蓝牙标签设置"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.BeaconSettingListActivity"
+            android:label="蓝牙标签管理"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.attendance.BeaconAttendanceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AttendaceTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="cn.robusoft.beacon.service.BeaconService"
+            android:enabled="true"
+            android:exported="true"
+            android:isolatedProcess="false"
+            android:label="beacon">
+        </service>
+        <service
+            android:name="cn.robusoft.beacon.BeaconIntentProcessor"
+            android:enabled="true">
+        </service>
+        <service android:name="cn.robusoft.IbeaconService">
+        </service>
+
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.AttendanceTimeSettingActivity"
+            android:label="考勤时间设置"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.AttendanceMemberBindActivity"
+            android:label="区域人员管理"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.contactlist.ContactsServiceActivity"
+            android:label="公共服务"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.attendance.BeaconShakeAttendanceActivity"
+            android:label="蓝牙考勤"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.attendance.BeaconListActivity"
+            android:label="全部标签"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <service android:name="cn.yjt.oa.app.attendance.AutoAttendanceService"/>
+
+        <receiver android:name="cn.yjt.oa.app.attendance.AttendanceTimeCheckReceiver">
+            <intent-filter>
+                <action android:name="cn.yjt.oa.app.attendance.ACTION_ATTENDANCE_TIME_CHECK"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="cn.yjt.oa.app.personalcenter.IncomingSetting"
+            android:label="来电弹屏"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.personalcenter.ShakdingSoundSetting"
+            android:label="摇一摇音效"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.enterprise.AttendanceTimeActivity"
+            android:label="考勤时间"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.personalcenter.RegiestPersonalHomeActivity"
+            android:label="完善注册信息"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.signin.SigninStructActivity"
+            android:label="成员考勤记录"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.personalcenter.PatrolRemindActivity"
+            android:label="巡检提醒设置"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".patrol.activitys.PatrolManageActivity"
+            android:label="巡检管理"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".patrol.activitys.PatrolContentActivity"
+            android:label="巡检内容管理"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".patrol.activitys.PatrolPointActivity"
+            android:label="巡检点"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".patrol.activitys.PatrolRouteActivity"
+            android:label="巡检路线"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".patrol.activitys.PatrolRouteBindPointActivity"
+            android:label="巡检点管理"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".patrol.activitys.PatrolRouteBindPersonActivity"
+            android:label="巡检人员管理"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".patrol.activitys.PatrolRecordActivity"
+            android:label="巡检记录管理"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.patrol.activitys.PatrolDetailRecordActivity"
+            android:label="巡检路线详情"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".patrol.activitys.PatrolCreateNFCTagActivity"
+            android:label="制作巡检标签"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".patrol.activitys.PatrolActivity"
+            android:label="巡检签到界面"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app"
+            android:theme="@style/AttendaceTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".patrol.activitys.PatrolSummaryActivity"
+            android:label="巡检"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".patrol.activitys.PatrolTimeActivity"
+            android:label="巡检时间"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.patrol.activitys.PatrolTimeSettingActivity"
+            android:label="巡检时间设置"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".patrol.activitys.PatrolReportsActivity"
+            android:label="巡检报表"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".patrol.activitys.PatrolRemindActivity"
+            android:label="巡检提醒"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".patrol.activitys.QrCodeActivity"
+            android:label="二维码签到界面"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="cn.yjt.oa.app"
+            android:theme="@style/AttendaceTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yjt.oa.app.meeting.MeetingActivity"
+            android:label="会议签到"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.meeting.MeetingPublicActivity"
+            android:label="新建会议"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.meeting.MeetingInfoActivity"
+            android:label="会议管理"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.meeting.MeetingStaffActivity"
+            android:label="出席人员"
+            android:screenOrientation="portrait"/>
+
+        <!--生活圈合并-->
+        <activity
+            android:name="cn.yjt.oa.app.lifecircle.LifeCircleActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.lifecircle.ChooseCityActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.lifecircle.SurroundActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.lifecircle.AreaActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.lifecircle.TypeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.lifecircle.StoreDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.lifecircle.CommentListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.lifecircle.MapModeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.yjt.oa.app.lifecircle.MapSearchActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.yjt.oa.app.meeting.MeetingSigninActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AttendaceTheme"/>
+
+        <!--生活圈-->
+        <activity
+            android:name=".cardpack.CardPackActivity"
+            android:label="刮刮卡抽奖"
+            android:screenOrientation="portrait"/>
+
+
+        <service android:name=".patrol.service.PatrolService"/>
+        <service android:name=".patrol.service.QrCodeService"/>
+        <service android:name="cn.robusoft.CTBeaconService"/>
+
+        <receiver android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <!--巡检提醒广播 -->
+        <receiver android:name=".patrol.receiver.PatrolRemindReceiver">
+            <intent-filter>
+                <action android:name="cn.yjt.oa.app.patrol.ACTION_PATROL_REMIND"></action>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="org.altbeacon.beacon.service.BeaconService"
+            android:enabled="true"
+            android:isolatedProcess="false"
+            android:label="beacon">
+        </service>
+        <service
+            android:name="org.altbeacon.beacon.BeaconIntentProcessor"
+            android:enabled="true">
+        </service>
+
+        <service android:name=".patrol.service.PatrolRemindService"/>
+        <!-- activeAndroid扫描配置 -->
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="cn.yjt.oa.app.beans.MessageInfoCache,cn.yjt.oa.app.beans.MessageInfoContentCache,cn.yjt.oa.app.beans.OperaStatistics"/>
+
+        <meta-data android:name="AA_DB_NAME" android:value="Application.db" />
+        <meta-data android:name="AA_DB_VERSION" android:value="2" />
+    </application>
+
+</manifest>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical" 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+  >
+    <cn.yjt.oa.app.lifecircle.view.RoundedRectListView 
+        android:id="@+id/spinner_list"
+         android:background="@drawable/bg_order" 
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" 
+         android:listSelector="@drawable/list_selector" 
+         android:cacheColorHint="#00000000" 
+         android:divider="#20000000" 
+         android:dividerHeight="0.100000024dip" 
+         android:scrollbarFadeDuration="0" 
+         android:fadeScrollbars="false" />
+</LinearLayout>

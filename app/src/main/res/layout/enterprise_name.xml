@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="20dp"
+    android:text="中国电信政企测试"
+    android:textColor="@color/button_text_color"
+    android:textSize="16sp" />

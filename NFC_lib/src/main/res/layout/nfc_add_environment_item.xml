@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5px" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img"
+        android:textColor="#FFFFFFFF"
+        android:textSize="22px" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5px"
+        android:layout_toRightOf="@id/img"
+        android:textColor="#FFFFFFFF" />
+
+    <CheckBox    
+        android:id="@+id/cb"    
+        android:layout_width="wrap_content"    
+        android:layout_height="wrap_content"    
+        android:focusable="false"    
+        android:focusableInTouchMode="false"    
+        android:clickable="false"           
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/> 
+    
+    <!-- <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbStart" />
+
+        <RadioButton
+            android:id="@+id/rbClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbClose" />
+    </RadioGroup> -->
+
+</RelativeLayout>

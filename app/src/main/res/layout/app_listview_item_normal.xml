@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_app_thumbnails"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/app_default_icon" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_app_thumbnails"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应用名称" />
+
+        <TextView
+            android:id="@+id/tv_app_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0万下载 | 0MB" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btn_app_download"
+        android:layout_width="47dp"
+        android:layout_height="27dp"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:textSize="12sp"
+        android:background="@drawable/app_btn_download"
+        android:layout_alignParentRight="true"
+        android:text="下载"/>
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/task_list_item_bottom_margin"
+        android:layout_marginRight="@dimen/task_list_item_right_margin"
+        android:layout_marginTop="@dimen/task_list_item_top_margin"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/task_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/task_content_bottom_background"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/task_list_item_from_user_icon_left_margin"
+                android:layout_marginTop="@dimen/task_list_item_from_user_icon_top_margin" >
+
+                <ImageView
+                    android:id="@+id/from_user_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/from_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/from_user_icon"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="名字"
+                    android:textColor="#cc000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/task_creation_exact_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/task_list_item_reply_time_right_margin"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:text="时间"
+                    android:textColor="#7f000000"
+                    android:textSize="11dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/task_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/task_list_item_content_bottom_margin"
+                android:layout_marginLeft="@dimen/task_list_item_content_left_margin"
+                android:layout_marginRight="@dimen/task_list_item_content_right_margin"
+                android:layout_marginTop="@dimen/task_list_item_content_top_margin"
+                android:ellipsize="end"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="2"
+                android:text="关注植物、自然"
+                android:textColor="#cc000000"
+                android:textSize="13dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/task_list_item_content_action_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/task_list_item_operation_bar_height"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/task_top_sticky_container"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/task_top_sticky" />
+
+                    <TextView
+                        android:id="@+id/task_top_sticky"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="置顶"
+                        android:textColor="#cc000000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/task_list_item_operation_bar_divider_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/task_list_item_content_action_divider" />
+
+                <LinearLayout
+                    android:id="@+id/task_reply_state_container"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/task_reply_count_indicator" />
+
+                    <TextView
+                        android:id="@+id/task_reply_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11"
+                        android:textColor="#cc000000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

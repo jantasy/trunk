@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f6fc"
+    android:orientation="vertical"
+    android:paddingLeft="23dp"
+    android:paddingRight="23dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/widget_next" />
+
+        <TextView
+            android:id="@+id/enterprise_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:textColor="@color/enterprise_item_name"
+            android:textSize="15sp" />
+         <TextView
+            android:id="@+id/enterprise_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/ic_no_v"
+            android:drawablePadding="5dp"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@+id/enterprise_name"
+            android:textColor="@color/enterprise_item_name"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/comm_res_divider" />
+    </RelativeLayout>
+
+</RelativeLayout>

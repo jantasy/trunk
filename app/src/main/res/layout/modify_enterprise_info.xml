@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f6fc" >
+    
+        <Button
+        android:id="@+id/save_enterprise_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/contact_list_button"
+        android:text="@string/contactlist_group_detail_store"
+        android:textColor="#cc000000"
+        android:textSize="17sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/save_enterprise_info" 
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/enterprise_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="43dp"
+                android:textColor="@color/button_text_color"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/comm_res_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:descendantFocusability="beforeDescendants"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="11dp"
+                    android:gravity="center_vertical"
+                    android:text="企业简称："
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/short_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="11dp"
+                    android:background="@drawable/contact_list_input"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/attention_text"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="11dp"
+                    android:gravity="center_vertical"
+                    android:text="地址："
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/adress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="11dp"
+                    android:background="@drawable/contact_list_input"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/attention_text"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="11dp"
+                    android:gravity="center_vertical"
+                    android:text="邮箱："
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="11dp"
+                    android:background="@drawable/contact_list_input"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/attention_text"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="11dp"
+                    android:gravity="center_vertical"
+                    android:text="联系电话："
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/telephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="11dp"
+                    android:background="@drawable/contact_list_input"
+                    android:padding="10dp"
+                    android:phoneNumber="true"
+                    android:singleLine="true"
+                    android:textColor="@color/attention_text"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/need_check_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="是否需要审核："
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/is_need_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@id/need_check_tv"
+                        android:gravity="center_vertical"
+                        android:textSize="14dp"
+                        android:visibility="gone" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <RadioButton
+                            android:id="@+id/positive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="是" />
+
+                        <RadioButton
+                            android:id="@+id/negative"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="否" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginBottom="11dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="是否公开："
+                        android:textSize="14dp" />
+
+
+                    <RadioGroup
+                        android:id="@+id/is_open"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/open"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="是" />
+
+                        <RadioButton
+                            android:id="@+id/not_open"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="否" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

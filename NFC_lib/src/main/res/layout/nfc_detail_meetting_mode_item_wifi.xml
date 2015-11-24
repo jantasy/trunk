@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlModeMute"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nfc_setting_item_bg" >
+
+
+    <ImageView
+        android:id="@+id/iv_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dip"
+        />
+
+    <TextView
+        android:id="@+id/tv_ssid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_toLeftOf="@id/iv_checkbox"
+        android:singleLine="true"
+        android:textColor="@color/nfc_black"
+        android:textSize="16dip" 
+        android:layout_centerVertical="true"/>
+
+
+</RelativeLayout>

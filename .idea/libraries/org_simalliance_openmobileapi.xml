@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.simalliance.openmobileapi">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/TelecomppExtendLib/lib/org.simalliance.openmobileapi.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

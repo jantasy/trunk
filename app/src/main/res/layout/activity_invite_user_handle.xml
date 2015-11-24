@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="20dp" >
+
+    <TextView
+        android:id="@+id/invite_user_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text=""
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/invite_user_button_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tc_btn_left"
+            android:text="拒绝"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/invite_user_button_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/contact_list_button"
+            android:text="您已经同意此邀请" />
+          <View 
+            android:id="@+id/tv_line"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/button_line"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/invite_user_button_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tc_btn_right"
+            android:text="同意"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/invite_user_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/invite_user_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/ic_administrator_hi" />
+
+    <TextView
+        android:id="@+id/invite_user_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/invite_user_title"
+        android:layout_below="@+id/invite_user_icon"
+        android:layout_marginTop="41dp"
+        android:text="" />
+
+</RelativeLayout>

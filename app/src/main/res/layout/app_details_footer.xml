@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/app_foot_height"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/app_foot_background_color" >
+    
+    <Button
+        android:id="@+id/app_details_download"
+        android:layout_width="186dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/app_details_download_btn_bg"
+        android:text="下载" />
+    <!--
+    <ImageButton
+        android:id="@+id/app_details_pause"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@id/app_details_download"
+        android:layout_centerVertical="true"
+        android:src="@drawable/app_details_pause_btn_bg"
+        android:background="#00ffffff"
+        android:layout_height="wrap_content"/>
+    <ImageButton
+        android:id="@+id/app_details_cancel"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/app_details_download"
+        android:layout_centerVertical="true"
+        android:background="#00ffffff"
+        android:src="@drawable/app_details_cancel_btn_bg"
+        android:layout_height="wrap_content"/>
+        -->
+    
+</RelativeLayout>

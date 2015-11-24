@@ -1,0 +1,11 @@
+<animation-list android:oneshot="false"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<item android:duration="450" android:drawable="@drawable/nfc_touch_hor_1" />
+	<item android:duration="450" android:drawable="@drawable/nfc_touch_hor_2" />
+	<item android:duration="450" android:drawable="@drawable/nfc_touch_hor_3" />
+	<item android:duration="450" android:drawable="@drawable/nfc_touch_hor_4" />
+	<item android:duration="450" android:drawable="@drawable/nfc_touch_hor_5" />
+	<item android:duration="450" android:drawable="@drawable/nfc_touch_hor_6" />
+	
+</animation-list>

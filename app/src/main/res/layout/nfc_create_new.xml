@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nfc_tag_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="标签名称" />
+
+    <EditText
+        android:id="@+id/nfc_tag_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/tc_input_bg"
+        android:hint="输入您要创建的标签名称"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/clock_hour" >
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nfc_tag_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="执行操作" />
+
+
+        <ListView
+            android:id="@+id/nfc_add_operation_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:divider="#f2f6fc"
+            android:dividerHeight="10dp"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/nfc_add_operation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/nfc_btn_add"
+                android:text="添加操作" />
+
+            <Button
+                android:id="@+id/nfc_write_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/nfc_btn_write"
+                android:text="写入标签" />
+        </LinearLayout>
+
+</LinearLayout>

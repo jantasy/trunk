@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	  <!--  <item android:state_window_focused="false" 
+        android:drawable="@android:color/transparent" /> 
+	<item android:state_window_focused="false" android:state_enabled="true"
+        android:drawable="@drawable/nfc_textfield_default" />
+﻿    <item android:state_window_focused="false" android:state_enabled="false"
+        android:drawable="@drawable/nfc_textfield_disabled" />
+    <item android:state_enabled="true" android:state_focused="true" android:drawable="@drawable/nfc_textfield_selected" />
+    <item android:state_enabled="true" android:drawable="@drawable/nfc_textfield_default" />
+    -->
+<!--     
+    <item android:state_focused="true" android:drawable="@drawable/nfc_bg_edittext" /> -->
+    
+    <item android:state_selected="true" android:drawable="@drawable/nfc_bg_edittext_white" /> 
+    <item android:drawable="@color/nfc_transparent" />
+    
+</selector>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\exploded-aar\trunk\floatwidgetlib\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="756fec0a82a808fd6f169766346e317791ae203e">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\trunk-floatwidgetlib-unspecified_f42c0333b3317bea257a3c09b45fac65f4ad7da0.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\com.android.support-support-v4-23.0.0_89872af123e259f5f36eb2c42f81c453314caaba.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\libs\ndeftools.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ace8c1881e3a8de04a087e1c472a6938d614b2d8">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\ndeftools_47b86c3054e3df4f0861ca591da93b8c70d41891.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="11842de6a309c447b3a3d60d73ad637a87c58994">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\com.android.support-cardview-v7-22.0.0_b96132b71141f7dc28099e5ad4222139c6c903ad.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\libs\http_client_lib.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="72a1b57c36ad38862a875549381b0db1a42c213e">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\http_client_lib_7cf36a1996db58c13026c57b8059b670ee40ee0d.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\libs\library-xexpandablelistview.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="88cbf35499fffed6c1f19250ed994658f99b7bfa">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\library-xexpandablelistview_a2c3d9696374ee9ee02e18841f92996ed8d6a29a.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\libs\ctbeacon_lib_v.2.1.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1d70ec19ec55822ee7c2fa6a25b91c6b500ea67c">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\ctbeacon_lib_v.2.1.4_190aa5f29116249174acad6bb06231d6506f7c44.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\exploded-aar\trunk\QrCodeScan\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a97e59bcf1592b7457214e4edd495cb0ce5a990a">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\trunk-QrCodeScan-unspecified_a479a981b7cf1d2582d8d7e51ba9cb93f1418434.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\libs\com.umeng.message.lib.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="86edfec334e0991f73c33682d063cd263f874c4f">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\com.umeng.message.lib_5cac0c22e59a227303e4e589e59d1a042f573e09.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\libs\baidumapapi_v3_2_0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="46ca4c3c74e1ddc60b45c490485e5df05babe6a5">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\baidumapapi_v3_2_0_9cf0c5a3e1bcf921749ad38a0487221fc77dd914.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\libs\umeng-analytics-v5.2.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0f9eccf79ae6006e4346725b09114182dca0c023">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\umeng-analytics-v5.2.4_7af504826e2743ef01e164a1bf291cce838ce57e.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\exploded-aar\trunk\TelecomppExtendLib\unspecified\jars\libs\pputil.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="963bb2158e22885026168fc4aa837bc0b2c2efbf">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\pputil_e682cb68f3ce6b80197a866df6a5c026d647c383.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\nineoldandroids-2.4.0_957aa67f9b45966a0b0e60fb0e99fadfcb4facad.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\exploded-aar\trunk\TelecomppExtendLib\unspecified\jars\libs\bestpaysdk.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6da06078cbf3584973b906adf6a81ba1f3eaad29">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\bestpaysdk_7bbb45ae937d517ae2ac2b20b58fc05086e8b37c.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\libs\active_android.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3abd2f62175404304181c72044948dd21391b212">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\active_android_f172dfcb655f93ddcfed0c099233920fce95a21c.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\libs\pushservice-4.4.0.71.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9509cfa0c9817d0905fc6f9b0d417a4730884966">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\pushservice-4.4.0.71_b805ce130a9b43ec2e8b8d83cf494824453150ca.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\libs\edep.20150630.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f137be1df74daa461e7c7440ec77618bb0f402fe">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\edep.20150630_f9b4d76c77d7b77be8adaaa4e26a9cb5d714998f.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\exploded-aar\trunk\NFC_lib\unspecified\jars\libs\guava-r07.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5fce97002e6f02fe21a21f86d62de37bc7c95312">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\guava-r07_04ae91f71cba202ece59208cb746684f21382b0f.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\libs\locSDK_6.13.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\locSDK_6.13_ad2de0517fd6974d10e60163aecefa290b3916d7.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\exploded-aar\trunk\NFC_lib\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="feedd0909bb799b3ddee09424d6accec1968552b">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\trunk-NFC_lib-unspecified_fb910b2f56050f37c7b57744befbb8e809fe3f64.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\exploded-aar\trunk\TelecomppExtendLib\unspecified\jars\libs\log4j-1.2.17.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d04bdba5a324891e8f7e1614190ecfc6ed74b05b">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\log4j-1.2.17_861707c349f3b7bc35e07e9a410df3009a9112db.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\libs\android_volley.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c1639fe86e29ded9ae0e03653b6cae095e5f8da5">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\android_volley_700b6b5b2eafac16bc619a8772c537473922aff6.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\exploded-aar\trunk\TelecomppExtendLib\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4ed71f9e53f372395ee21fa658a4a9ae5b17d515">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\trunk-TelecomppExtendLib-unspecified_a0a3cd6d57d8085f5017989de7dc2298b6920be5.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\libs\umeng-update-v2.4.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ee700e317f574886dc0a236b801f219df6fbd26d">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\umeng-update-v2.4.2_b39f02b21be0f46f87bc4321914ecacf9c6e880a.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\internal_impl-23.0.0_f79da2af9a3616bbef906baf6cedb4f2ee082b8e.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\libs\httpmime-4.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d34b163e52a9727101aced60775d51c5085390a1">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\httpmime-4.1.1_86b36c3495a112069b9dc7fa16626d6640bd94a6.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\libs\nxpnfcliblite.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3974873117ed1131f691e6ec96b38617264d2fa3">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\nxpnfcliblite_e6740d4fd5462afb7c1f0de19bc15de94d3c6764.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\exploded-aar\trunk\TelecomppExtendLib\unspecified\jars\libs\android-logging-log4j-1.0.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="612d68ae6b8d3e921d771e1382c017c123c73c54">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\android-logging-log4j-1.0.3_e586c5c043832d7fabdacddca787ae7daf01a487.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\exploded-aar\trunk\sliddingmenu_library\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="43017d456ad03c712a5c111449e9f5cfe1e5c9ef">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\trunk-sliddingmenu_library-unspecified_1680149d4a2044587c6ccaf01901461ad10ea55f.jar" />
+    </item>
+    <item
+        jar="D:\Users\PC\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\support-annotations-23.0.0_67a3ad2880349e70143f50469ca62874a57c35c1.jar" />
+    </item>
+    <item
+        jar="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\exploded-aar\trunk\viewpager_indicator_lib\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="29441f77a1911c8cc0ddf1f4ee8043720652818a">
+        <dex dex="C:\Users\PC\Documents\Tencent Files\393835017\FileRecv\trunk\app\build\intermediates\pre-dexed\anzhi\debug\trunk-viewpager_indicator_lib-unspecified_ac47a70ffb1110a3eda3b03b7e23ca7825fb8aab.jar" />
+    </item>
+
+</items>

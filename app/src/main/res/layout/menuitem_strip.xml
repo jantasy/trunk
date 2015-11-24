@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.yjt.oa.app.app.widget.MenuItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00AAAC"
+    android:clickable="true"
+    android:orientation="horizontal" >
+    <LinearLayout
+        android:orientation="horizontal" 
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content"
+        android:id="@+id/img_icon"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_charge"/>
+	<TextView 
+	    android:id="@+id/tv_title"
+	    android:layout_centerVertical="true"
+	    android:layout_height="wrap_content"
+	    android:padding="2dp"
+	    android:layout_width="wrap_content"
+	    android:textSize="12sp"
+	     android:layout_marginLeft="5dp"
+	    android:textColor="#ffffff"
+	    android:text="充值、消费"
+	    />
+    </LinearLayout>
+    
+</cn.yjt.oa.app.app.widget.MenuItemView>

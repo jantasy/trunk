@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <cn.yjt.oa.app.widget.dragdrop.DragContainer
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12" >
+
+        <ScrollView
+            android:id="@+id/ss"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#987800"
+            android:scrollbars="none" >
+		
+            <cn.yjt.oa.app.app.widget.MentroView
+                android:id="@+id/mv_my"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000" />
+        </ScrollView>
+    </cn.yjt.oa.app.widget.dragdrop.DragContainer>
+
+    <LinearLayout
+        android:id="@+id/ll_add"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="#0d698a"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/bt_add_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="添加" />
+    </LinearLayout>
+
+</LinearLayout>

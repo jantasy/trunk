@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+
+    <item
+        id="1"
+        c="cn.yjt.oa.app.notifications.NotificationActivity"
+        i="res://drawable/icon_notice"
+        p="current"
+        t="res://string/notice"/>
+
+    <item
+        id="2"
+        c="cn.yjt.oa.app.task.TaskMainActivity"
+        i="res://drawable/icon_task"
+        p="current"
+        t="res://string/task_main_title_name"/>
+
+    <item
+        id="3"
+        c="cn.yjt.oa.app.signin.SigninActivity"
+        i="res://drawable/icon_signin"
+        p="current"
+        t="res://string/signinleave_title"/>
+	<!-- 
+    <item
+        id="4"
+        c="cn.yjt.oa.app.signin.AttendanceActivity"
+        i="res://drawable/location_signin"
+        p="current"
+        t="res://string/location_signin"/>
+ 	-->
+ 	<item
+        id="4"
+        c="cn.yjt.oa.app.attendance.LocationActivity"
+        i="res://drawable/location_signin"
+        p="current"
+        t="res://string/location_signin"/>
+ 	
+    <item
+        id="5"
+        c="com.zbar.lib.CaptureActivity"
+        i="res://drawable/scan_signin"
+        p="current"
+        t="res://string/scanning_signin"/>
+    <!--  
+    <item
+        id="10"
+        c="cn.yjt.oa.app.attendance.BeaconAttendanceActivity"
+        i="res://drawable/shake_signin"
+        p="current"
+        v="18"
+        t="res://string/shake_signin"/>
+        -->
+    <item
+        id="10"
+        c="cn.yjt.oa.app.attendance.BeaconShakeAttendanceActivity"
+        i="res://drawable/beacon_signin"
+        p="current"
+        v="18"
+        t="res://string/beacon_signin"/>
+
+    <item
+        id="6"
+        c="cn.yjt.oa.app.consume.ConsumeActivity"
+        i="res://drawable/icon_consume"
+        p="current"
+        t="res://string/consume_title"/>
+
+    
+    <item
+        id="7"
+        c="cn.yjt.oa.app.teleconferencenew.TeleconferenceActivity"
+        i="res://drawable/phone_meeting"
+        p="current"
+        t="res://string/phone_meeting"/>
+
+    <item
+        id="8"
+        c="cn.yjt.oa.app.enterprise.operation.EnterpriseManageActivity"
+        i="res://drawable/ic_enterprise_manager"
+        p="current"
+        require_permission="member_list|send_notice|modify_enterprise_info"
+        t="res://string/enterprise_manage"/>
+
+    <item
+        id="11"
+        c="cn.yjt.oa.app.meeting.MeetingActivity"
+        i="res://drawable/dashboard_meeting"
+        p="current"
+        t="res://string/meeting_signin"/>
+
+    <!--<item
+        id="12"
+        c="cn.yjt.oa.app.patrol.activitys.PatrolSummaryActivity"
+        i="res://drawable/dashboard_patrol"
+        p="current"
+        require_permission="inspect_config|get_inspect_report|inspect"
+        t="res://string/patrol_manager"/>-->
+    <item
+        id="12"
+        c="cn.yjt.oa.app.patrol.activitys.PatrolSummaryActivity"
+        i="res://drawable/dashboard_patrol"
+        p="current"
+        t="res://string/patrol_manager"/>
+   <!--
+    <item
+        c="developing_sms_helper"
+        i="res://drawable/sms_helper"
+        p="current"
+        t="res://string/sms_helper"/>
+
+    <item
+        c="developing_work_circle" 
+        i="res://drawable/work_circle"
+        p="current"
+        t="res://string/work_circle"/>
+
+    <item
+        c="cn.yjt.oa.app.quizmoment.QuizMomentMainActivity"
+        i="res://drawable/quiz_moment"
+        p="current"
+        t="res://string/quiz_moment"/>
+
+    <item
+        c="developing_wei_live"
+        i="res://drawable/wei_live"
+        p="current"
+        t="res://string/wei_live"/>
+    
+     <item
+        c="cn.yjt.oa.app.documentcenter.DocumentCenterMainActivity"
+        i="res://drawable/doc_center"
+        p="current"
+        t="res://string/doc_center"/>
+
+     <item
+        c="cn.yjt.oa.app.industry.IndustryInfoActivity"
+        i="res://drawable/industry_info"
+        p="current"
+        t="res://string/industry_info"/>
+
+	-->
+
+     
+    <!-- 翼机通圈存的activity -->
+
+    <item
+        id="9"
+        c="cn.yjt.oa.app.recharge.BlankActivity"
+        i="res://drawable/icon_recharge"
+        p="current"
+        t="res://string/recharge_title"/>
+    
+</items>

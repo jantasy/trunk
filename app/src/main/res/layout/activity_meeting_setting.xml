@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@drawable/contact_list_division"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="会议名称"
+                android:textColor="#bac0c9"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/et_meeting_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入会议名称"
+                android:background="#fff"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@drawable/contact_list_division"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="会议主题"
+                android:textColor="#bac0c9"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/et_meeting_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入会议主题"
+                android:background="#fff"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="会议日期"
+                android:textColor="#bac0c9"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@drawable/contact_list_division"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="起始时间~终止时间"
+                android:textColor="#bac0c9"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:background="#fff"
+                    android:hint="会议起始时间"
+                    android:inputType="text"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="~"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_stop_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:hint="会议终止时间"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@drawable/contact_list_division"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="会议地点"
+                android:textColor="#bac0c9"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#fff"
+                android:hint="请输入会议地点"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:background="@drawable/contact_list_button"
+                android:text="提交会议并生成二维码"
+				android:textSize="15sp"
+                 />
+            <ImageView
+                android:id="@+id/iv_qr_code"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/qrcode_default"
+                />
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/contact_list_button"
+                android:gravity="center"
+                android:text="下载二维码"
+				android:textSize="15sp"
+                 />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

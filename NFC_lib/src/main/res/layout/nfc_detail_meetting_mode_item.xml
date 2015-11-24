@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlModeMute"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nfc_setting_item_bg" >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dip"
+        android:background="@drawable/nfc_mode_mute" />
+
+    <ImageView
+        android:id="@+id/iv_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dip"
+        android:background="@drawable/nfc_mode_switch_on" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_toLeftOf="@id/iv_switch"
+        android:layout_toRightOf="@id/iv_icon"
+        android:singleLine="true"
+        android:text="@string/nfc_phone_mode"
+        android:textColor="@color/nfc_black"
+        android:textSize="16dip" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_toLeftOf="@id/iv_switch"
+        android:layout_toRightOf="@id/iv_icon"
+        android:singleLine="true"
+        android:text="@string/nfc_phone_mutemode"
+        android:textColor="@color/nfc_light_black"
+        android:textSize="10dip" />
+
+</RelativeLayout>
